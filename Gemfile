@@ -4,3 +4,4 @@ source "https://rubygems.org"
 gem "beautiful-jekyll-theme", "~> 5.0.0"
 
 gem "github-pages", group: :jekyll_plugins
+gem "webrick", "~> 1.7"
