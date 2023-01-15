@@ -5,7 +5,11 @@ subtitle: Why me instead of a robot?
 permalink: /about/
 ---
 
+{% if site.data.me.about.qualities %}
 Some of my best qualities:
-- **Gitmoji master**: I turn any boring repository into a color explosion
-- **Keyboard shortcut wizard**: To the dismay of `Ctrl` and `Shift` keys... 
-- **Coverage hunter**: Did we test the tests ?
+{% for quality in site.data.me.about.qualities %}
+- **{{ quality.name }}**: {{ quality.description }}
+{% endfor %}
+{% else %}
+Why not ?
+{% endif %}
