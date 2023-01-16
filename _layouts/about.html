@@ -1,0 +1,20 @@
+---
+layout: page
+title: About me
+permalink: /about/
+---
+
+{% if page.answer %}
+{% if page.answer.text %}
+<h2>{{ page.answer.text }}</h2>
+{% endif %}
+{% if page.answer.list %}
+<ul>
+{% for element in page.answer.list %}
+    <li><strong>{{ element.name }}</strong>: {{ element.description }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% else %}
+<h2>Why not ?</h2>
+{% endif %}
