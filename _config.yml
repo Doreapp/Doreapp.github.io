@@ -21,4 +21,8 @@ page_gen:
     template: school
     name: short-name
     dir: schools
-    
+  - data: me.me
+    template: index
+    name: page-name
+    dir: '.'
+    debug: true

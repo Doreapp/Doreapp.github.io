@@ -1,3 +1,10 @@
+me:
+  - title: Antoine Mandin
+    subtitle: Software engineer
+    share-title: Antoine Mandin | Software engineer
+    page-name: index
+    name: Antoine Mandin
+    birthday: '04-10-1999'
 about:
   qualities:
     - name: Gitmoji master
