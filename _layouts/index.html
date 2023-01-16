@@ -1,0 +1,12 @@
+---
+layout: home
+---
+
+<h2>Schools</h2>
+<ul>
+{% for school in site.data.schools %}
+    <li>
+        <a href="{{ school.short-name | datapage_url: 'schools' }}">{{school.long-name}}</a>
+    </li>
+{% endfor %}
+</ul>
