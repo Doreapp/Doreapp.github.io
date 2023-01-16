@@ -25,4 +25,7 @@ page_gen:
     template: index
     name: page-name
     dir: '.'
-    debug: true
+  - data: me.about
+    template: about
+    name: page-name
+    dir: '.'
