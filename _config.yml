@@ -2,6 +2,7 @@ remote_theme: daattali/beautiful-jekyll
 
 plugins:
   - jekyll-feed
+  - jekyll-datapage-generator
 
 title: Antoine Mandin | Software engineer
 author: Antoine Mandin
@@ -11,3 +12,13 @@ description: >-
 baseurl: ""
 url: ""
 github_username: Doreapp
+
+# Page generation configuration
+# See https://github.com/avillafiorita/jekyll-datapage_gen
+# page_gen-dirs: true # uncomment, if you prefer to generate named folders
+page_gen:
+  - data: schools
+    template: school
+    name: short-name
+    dir: schools
+    
