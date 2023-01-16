@@ -10,12 +10,11 @@ about:
     title: About me
     subtitle: Why me instead of a robot?
     share-title: About me | Antoine Mandin
-    answer:
-      text: 'Some of my best qualities:'
-      list:
-      - name: Gitmoji master
-        description: I turn any boring repository into a color explosion
-      - name: Keyboard shortcut wizard
-        description: To the dismay of `Ctrl` and `Shift` keys...
-      - name: Coverage hunter
-        description: Did we test the tests ?
+    text: 'Some of my best qualities:'
+    list:
+    - name: Gitmoji master
+      description: I turn any boring repository into a color explosion
+    - name: Keyboard shortcut wizard
+      description: To the dismay of `Ctrl` and `Shift` keys...
+    - name: Coverage hunter
+      description: Did we test the tests ?
