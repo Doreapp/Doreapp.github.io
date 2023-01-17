@@ -17,11 +17,11 @@ github_username: Doreapp
 # See https://github.com/avillafiorita/jekyll-datapage_gen
 # page_gen-dirs: true # uncomment, if you prefer to generate named folders
 page_gen:
-  - data: schools
+  - data: me.education.schools
     template: school
     name: short-name
-    dir: schools
-  - data: me.me
+    dir: school
+  - data: me.profile
     template: index
     name: page-name
     dir: '.'
