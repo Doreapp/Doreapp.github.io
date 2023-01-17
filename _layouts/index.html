@@ -4,9 +4,9 @@ layout: home
 
 <h2>Schools</h2>
 <ul>
-{% for school in site.data.schools %}
+{% for school in site.data.me.education.schools %}
     <li>
-        <a href="{{ school.short-name | datapage_url: 'schools' }}">{{school.long-name}}</a>
+        <a href="{{ school.short-name | datapage_url: 'school' }}">{{school.long-name}}</a>
     </li>
 {% endfor %}
 </ul>
