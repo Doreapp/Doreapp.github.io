@@ -6,46 +6,46 @@ profile:
     name: Antoine Mandin
     birthday: '04-10-1999'
 about:
-  - page-name: about
-    title: About me
-    subtitle: Why me instead of a robot?
-    share-title: About me | Antoine Mandin
-    text: 'Some of my best qualities:'
-    list:
-    - name: Gitmoji master
-      description: I turn any boring repository into a color explosion
-    - name: Keyboard shortcut wizard
-      description: To the dismay of `Ctrl` and `Shift` keys...
-    - name: Coverage hunter
-      description: Did we test the tests ?
+- page-name: about
+  title: About me
+  subtitle: Why me instead of a robot?
+  share-title: About me | Antoine Mandin
+  text: 'Some of my best qualities:'
+  list:
+  - name: Gitmoji master
+    description: I turn any boring repository into a color explosion
+  - name: Keyboard shortcut wizard
+    description: To the dismay of `Ctrl` and `Shift` keys...
+  - name: Coverage hunter
+    description: Did we test the tests ?
 education:
   schools:
-    - title: INSA Lyon
-      subtitle: French engineering school
-      share-title: INSA Lyon | Engineering school
-      short-name: INSA Lyon
-      long-name: Institut National des Sciences Appliquées de Lyon 
-      city: Lyon
-      country: France
-      description: >-
-        French engineering school offering a 5-year curriculum.
-        The two first years are general scientific education, with mathematics, physics, chemistry and an pleasant student life.
-        The next three years are devoted to specialization. I joined the Computer science department, which offers 
-        courses about topis ranging from computer architecture to data models.  
-      weblink: https://www.insa-lyon.fr/
-      start-date: 01-09-2017
-      end-date: 30-06-2022
-    - title: KTH
-      subtitle: Royal Institue of Technology
-      share-title: KTH Royal Institue of Technology
-      short-name: KTH
-      long-name: KTH Royal Institue of Technology
-      city: Stockholm
-      country: Sweden
-      description: >-
-        Sweden's largest largest technical university.
-        I worked in KTH during a full semester, deepening my knowledge in computer science and improving my english.
-      weblink: https://www.kth.se/
-      start-date: 22-08-2021
-      end-date: 15-01-2022
+  - title: INSA Lyon
+    subtitle: French engineering school
+    share-title: INSA Lyon | Engineering school
+    short-name: INSA Lyon
+    long-name: Institut National des Sciences Appliquées de Lyon
+    city: Lyon
+    country: France
+    description: >-
+      French engineering school offering a 5-year curriculum.
+      The two first years are general scientific education, with mathematics, physics, chemistry and an pleasant student life.
+      The next three years are devoted to specialization. I joined the Computer science department, which offers
+      courses about topis ranging from computer architecture to data models.
+    weblink: https://www.insa-lyon.fr/
+    start-date: 01-09-2017
+    end-date: 30-06-2022
+  - title: KTH
+    subtitle: Royal Institue of Technology
+    share-title: KTH Royal Institue of Technology
+    short-name: KTH
+    long-name: KTH Royal Institue of Technology
+    city: Stockholm
+    country: Sweden
+    description: >-
+      Sweden's largest largest technical university.
+      I worked in KTH during a full semester, deepening my knowledge in computer science and improving my english.
+    weblink: https://www.kth.se/
+    start-date: 22-08-2021
+    end-date: 15-01-2022
 
