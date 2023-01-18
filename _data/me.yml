@@ -48,4 +48,187 @@ education:
     weblink: https://www.kth.se/
     start-date: 22-08-2021
     end-date: 15-01-2022
+  diplomas:
+  - title: Engineering degree in computer science
+    subtitle: Awarded by INSA Lyon
+    share-title: Engineering degree in computer science
+    date: 21-07-2022
+    school: INSA Lyon
+work:
+  companies:
+  - title: SIREHNA
+    description: >-
+      SIREHNA develop a large range of products & systems aiming to secure navigation and maritime environment 
+      on both civil and military markets.
+      Small size business (100+ employee), subsidary of Naval Group.
+    weblink: https://www.sirehna.com/
+    city: Bouguenais
+    country: France
+  - title: Kissfly, 
+    weblink: https://kissfly.co/
+    description: >-
+      Startup based in San Francisco specialized into autonomous flying drones
+    city: San Francisco
+    country: US
+  - title: LIRIS
+    weblink: https://liris.cnrs.fr/
+    description: >-
+      Research laboratory focused on computer science and image. 
+      Associated to several Lyon's universities. 
+    city: Lyon
+    country: France
+  - title: Doreapp
+    description: >- 
+      Basically my "company" identity, as a "auto entrepreneur", 
+      used mostly to publish apps on Google Play Store.
+  jobs:
+  - title: Software engineer
+    subtitle: SIREHNA
+    company: SIREHNA
+    share-title: Software engineer job at SIREHNA
+    start-date: 01-09-2022
+  - title: Software engineer intern
+    subtitle: SIREHNA
+    company: SIREHNA
+    share-title: Software engineer internship at SIREHNA
+    start-date: 01-02-2022
+    end-date: 30-06-2022
+  - title: IT engineer intern
+    subtitle: Kissfly
+    company: Kissfly
+    share-title: IT engineer intership at Kissfly
+    start-date: 01-05-2021 
+    end-date: 20-08-2021
+  - title: Research intern
+    subtitle: LIRIS
+    company: LIRIS
+    share-title: Research internship at LIRIS
+    start-date: 01-06-2020 
+    end-date: 20-08-2020
+  - title: Autoentrepreneur
+    subtitle: Doreapp
+    company: Doreapp
+    share-title: Auto entrepreneur as Doreapp
+    start-date: 01-07-2018
+skills:
+  soft:
+  - Team working
+  - Fast learning
+  technical:
+    programming-languages:
+    - name: Python
+      weblink: https://www.python.org/
+    - name: Java
+      weblink: https://www.java.com/
+    - name: Kotlin
+      weblink: https://kotlinlang.org/
+    - name: Elm
+      weblink: https://elm-lang.org/
+    - name: JavaScript
+      weblink: https://developer.mozilla.org/docs/Web/JavaScript
+    - name: TypeScript
+      weblink: https://www.typescriptlang.org/
+    libraries-and-frameworks:
+    - name: React
+      weblink: https://fr.reactjs.org/
+      language: JavaScript
+      categories:
+      - Frontend
+    - name: FastAPI
+      weblink: https://fastapi.tiangolo.com/
+      language: Python
+    categories:
+    - Backend
+    - Frontend
+    - Algorithm
+volunteering:
+- title: Communication manager
+  subtitle: AEDI (student association of the IT department)
+  start-date: 01-07-2020 
+  end-date: 01-07-2021
+- title: Animation manager
+  subtitle: BAL (Prom)
+  start-date: 01-09-2020 
+  end-date: 01-03-2021
+projects:
+- title: Estimate of masses
+  subtitle: SIREHNA
+  comapny: SIREHNA
+  start-date: 01-10-2022
+  team-size: 3
+- title: PhoneHistory
+  subtitle: Android App
+  share-title: PhoneHistory App
+  company: Doreapp
+  start-date: 15-09-2019 
+  end-date: 14-11-2020
+  team-size: 1
+  weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.phonehistory
+  skills:
+  - Android
+  - Java
+  - XML
+  - IntelliJ IDEA
+  description: >-
+    Android app retrieving the usage history of the phone.
+    It uses UsageEvents API to recover the apps usage and list it 
+    in a chronological order. It also displays statistics about the 
+    phone's usage.
+- title: Heads or Tails
+  subtitle: Android App
+  share-title: Heads or Tails App
+  company: Doreapp
+  start-date: 15-09-2017
+  end-date: 15-03-2018
+  team-size: 1
+  weblink: https://play.google.com/store/apps/details?id=com.antoine.mandin.pileouface
+  skills:
+  - Android
+  - Java
+  - XML
+  - IntelliJ IDEA
+  description: >-
+    Android app making random draws.
+- title: NuMemory
+  subtitle: Android Game
+  share-title: NuMemory game
+  company: Doreapp
+  start-date: 01-08-2020
+  end-date: 01-09-2020
+  team-size: 1
+  weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.nummemory
+  skills:
+  - Android
+  - Java
+  - XML
+  - IntelliJ IDEA
+  description: >-
+    Android game challenging the user's memory.
+- title: Prix carburants
+  subtitle: A map of fuell prices
+  start-date: 17-05-2022
+  end-date: 08-06-2022
+  team-size: 1
+  weblink: https://doreapp.github.io/prix-carburants/
+  source-code: https://github.com/Doreapp/prix-carburants
+  skills:
+  - Jekyll
+  - Leaflet
+  - GeoJSON
+  - Python
+  - GitHub
+  - GitHub pages
+  - GitHub actions
+  - CI/CD
+  description: >-
+    First, a python module dedicated to fetch french open data
+    about fuel prices.
+    Secondly, a GitHub repository designated to hold the data
+    and to update it recurrently using GitHub actions.
+    Finally, a static website made with Jekyll technology and hosted
+    on GitHub pages, displaying fuel prices in a Map (using Leaflet and GeoJSON)
+    as well as geographic statistics about fuel prices.
+
+  
+
 
