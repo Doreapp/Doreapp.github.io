@@ -1,0 +1,16 @@
+name: Python Continuous Integration
+
+on:
+  push:
+    paths:
+      - 'tools/**.py'
+      - 'tools/pyfolio/**'
+      - 'tools/requirements*'
+
+jobs:
+  Check-lint:
+    runs-on: ubuntu-latest
+    name: Check lint
+    steps:
+      - uses: actions/checkout@v2
+      - run: make --directory=tools docker_lint
