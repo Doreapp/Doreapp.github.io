@@ -1,0 +1,28 @@
+# Definition of the data format to respect
+#
+# Markers:
+# - (1) Array of length 1
+# - (o) Optional
+#
+# Types:
+# - str = Free text
+# - url = Web link text
+
+profile(1):
+- name: str
+  subtitle: str
+  share-title(o): str
+about(1):
+- subtitle: str
+  share-title(o): str
+  text(o): str
+  list(o):
+  - name: str
+    description: str
+education:
+  schools:
+  - name: str
+    subtitle(o): str
+    share-title(o): str
+    description: str
+    weblink(o): url

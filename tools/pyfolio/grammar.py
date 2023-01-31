@@ -8,6 +8,8 @@ from dataclasses import dataclass
 from logging import Logger
 from typing import Dict as TDict
 
+import yaml
+
 URL_REGEX = re.compile(
     r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}"
     r"\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
@@ -103,3 +105,39 @@ class Dict(Type):
                 )
             return False
         return True
+
+
+def _parse(location: str, element) -> Type:
+    """Parse a subelement of the grammar"""
+    if isinstance(element, dict):
+        result = Dict({}, {})
+        for key, value in element.items():
+            vtype = _parse(f"{location}.{key}", value)
+            if key.endswith("(1)") and isinstance(vtype, List):
+                vtype.must_have_a_single_child = True
+                key = key[:-3]
+            if key.endswith("(o)"):
+                result.optional[key[:-3]] = vtype
+            else:
+                result.needed[key] = vtype
+        return result
+    if isinstance(element, list):
+        if len(element) != 1:
+            raise Exception(
+                "Lists must contain a single child. " f"{location} contains {len(element)}."
+            )
+        return List(_parse(f"{location}[0]", element[0]))
+    if isinstance(element, str):
+        if element == "str":
+            return String()
+        if element == "url":
+            return String(url=True)
+        raise Exception(f"{location} is an unknown str '{element}'")
+    raise Exception(f"{location} has an undleded type '{type(element).__name__}'.")
+
+
+def load(filepath: str) -> Type:
+    """Load a grammar from a YAML file"""
+    with open(filepath, "r", encoding="utf8") as fis:
+        raw = yaml.safe_load(fis)
+    return _parse("", raw)
