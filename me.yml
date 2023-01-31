@@ -1,14 +1,10 @@
 profile:
-  - title: Antoine Mandin
+  - name: Antoine Mandin
     subtitle: Software engineer
     share-title: Antoine Mandin | Software engineer
-    page-name: index
-    name: Antoine Mandin
-    birthday: '04-10-1999'
+    birthday: 04-10-1999
 about:
-- page-name: about
-  title: About me
-  subtitle: Why me instead of a robot?
+- subtitle: Why me instead of a robot?
   share-title: About me | Antoine Mandin
   text: 'Some of my best qualities:'
   list:

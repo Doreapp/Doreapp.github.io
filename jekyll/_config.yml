@@ -7,7 +7,7 @@ plugins:
 title: Antoine Mandin | Software engineer
 author: Antoine Mandin
 email: antoine.mandin.am@gmail.com
-description: >- 
+description: >-
   Portfolio and Resume of Antoine Mandin. French Software engineer.
 baseurl: ""
 url: ""
@@ -23,9 +23,11 @@ page_gen:
     dir: school
   - data: me.profile
     template: index
-    name: page-name
+    name_expr: '"index"'
+    title: name
     dir: '.'
   - data: me.about
     template: about
-    name: page-name
+    name_expr: '"index"'
+    title_expr: '"About me"'
     dir: '.'
