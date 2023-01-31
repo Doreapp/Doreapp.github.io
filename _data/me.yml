@@ -58,13 +58,13 @@ work:
   companies:
   - title: SIREHNA
     description: >-
-      SIREHNA develop a large range of products & systems aiming to secure navigation and maritime environment 
+      SIREHNA develop a large range of products & systems aiming to secure navigation and maritime environment
       on both civil and military markets.
       Small size business (100+ employee), subsidary of Naval Group.
     weblink: https://www.sirehna.com/
     city: Bouguenais
     country: France
-  - title: Kissfly, 
+  - title: Kissfly,
     weblink: https://kissfly.co/
     description: >-
       Startup based in San Francisco specialized into autonomous flying drones
@@ -73,13 +73,13 @@ work:
   - title: LIRIS
     weblink: https://liris.cnrs.fr/
     description: >-
-      Research laboratory focused on computer science and image. 
-      Associated to several Lyon's universities. 
+      Research laboratory focused on computer science and image.
+      Associated to several Lyon's universities.
     city: Lyon
     country: France
   - title: Doreapp
-    description: >- 
-      Basically my "company" identity, as a "auto entrepreneur", 
+    description: >-
+      Basically my "company" identity, as a "auto entrepreneur",
       used mostly to publish apps on Google Play Store.
   jobs:
   - title: Software engineer
@@ -87,29 +87,103 @@ work:
     company: SIREHNA
     share-title: Software engineer job at SIREHNA
     start-date: 01-09-2022
+    description: >-
+      As a software engineer at Sirehna, I am part of a small team, where we build
+      software and programs that have large connections to naval architecture and
+      science.
+      My role involves working with Gitlab and utilizing its CI/CD and code review
+      processes to ensure high-quality code is produced and deployed.
+      I work with both backend technologies, such as Python, and frontend technologies, such as React.js,to create a seamless user experience.
+      I am responsible for the development, testing, and maintenance of software and
+      programs, collaborating with the team to ensure timely delivery and high-quality
+      products.
+      Additionally, I am involved in the continuous improvement of the software
+      development process and ensure the software is optimized for performance
+      and scalability.
   - title: Software engineer intern
     subtitle: SIREHNA
     company: SIREHNA
     share-title: Software engineer internship at SIREHNA
     start-date: 01-02-2022
     end-date: 30-06-2022
+    description: >-
+      During my internship at SIREHNA, I was tasked with building a simulation
+      and data management environment for the hydrodynamic engineers of the company.
+      The goal of the internship was to improve their working processes and automate
+      hydrodynamics simulations.
+      In this context, I developed a full environment, containing the following components:
+      - A large storage system based on MinIO, which provided a robust and
+      scalable storage solution for the simulation data.
+      - A user and permission management web platform based on Girder, which enabled
+      secure access and management of the simulation data.
+      - An automated workflow to run CFD simulations and asynchronously return
+      the results and logs, based on Gitlab.
+      This streamlined the simulation process and allowed for efficient data management.
+      This internship allowed me to gain experience in a professional setting and
+      develop my skills in software development, data management and automation.
   - title: IT engineer intern
     subtitle: Kissfly
     company: Kissfly
     share-title: IT engineer intership at Kissfly
-    start-date: 01-05-2021 
+    start-date: 01-05-2021
     end-date: 20-08-2021
+    description: >-
+      During my internship at Kissfly, I gained experience working in a remote
+      environment while being based in France.
+      This internship allowed me to develop my skills in remote collaboration and time management.
+      I was assigned multiple tasks, including:
+      - Improving the live video streaming system between the moving drone and the
+      ground station. The streaming was based on WebRTC, and by testing and updating
+      the parameters, I managed to improve the maximum streaming range as well as
+      the latency and video framerate.
+      - Improving the ground station user interface using Vue.js, including adding
+      control buttons and 3D trajectory display. This helped to enhance the user
+      experience and make the interface more intuitive.
+      - Researching and testing live video streaming technologies, such as
+      WiFi-broadcast. This allowed me to gain knowledge about different technologies
+      and their capabilities, which helped me to make informed decisions about the
+      best technology to use for the project.
+
+      This internship gave me the opportunity to work on real-world projects, and
+      I was able to apply my technical skills while learning new technologies and
+      approaches to problem-solving.
+      I was able to improve my skills in live video streaming, front-end development
+      and research.
   - title: Research intern
     subtitle: LIRIS
     company: LIRIS
     share-title: Research internship at LIRIS
-    start-date: 01-06-2020 
+    start-date: 01-06-2020
     end-date: 20-08-2020
+    description: >-
+      During my internship in an LIRIS research laboratory, I was assigned to a
+      project that was part of a thesis. The goal was to evaluate a dataset prior to
+      machine learning training in order to identify any incorrect data. To achieve
+      this, I created Python algorithms using blocking methods to analyze the dataset
+      and return the conflicting records.
+      I was responsible for developing and implementing the algorithms, testing
+      them, and analyzing the results. I also had to work with large datasets and
+      manage the data effectively, as well as using various libraries like pandas and
+      numpy.
+      This experience allowed me to develop my skills in data analysis, data
+      preprocessing, and machine learning. It also helped me to gain a deeper
+      understanding of the importance of data quality in machine learning and how to
+      ensure the data is correct before training a model.
   - title: Autoentrepreneur
     subtitle: Doreapp
     company: Doreapp
     share-title: Auto entrepreneur as Doreapp
     start-date: 01-07-2018
+    description: >-
+      Before my formal education and internships, I taught myself how to
+      develop Android applications. This led to the creation of several applications
+      available on the Google Play Store and the establishment of my own small
+      business, Doreapp.
+      Through this experience, I developed my skills in Android development and
+      programming concepts such as object-oriented programming, data
+      structures, and algorithms.
+      I also learned how to use Android Studio, Java, and other related
+      technologies to develop my applications.
 skills:
   soft:
   - Team working
@@ -128,6 +202,8 @@ skills:
       weblink: https://developer.mozilla.org/docs/Web/JavaScript
     - name: TypeScript
       weblink: https://www.typescriptlang.org/
+    - name: SQL
+      weblink: https://en.wikipedia.org/wiki/SQL
     libraries-and-frameworks:
     - name: React
       weblink: https://fr.reactjs.org/
@@ -137,30 +213,123 @@ skills:
     - name: FastAPI
       weblink: https://fastapi.tiangolo.com/
       language: Python
+      categories:
+      - Backend
+    - name: SQLite
+      language: SQL
+      weblink: https://sqlite.org/index.html
+      categories:
+      - Backend
+      - Database
+    - name: numpy
+      language: Python
+      weblink: https://numpy.org/
+    - name: pandas
+      language: Python
+      weblink: https://pandas.pydata.org/
+    - name: Pytest
+      language: Python
+      weblink: https://pytest.org/
+    - name: Vuejs
+      language: JavaScript
+      categories:
+      - Frontend
+      weblink: https://vuejs.org/
+    - name: WebRTC
+      language: JavaScript
+      categories:
+      - Frontend
+      weblink: https://webrtc.org/
+    - name: ThreeJS
+      language: JavaScript
+      categories:
+      - Frontend
+      weblink: https://threejs.org/
+    - name: SQLalchemy
+      language: Python
+      categories:
+      - Backend
+      - Database
+      weblink: https://www.sqlalchemy.org/
+    - name: Sphinx
+      language: Python
+      weblink: https://www.sphinx-doc.org/
+    - name: Mermaid
+      language: JavaScript
+      categories:
+      - Frontend
+      weblink: https://mermaid-js.github.io/
     categories:
     - Backend
     - Frontend
     - Algorithm
+    - Database
+    tools:
+    - name: MinIO
+    - name: GitHub
+    - name: GitHub actions
+    - name: GitHub pages
+    - name: GitLab
+    - name: GitLab
+    - name: Visual Studio code
+    - name: Android Studio
+    - name: IntelliJ
+    - name: Docker
+    - name: Docker compose
+    - name: CI/CD
+    - name: AWS
+    others:
+    - Video streaming
 volunteering:
 - title: Communication manager
   subtitle: AEDI (student association of the IT department)
-  start-date: 01-07-2020 
+  start-date: 01-07-2020
   end-date: 01-07-2021
 - title: Animation manager
   subtitle: BAL (Prom)
-  start-date: 01-09-2020 
+  start-date: 01-09-2020
   end-date: 01-03-2021
 projects:
 - title: Estimate of masses
   subtitle: SIREHNA
-  comapny: SIREHNA
+  company: SIREHNA
   start-date: 01-10-2022
   team-size: 3
+  skills:
+  - Team working
+  - Python
+  - SQL
+  - SQLite
+  - Pytest
+  - Docker
+  - GitLab
+  - GitLab CI
+  - CI/CD
+  description: >-
+    As a software engineer at Sirehna, I was tasked with the responsibility of
+    developing a weight estimate software that met the specific needs of our clients.
+    Using the Python programming language, I worked on the core of the app, creating
+    a database-centered API that was independent of the graphical user
+    interface.
+
+    My focus was on implementing robust file reading and writing operations, and
+    handling incorrect or missing data. I utilized a relational database to ensure
+    the integrity of the data, while also offering efficient computations.
+    Additionally, I implemented features that properly managed the data history,
+    using Git as the versioning tool.
+
+    To ensure the quality of the code, I followed several good practices,
+    including the use of code formatters and linters, conteneurization with Docker,
+    and continuous integration with Gitlab CI and code review. Throughout the project, I
+    collaborated closely with the clients to understand their needs and build a
+    software that was truly useful to them.
+
+    The project is still ongoing while I am writing this.
 - title: PhoneHistory
   subtitle: Android App
   share-title: PhoneHistory App
   company: Doreapp
-  start-date: 15-09-2019 
+  start-date: 15-09-2019
   end-date: 14-11-2020
   team-size: 1
   weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.phonehistory
@@ -171,8 +340,8 @@ projects:
   - IntelliJ IDEA
   description: >-
     Android app retrieving the usage history of the phone.
-    It uses UsageEvents API to recover the apps usage and list it 
-    in a chronological order. It also displays statistics about the 
+    It uses UsageEvents API to recover the apps usage and list it
+    in a chronological order. It also displays statistics about the
     phone's usage.
 - title: Heads or Tails
   subtitle: Android App
@@ -228,7 +397,329 @@ projects:
     Finally, a static website made with Jekyll technology and hosted
     on GitHub pages, displaying fuel prices in a Map (using Leaflet and GeoJSON)
     as well as geographic statistics about fuel prices.
+- title: TakeNews
+  subtitle: Web mobile app to stay in touch
+  start-date: 06-12-2022
+  team-size: 1
+  weblink: https://doreapp.github.io/TakeNews
+  source-code: https://github.com/Doreapp/TakeNews
+  skills:
+  - TypeScript
+  - React
+  - MUI
+  - Tailwind
+  - GitHub
+  - GitHub pages
+  - GitHub actions
+  - CI/CD
+  - Docker
+  description: >-
+    A mobile-specific website designed using React (with TypeScript), MUI components,
+    and Tailwind CSS.
 
-  
+    The goal of this project was to create a web app that allows users to stay in touch
+    with their contacts regularly. The main objective was to explore the potential of building a web application
+    that can communicate with various mobile device features, similar to native mobile
+    apps. To achieve this, the app utilizes the local storage feature of browsers to
+    store user data locally.
 
+    Additionally, the app includes functionality to open other apps such as
+    the phone dialer or facebook messenger. The app also uses an experimental API
+    that allows users to browse their phone's contact list.
+- title: Simulation and data management environment
+  subtitle: Intership at Sirehna
+  start-date: 01-02-2022
+  end-date: 30-06-2022
+  team-size: 1
+  job: Software engineer intern
+  skills:
+  - Python
+  - Girder
+  - MinIO
+  - GitLab
+  - GitLab CI
+  - Vuejs
+  - Docker
+  description: >-
+    I worked on a project for Sirehna, a company that runs computational fluid
+    dynamics (CFD) simulations to evaluate ship performances (amongst other things).
+    My role in this project was to create a simulation and data management environment
+    that would help the Sirehna team track and retrieve their data, as well as automate
+    low-added-value tasks.
 
+    I used the Girder library to instantiate a web server dedicated to managing users,
+    their authentication and permissions. I also set up a MinIO instance to handle the
+    large amount of data required for the CFD simulations and connected it to the web
+    server. To further improve efficiency, I automated a simulation process by
+    utilizing Gitlab pipelines features and custom Python scripts to facilitate
+    communication between the server and the computation pipeline.
+
+    The final piece of the puzzle was creating a user-friendly web interface using Girder
+    web components, allowing users to easily start automated computations, monitor
+    their progress, and keep track of their results.
+- title: Optimization of drone livr video streaming
+  subtitle: At Kissfly
+  start-date: 01-06-2021
+  end-date: 16-07-2021
+  team-size: 1
+  job: IT engineer intern
+  skills:
+  - WebRTC
+  - Video streaming
+  description: >-
+    At Kissfly, I was in charge of improving the live video streaming system that
+    broadcasted the video taken on the drone to the ground station.
+    The system was built with a Node.js Express server running on the drone and a
+    headless Chromium instance running as a server's client, offering a connection in
+    peer-to-peer to the ground station in order to stream the live video via
+    WebRTC (RTC for Real Time Communication).
+
+    My mission was to test multiple configurations in different environments
+    in order to improve the maximum streaming distance, as well as the video latency and
+    framerate. After several tests, I managed to improve these parameters, but I also
+    concluded that these technologies were not well-suited for this specific use case
+    and that they had reached their limits.
+
+    This experience allowed me to work with new technologies and to understand their
+    limitations and capabilities. I was able to improve my skills in live video
+    streaming, web development, and problem-solving.
+- title: Ground station UI improvement
+  subtitle: At Kissfly
+  start-date: 15-07-2022
+  end-date: 31-07-2021
+  team-size: 1
+  job: IT engineer intern
+  skills:
+  - Vuejs
+  - ThreeJS
+  description: >-
+    At Kissfly, I was an assigned to improve the ground station user interface.
+    To accomplish this, I implemented several features:
+    - I added a 3D representation of the drone state, which displays the drone position
+    relatively to its start position, computed via SLAM algorithm (which was out of my
+    mission scope). It also displayed the temporary trajectory
+    and the drone's actual angles (pitch, roll and yaw). This representation was done
+    using the Three.js library.
+    - I added control buttons to the UI, which improved the user's ability to control the
+    drone and made the interface more intuitive.
+
+    This experience allowed me to work with new technologies and to understand how to
+    improve the user experience. I was able to improve my skills in front-end
+    development, user interface design, and problem-solving.
+- title: E scooters
+  subtitle: Mobile app as a school project
+  start-date: 16-11-2021
+  end-date: 16-11-2022
+  team-size: 4
+  school: KTH
+  source-code: https://github.com/Doreapp/E-Scooters-Native
+  skills:
+  - React
+  - React native
+  - Tailwind
+  - Leaflet
+  description: >-
+    As a school project, I was part of a team tasked with coming up with an idea for a
+    mobile application. We decided to create an application that regroups all the
+    e-scooter brands in Stockholm.
+
+    The idea was that the user would only need to have a single app to compare
+    the location and prices of the e-scooters nearby and access it.
+
+    First, we created a web app. Using React and Tailwind CSS libraries, we designed
+    the front-end. I focused on using the Leaflet library to
+    display the map, the user location, and e-scooter pins on their locations, while
+    other members of the team built other parts of the app, such as the
+    communication with e-scooter brands' API.
+    In the end, we ended up with a standalone web app that displayed e-scooters'
+    location, but without the functionalities of rental.
+
+    Secondly, we had to create a "native app". We chose to use React Native to be
+    cross-platform. Once again, I was in charge of taking care of the map
+    utilities, but this time, we didn't find easy-to-use and cross-platform libraries
+    to display a map like Leaflet does. Thus, I implemented the Map tiles workflow,
+    using Open Street Map data, in order to reproduce the behavior of a map component.
+    It worked well, except for zooming utilities.
+    We reached almost the same point with the native app as with the web app.
+
+    This experience allowed me to work as part of a team and to develop my skills in web
+    frontend and cross-platform development. I also gained experience in using React
+    and React Native, as well as in using libraries like Leaflet and Open Street Map
+    for maps. It also helped me to understand the challenges and differences in
+    developing a web app and a native app.
+- title: Skillect
+  subtitle: Full stack portfolio website
+  start-date: 22-10-2022
+  end-date: 26-11-2022
+  source-code: https://github.com/Doreapp/skillect
+  team-size: 1
+  skills:
+  - Docker
+  - Docker compose
+  - React
+  - MUI
+  - Tailwind
+  - FastAPI
+  - Postgres
+  - Traefik
+  - CI/CD
+  - GitHub
+  - GitHub actions
+  - SQL Alchemy
+  - AWS
+  - RabbitMQ
+  description: >-
+    As a personal project, I aimed to create a backend with a relational database to
+    store and serve my experiences and skills.
+    The goal was to use this backend in a portfolio website, both displaying my
+    skills to anybody and allowing myself to edit the data.
+
+    From a full-stack template using FastAPI, Postgres, and Vue.js, I developed a
+    full-stack website. The backend is based on FastAPI, which serves a REST API on top
+    of a WSGI Http server (for which I used Gunicorn). Using the SQLAlchemy library,
+    I designed the data model, both for user authentication and authorization
+    workflows and to store professional skills. Good practices of using
+    linters/formaters (Black, Pylint and Isort here), continuous integration (with
+    GitHub Actions) and containerization (with Docker) were used here.
+
+    The front-end is based on React, MUI and Tailwind CSS libraries (in opposition to
+    Vue.js that was used in the original template). It uses Axios to communicate
+    with the backend, including for authentication. Here too, good practices
+    of using linters/formaters (Prettier, ESLint), continuous integration and
+    containerization were applied.
+
+    I also set up a reverse proxy, based on Traefik, in charge of redirecting API
+    calls properly to the backend. It also uses Let's Encrypt to automatically renew
+    a SSL certificate (needed to enable HTTPS protocol).
+
+    The environment is described using Docker Compose, that includes the backend, the
+    front-end, the reverse proxy, and other services like the Postgres database.
+
+    During this project, which was ultimately abandoned, I learned how to build a
+    real-world full-stack website, from the technical functionalities (e.g.
+    authentication) to the deployment (GitHub Actions, AWS, domain name, SSL
+    certificates...).
+    I also learned how to set up a reverse proxy and how to work with various
+    libraries and technologies like FastAPI, React, and SQLAlchemy.
+- title: sphinx-mermaid
+  subtitle: Sphinx extension to enable mermaid graphs in documentation
+  team-size: 1
+  start-date: 26-11-2022
+  end-date: 02-01-2023
+  source-code: https://github.com/Doreapp/sphinx-mermaid
+  weblink: https://doreapp.github.io/sphinx-mermaid/
+  skills:
+  - Python
+  - PyPI
+  - Sphinx
+  - Mermaid
+  - GitHub
+  - GitHub actions
+  description: >-
+    As a personal project, I developed a small Python library resulting in a Sphinx
+    extension to enable Mermaid graphs in generated documentation. This library
+    allowed me to create interactive and visually appealing graphs within Sphinx
+    documentation, making it more informative and user-friendly.
+
+    I learned how to create a Sphinx extension and how to deploy a Python package to
+    PyPI, which is the Python Package Index, a repository of software for the Python
+    programming language.
+    This experience allowed me to improve my skills in Python development and package
+    management, as well as my understanding of the Sphinx documentation system.
+- title: text-checker
+  subtitle: Python library to check a text spelling using reverso
+  source-code: https://github.com/Doreapp/text-checker
+  team-size: 1
+  start-date: 11-05-2022
+  end-date: 16-05-2022
+  skills:
+  - Python
+  - GitHub
+  description: A python package able to check a text spelling using reverso, and suggest corrections.
+- name: Randos map
+  start-date: 23-07-2022
+  end-date: 24-07-2022
+  subtitle: Static website displaying hikes in Loire-Atlantique (French region).
+  team-size: 1
+  source-code: https://github.com/Doreapp/Randos-map
+  weblink: https://doreapp.github.io/Randos-map
+  skills:
+  - GitHub
+  - GitHub Actions
+  - GitHub pages
+  - Jekyll
+  - JavaScript
+  - Python
+  - Leaflet
+  description: >-
+    Small static website, built with casual html, js and CSS.
+    Using leaflet, it displays a Map and the hikes' trajectories.
+    It also displays hikes' details like the length, estimated duration or estimated difficulty.
+    The data comes from the French open data.
+- title: My portfolio
+  subtitle: Doreapp.github.io
+  source-code: https://github.com/Doreapp/Doreapp.github.io
+  weblink: https://doreapp.github.io/
+  start-date: 16-01-2023
+  team-size: 1
+  description: >-
+    A portfolio project, centered on the data.
+    You are probably reading this on the result of this project, which is this in progress when I wrote that.
+  skills:
+  - Jekyll
+  - GitHub pages
+  - GitHub actions
+  - GitHub
+- title: Arlanda trip
+  source-code: https://github.com/Doreapp/ArlandaTrip
+  description: >-
+    This project aimed to find the cheapest and most efficient way to Stockholm airport from the city, without paying the fee for the direct subway.
+    Using the API provided by the Stockholm Transport company, I created a set of Python scripts to gather information on transportation options.
+    The result was a set of scripts that could help travelers save money and find the best route to the airport.
+  start-date: 20-10-2021
+  end-date: 22-10-2021
+  skills:
+  - Python
+  team-size: 1
+- title: SMART VR
+  source-code: https://github.com/Doreapp/Smart_VR
+  team-size: 7
+  description: >-
+    As part of a two-week school project for the ANTS (Advanced Neuro-rehabilitation Therapies & Sport) Association, I was part of a team of 7 engineer students tasked with creating virtual reality workshops to make gym and mobilization exercises more fun for disabled individuals.
+    The final product was a game running on Oculus Quest, developed using Unity.
+    The player takes flight in a real city and must complete repetitive exercises to move through gates and collect points in the sky.
+  skills:
+  - team working
+  - C#
+  - unity
+  start-date: 26-04-2021
+  end-date: 06-05-2021
+- title: Kanban App
+  subtitle: Open source android app
+  source-code: https://github.com/Doreapp/Kanban_App
+  weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.kanbanapp
+  team-size: 1
+  start-date: 09-02-2021
+  end-date: 22-03-2021
+  description: >-
+    Android app to manage a Kanban board easily. Fully open source.
+  skills:
+   - Kotlin
+   - xml
+   - Android
+   - github
+   - Android Studio
+- title: My data analyzer
+  source-code: https://github.com/Doreapp/My_data_analyser
+  team-size: 1
+  start-date: 15-12-2020
+  end-date: 02-01-2021
+  description: >-
+    I developed an Android application that enables users to analyze their personal data from various apps such as Spotify and Facebook Messenger.
+    The app required users to download their personal data from these apps and then analyzed it to display statistics such as their favorite artists and the amount of time spent listening to them.
+    Although the app was never published, the source code is available on GitHub for anyone interested in learning more about its development and functionality.
+    This project allowed me to gain experience in working with personal data, Android development, and data analysis.
+  skills:
+  - Kotlin
+  - android studio
+  - github
