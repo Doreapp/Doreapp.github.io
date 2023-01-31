@@ -16,10 +16,9 @@ about:
     description: Did we test the tests ?
 education:
   schools:
-  - title: INSA Lyon
+  - name: INSA Lyon
     subtitle: French engineering school
     share-title: INSA Lyon | Engineering school
-    short-name: INSA Lyon
     long-name: Institut National des Sciences Appliquées de Lyon
     city: Lyon
     country: France
@@ -31,10 +30,9 @@ education:
     weblink: https://www.insa-lyon.fr/
     start-date: 01-09-2017
     end-date: 30-06-2022
-  - title: KTH
+  - name: KTH
     subtitle: Royal Institue of Technology
     share-title: KTH Royal Institue of Technology
-    short-name: KTH
     long-name: KTH Royal Institue of Technology
     city: Stockholm
     country: Sweden
