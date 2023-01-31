@@ -24,3 +24,11 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `about[0].list` | [Optional] List of bullet points |
 | `about[0].list[?].name` | Main text of the bullet point |
 | `about[0].list[?].description` | Secondary text of the bullet point |
+| | |
+| `education` | |
+| `education.schools` | List of schools (can be empty) |
+| `education.schools[?].name` | School name |
+| `education.schools[?].subtitle` | [Optional] Short subtitle for the school |
+| `education.schools[?].share-title` | [Optional] Explicit name of the webpage |
+| `education.schools[?].description` | Description of the school |
+| `education.schools[?].weblink` | [Optional] URL of the school's website |

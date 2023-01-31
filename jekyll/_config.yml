@@ -19,7 +19,8 @@ github_username: Doreapp
 page_gen:
   - data: me.education.schools
     template: school
-    name: short-name
+    name: name
+    title: name
     dir: school
   - data: me.profile
     template: index
