@@ -32,6 +32,17 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `education.schools[?].share-title` | [Optional] Explicit name of the webpage |
 | `education.schools[?].description` | Description of the school |
 | `education.schools[?].weblink` | [Optional] URL of the school's website |
+| | |
+| `projects` | List of accomplished or on-going projects |
+| `projects[?].title` | Short title/name of the project |
+| `projects[?].description` | Description of the project, can be quite long |
+| `projects[?].subtitle` | [Optional] Project longer subtitle |
+| `projects[?].start-date` | [Optional] Date of the project beginning (`dd-mm-yyyy`) |
+| `projects[?].end-date` | [Optional] Date of the project ending (`dd-mm-yyyy`) |
+| `projects[?].weblink` | [Optional] URL to the project result (or website) |
+| `projects[?].source-code` | [Optional] URL to the project source code |
+| `projects[?].skills` | [Optional] List of skills involved in the project |
+
 
 ## Automatic format check
 
