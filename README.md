@@ -32,3 +32,7 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `education.schools[?].share-title` | [Optional] Explicit name of the webpage |
 | `education.schools[?].description` | Description of the school |
 | `education.schools[?].weblink` | [Optional] URL of the school's website |
+
+## Automatic format check
+
+If you want to check the format of your `me.yml` file, you can use `pyfolio` python library in [`tools` directory](tools/).
