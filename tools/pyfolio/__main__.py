@@ -50,7 +50,7 @@ def exit_based_on_log_level(handler: AggregationHandler, levelname: str):
     """
     Exit with 1 or 0 code based on the higher level message emitted
     (handled by the `handler`).
-    The miniumum level at which an 1 code id used us defined by `levelname`.
+    The miniumum level at which a 1 code is used us defined by `levelname`.
     If levelname is `NONE`, return a 0 exit code.
     """
     level = NAME_TO_LEVEL.get(levelname)

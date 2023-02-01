@@ -10,7 +10,7 @@ VERSION = os.environ["VERSION"]
 
 
 def read_requirements(path: str) -> List[str]:
-    """Parse a list of requirements fro mthe file at ``path``"""
+    """Parse a list of requirements from the file at ``path``"""
     with open(path, "r", encoding="utf8") as req_file:
         result = [
             line.replace(" ", "")

@@ -1,6 +1,6 @@
 # Jekyll website
 
-This directory hold the source code for the jekyll website display the portfolio
+This directory holds the source code for the jekyll website displaying my portfolio
 
 ## How to use in dev
 

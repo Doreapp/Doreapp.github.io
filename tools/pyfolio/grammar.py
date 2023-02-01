@@ -133,7 +133,7 @@ def _parse(location: str, element) -> Type:
         if element == "url":
             return String(url=True)
         raise Exception(f"{location} is an unknown str '{element}'")
-    raise Exception(f"{location} has an undleded type '{type(element).__name__}'.")
+    raise Exception(f"{location} has an unhandled type '{type(element).__name__}'.")
 
 
 def load(filepath: str) -> Type:
