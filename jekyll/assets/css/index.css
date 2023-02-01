@@ -1,0 +1,11 @@
+.post-preview .post-title {
+    font-size: 1.5em;
+}
+
+.post-preview .post-description {
+    margin: 0;
+    margin-bottom: 0.625rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

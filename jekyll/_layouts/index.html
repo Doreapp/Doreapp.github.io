@@ -1,6 +1,39 @@
 ---
 layout: home
+css: "/assets/css/index.css"
 ---
+
+
+<h2>My projects</h2>
+
+<div class="post-list">
+    {% for project in site.data.me.projects %}
+    <article class="post-preview">
+        <a href="">
+            <h3 class="post-title">{{ project.title }}</h3>
+            {% if project.subtitle %}
+            <h4 class="post-subtitle">
+                {{ project.subtitle }}
+            </h4>
+            {% endif %}
+
+            {% if project.start-date %}
+            <p class="date post-meta">
+                {% if project.end-date %}
+                From {{ project.start-date | date: "%B %-d, %Y" }} to {{ project.end-date | date: "%B %-d, %Y" }}
+                {% else %}
+                Started on {{ project.start-date | date: "%B %-d, %Y" }}
+                {% endif %}
+            </p>
+            {% endif %}
+
+            <p class="post-description">
+                {{ project.description }}
+            </p>
+        </a>
+    </article>
+    {% endfor %}
+</div>
 
 <h2>Schools</h2>
 <ul>
