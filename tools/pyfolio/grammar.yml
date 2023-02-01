@@ -26,3 +26,13 @@ education:
     share-title(o): str
     description: str
     weblink(o): url
+projects:
+- title: str
+  start-date(o): date
+  end-date(o): date
+  skills(o):
+  - str
+  description: str
+  source-code(o): url
+  weblink(o): url
+  share-title(o): str
