@@ -9,7 +9,7 @@ css: "/assets/css/index.css"
 <div class="post-list">
   {% for project in site.data.me.projects %}
     <article class="post-preview">
-      <a href="">
+      <a href="{{ project.title | datapage_url: 'project' }}">
         <h3 class="post-title">{{ project.title }}</h3>
         {% if project.subtitle %}
           <h4 class="post-subtitle">

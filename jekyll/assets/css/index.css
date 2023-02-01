@@ -26,3 +26,11 @@
     overflow: hidden;
     white-space: nowrap;
 }
+
+.flex {
+    display: flex;
+}
+
+.space-around {
+    justify-content: space-around;
+}
