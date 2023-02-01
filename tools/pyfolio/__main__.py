@@ -8,7 +8,7 @@ import yaml
 
 from . import grammar
 
-logging.basicConfig(format="%(levelname)s:%(message)s")
+logging.basicConfig(format="[%(name)s] %(levelname)s: %(message)s")
 LOGGER = logging.getLogger(__name__)
 
 
@@ -16,7 +16,8 @@ def check_file(gram: grammar.Type, file: str):
     """Check the grammar of the file"""
     with open(file, "r", encoding="utf8") as fis:
         data = yaml.safe_load(fis)
-    gram.check(data, "<root>", logging.getLogger(file))
+    filename = path.basename(file)
+    gram.check(data, "{}", logging.getLogger(filename))
 
 
 def get_grammar() -> grammar.Type:
