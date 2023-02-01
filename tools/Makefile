@@ -80,3 +80,11 @@ _interactive: ## Enter the docker container in interactive mode
 _interactive: build
 	$(DOCKER_RUN) --entrypoint /bin/bash -i $(OPTIONS) -t $(DOCKER_IMAGE)
 
+
+check_me.yml: ## Check ../me.yml file using pyfolio
+check_me.yml: build
+	$(DOCKER_RUN) \
+		-v  $(shell pwd)/../me.yml:/work/me.yml \
+		--entrypoint /work/venv/bin/python3 \
+		$(OPTIONS) -t $(DOCKER_IMAGE) \
+		-m $(PROJECT_NAME) me.yml --fail-at ERROR
