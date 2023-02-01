@@ -14,6 +14,7 @@ URL_REGEX = re.compile(
     r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}"
     r"\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
 )
+DATE_REGEX = re.compile(r"\d\d-\d\d-\d\d\d\d")
 
 
 @dataclass
@@ -39,12 +40,18 @@ class String(Type):
     url: bool = False
     """Whether the string represents a URL"""
 
+    date: bool = False
+    """Whether the string represents a date"""
+
     def check(self, node, location: str, logger: Logger) -> bool:
         if not isinstance(node, str):
             logger.error("`%s` is not a string but a %s: '%s'", location, type(node).__name__, node)
             return False
         if self.url and not URL_REGEX.fullmatch(node):
             logger.error("`%s` is not a URL string: '%s'", location, node)
+            return False
+        if self.date and not DATE_REGEX.fullmatch(node):
+            logger.error("`%s` is not a date string: '%s'", location, node)
             return False
         return True
 
@@ -132,6 +139,8 @@ def _parse(location: str, element) -> Type:
             return String()
         if element == "url":
             return String(url=True)
+        if element == "date":
+            return String(date=True)
         raise Exception(f"{location} is an unknown str '{element}'")
     raise Exception(f"{location} has an unhandled type '{type(element).__name__}'.")
 
