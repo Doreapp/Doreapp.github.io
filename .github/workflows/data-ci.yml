@@ -1,0 +1,19 @@
+name: Data Continuous Integration
+
+on:
+  push:
+    paths:
+      # pyfolio changed
+      - 'tools/**.py'
+      - 'tools/pyfolio/**'
+      - 'tools/requirements*'
+      # data changed
+      - me.yml
+
+jobs:
+  Check-data-format:
+    runs-on: ubuntu-latest
+    name: Pyfolio check
+    steps:
+      - uses: actions/checkout@v2
+      - run: make --directory=tools check_me.yml
