@@ -451,7 +451,7 @@ projects:
     The final piece of the puzzle was creating a user-friendly web interface using Girder
     web components, allowing users to easily start automated computations, monitor
     their progress, and keep track of their results.
-- title: Optimization of drone livr video streaming
+- title: Optimization of drone live video streaming
   subtitle: At Kissfly
   start-date: 01-06-2021
   end-date: 16-07-2021
@@ -630,7 +630,7 @@ projects:
   - Python
   - GitHub
   description: A python package able to check a text spelling using reverso, and suggest corrections.
-- name: Randos map
+- title: Randos map
   start-date: 23-07-2022
   end-date: 24-07-2022
   subtitle: Static website displaying hikes in Loire-Atlantique (French region).
