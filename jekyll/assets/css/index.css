@@ -9,3 +9,20 @@
     overflow: hidden;
     white-space: nowrap;
 }
+
+.chip {
+    display: inline-block;
+    border-radius: 0.75em;
+    height: 1.5em;
+    background-color: lightgray;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: 1px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.chips-inline {
+    overflow: hidden;
+    white-space: nowrap;
+}
