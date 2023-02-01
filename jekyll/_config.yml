@@ -22,6 +22,10 @@ page_gen:
     name: name
     title: name
     dir: school
+  - data: me.projects
+    template: project
+    name: title
+    dir: project
   - data: me.profile
     template: index
     name_expr: '"index"'
@@ -29,6 +33,6 @@ page_gen:
     dir: '.'
   - data: me.about
     template: about
-    name_expr: '"index"'
+    name_expr: '"about"'
     title_expr: '"About me"'
     dir: '.'
