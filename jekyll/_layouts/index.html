@@ -3,41 +3,43 @@ layout: home
 css: "/assets/css/index.css"
 ---
 
-
-<h2>My projects</h2>
-
 <div class="post-list">
   {% for project in site.data.me.projects %}
     <article class="post-preview">
       <a href="{{ project.title | datapage_url: 'project' }}">
-        <h3 class="post-title">{{ project.title }}</h3>
-        {% if project.subtitle %}
-          <h4 class="post-subtitle">
-            {{ project.subtitle }}
-          </h4>
-        {% endif %}
+        <div class="post-content-wrap">
+          <h1 class="post-title">{{ project.title }}</h1>
+          {% if project.subtitle %}
+            <h2 class="post-subtitle">
+              {{ project.subtitle }}
+            </h2>
+          {% endif %}
 
-        {% if project.start-date %}
-          <p class="date post-meta">
-            {% if project.end-date %}
-              From {{ project.start-date | date: "%B %-d, %Y" }} to {{ project.end-date | date: "%B %-d, %Y" }}
-            {% else %}
-              Started on {{ project.start-date | date: "%B %-d, %Y" }}
-            {% endif %}
+          {% if project.start-date %}
+            <span class="date post-meta">
+              {% if project.subtitle %}
+                ·
+              {% endif %}
+              {% if project.end-date %}
+                From {{ project.start-date | date: "%B %-d, %Y" }} to {{ project.end-date | date: "%B %-d, %Y" }}
+              {% else %}
+                Started on {{ project.start-date | date: "%B %-d, %Y" }}
+              {% endif %}
+            </span>
+          {% endif %}
+
+          <p class="post-description">
+            {{ project.description }}
           </p>
-        {% endif %}
 
-        <p class="post-description">
-          {{ project.description }}
-        </p>
-
-        {% if project.skills %}
-          <div class="chips-inline skills">
-            {% for skill in project.skills %}
-              <span class="chip">{{ skill }}</span>
-            {% endfor %}
-          </div>
-        {% endif %}
+          {% if project.skills %}
+            <div class="chips-inline skills">
+              {% for skill in project.skills %}
+                <span class="chip">{{ skill }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
       </a>
     </article>
   {% endfor %}
