@@ -13,6 +13,10 @@ baseurl: ""
 url: ""
 github_username: Doreapp
 
+
+navbar-links:
+  About Me: "about"
+
 # Page generation configuration
 # See https://github.com/avillafiorita/jekyll-datapage_gen
 # page_gen-dirs: true # uncomment, if you prefer to generate named folders
