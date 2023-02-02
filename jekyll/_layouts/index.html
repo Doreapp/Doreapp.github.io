@@ -7,6 +7,14 @@ css: "/assets/css/index.css"
   {% for project in site.data.me.projects %}
     <article class="post-preview">
       <a href="{{ project.title | datapage_url: 'project' }}">
+        {% if project.img %}
+          <div class="post-image-wrap">
+            <div
+              class="post-image"
+              style="background-image: url({{ project.img }});"
+              alt="Project thumbnail"></div>
+          </div>
+        {% endif %}
         <div class="post-content-wrap">
           <h1 class="post-title">{{ project.title }}</h1>
           {% if project.subtitle %}
