@@ -34,3 +34,16 @@ css: "/assets/css/index.css"
     {% endfor %}
   </div>
 {% endif %}
+
+<script>
+  let overlayAdded = false;
+  window.addEventListener("load", () => {
+    if (! overlayAdded) {
+      overlayAdded = true;
+      overlay = document.createElement("div");
+      overlay.classList.add("overlay");
+      image = document.querySelector(".big-img.intro-header");
+      image.insertBefore(overlay, image.firstChild);
+    }
+  });
+</script>

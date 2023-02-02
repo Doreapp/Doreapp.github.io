@@ -287,7 +287,7 @@ volunteering:
 projects:
 - title: Estimate of masses
   subtitle: SIREHNA
-  img: "/assets/img/ship.jpeg"
+  cover-img: "/assets/img/ship.jpeg"
   company: SIREHNA
   start-date: 01-10-2022
   team-size: 3
@@ -323,7 +323,7 @@ projects:
     The project is still ongoing while I am writing this.
 - title: PhoneHistory
   subtitle: Android App
-  img: "/assets/img/phone-history.png"
+  cover-img: "/assets/img/phone-history.png"
   share-title: PhoneHistory App
   company: Doreapp
   start-date: 15-09-2019
@@ -342,7 +342,7 @@ projects:
     phone's usage.
 - title: Heads or Tails
   subtitle: Android App
-  img: "/assets/img/head-or-tail.png"
+  cover-img: "/assets/img/head-or-tail.png"
   share-title: Heads or Tails App
   company: Doreapp
   start-date: 15-09-2017
@@ -358,7 +358,7 @@ projects:
     Android app making random draws.
 - title: NuMemory
   subtitle: Android Game
-  img: "/assets/img/numemory.png"
+  cover-img: "/assets/img/numemory.png"
   share-title: NuMemory game
   company: Doreapp
   start-date: 01-08-2020
@@ -374,7 +374,7 @@ projects:
     Android game challenging the user's memory.
 - title: Prix carburants
   subtitle: A map of fuell prices
-  img: "/assets/img/prix-carburants.png"
+  cover-img: "/assets/img/prix-carburants.png"
   start-date: 17-05-2022
   end-date: 08-06-2022
   team-size: 1
@@ -399,7 +399,7 @@ projects:
     as well as geographic statistics about fuel prices.
 - title: TakeNews
   subtitle: Web mobile app to stay in touch
-  img: "/assets/img/take-news.png"
+  cover-img: "/assets/img/take-news.png"
   start-date: 06-12-2022
   team-size: 1
   weblink: https://doreapp.github.io/TakeNews
@@ -429,7 +429,7 @@ projects:
     that allows users to browse their phone's contact list.
 - title: Simulation and data management environment
   subtitle: Intership at Sirehna
-  img: "/assets/img/simulation-and-data-environment.png"
+  cover-img: "/assets/img/simulation-and-data-environment.png"
   start-date: 01-02-2022
   end-date: 30-06-2022
   team-size: 1
@@ -461,7 +461,7 @@ projects:
     their progress, and keep track of their results.
 - title: Optimization of drone live video streaming
   subtitle: At Kissfly
-  img: "/assets/img/drone.webp"
+  cover-img: "/assets/img/drone.webp"
   start-date: 01-06-2021
   end-date: 16-07-2021
   team-size: 1
@@ -488,7 +488,7 @@ projects:
     streaming, web development, and problem-solving.
 - title: Ground station UI improvement
   subtitle: At Kissfly
-  img: "/assets/img/drone.webp"
+  cover-img: "/assets/img/drone.webp"
   start-date: 15-07-2022
   end-date: 31-07-2021
   team-size: 1
@@ -512,7 +512,7 @@ projects:
     development, user interface design, and problem-solving.
 - title: E scooters
   subtitle: Mobile app as a school project
-  img: "/assets/img/escooters.jpg"
+  cover-img: "/assets/img/escooters.jpg"
   start-date: 16-11-2021
   end-date: 16-11-2022
   team-size: 4
@@ -554,7 +554,7 @@ projects:
     developing a web app and a native app.
 - title: Skillect
   subtitle: Full stack portfolio website
-  img: "/assets/img/skillect.jpg"
+  cover-img: "/assets/img/skillect.jpg"
   start-date: 22-10-2022
   end-date: 26-11-2022
   source-code: https://github.com/Doreapp/skillect
@@ -609,7 +609,7 @@ projects:
     libraries and technologies like FastAPI, React, and SQLAlchemy.
 - title: sphinx-mermaid
   subtitle: Sphinx extension to enable mermaid graphs in documentation
-  img: "/assets/img/sphinx-mermaid.jpg"
+  cover-img: "/assets/img/sphinx-mermaid.jpg"
   team-size: 1
   start-date: 26-11-2022
   end-date: 02-01-2023
@@ -635,7 +635,7 @@ projects:
     management, as well as my understanding of the Sphinx documentation system.
 - title: text-checker
   subtitle: Python library to check a text spelling using reverso
-  img: "/assets/img/text-checker.jpg"
+  cover-img: "/assets/img/text-checker.jpg"
   source-code: https://github.com/Doreapp/text-checker
   team-size: 1
   start-date: 11-05-2022
@@ -648,7 +648,7 @@ projects:
   start-date: 23-07-2022
   end-date: 24-07-2022
   subtitle: Static website displaying hikes in Loire-Atlantique (French region).
-  img: "/assets/img/randos-map.jpg"
+  cover-img: "/assets/img/randos-map.jpg"
   team-size: 1
   source-code: https://github.com/Doreapp/Randos-map
   weblink: https://doreapp.github.io/Randos-map
@@ -667,7 +667,7 @@ projects:
     The data comes from the French open data.
 - title: My portfolio
   subtitle: Doreapp.github.io
-  img: "/assets/img/portfolio.jpg"
+  cover-img: "/assets/img/portfolio.jpg"
   source-code: https://github.com/Doreapp/Doreapp.github.io
   weblink: https://doreapp.github.io/
   start-date: 16-01-2023
@@ -682,7 +682,7 @@ projects:
   - GitHub
 - title: Arlanda trip
   source-code: https://github.com/Doreapp/ArlandaTrip
-  img: "/assets/img/arlanda-trip.jpg"
+  cover-img: "/assets/img/arlanda-trip.jpg"
   description: >-
     This project aimed to find the cheapest and most efficient way to Stockholm airport from the city, without paying the fee for the direct subway.
     Using the API provided by the Stockholm Transport company, I created a set of Python scripts to gather information on transportation options.
@@ -694,7 +694,7 @@ projects:
   team-size: 1
 - title: SMART VR
   source-code: https://github.com/Doreapp/Smart_VR
-  img: "/assets/img/smart.jpg"
+  cover-img: "/assets/img/smart.jpg"
   team-size: 7
   description: >-
     As part of a two-week school project for the ANTS (Advanced Neuro-rehabilitation Therapies & Sport) Association, I was part of a team of 7 engineer students tasked with creating virtual reality workshops to make gym and mobilization exercises more fun for disabled individuals.
@@ -708,7 +708,7 @@ projects:
   end-date: 06-05-2021
 - title: Kanban App
   subtitle: Open source android app
-  img: "/assets/img/kanban-app.png"
+  cover-img: "/assets/img/kanban-app.png"
   source-code: https://github.com/Doreapp/Kanban_App
   weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.kanbanapp
   team-size: 1
@@ -724,7 +724,7 @@ projects:
    - Android Studio
 - title: My data analyser
   source-code: https://github.com/Doreapp/My_data_analyser
-  img: "/assets/img/my-data-analyser.jpg"
+  cover-img: "/assets/img/my-data-analyser.jpg"
   team-size: 1
   start-date: 15-12-2020
   end-date: 02-01-2021
