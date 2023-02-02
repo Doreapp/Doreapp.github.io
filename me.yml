@@ -2,6 +2,7 @@ profile:
   - name: Antoine Mandin
     subtitle: Software engineer
     share-title: Antoine Mandin | Software engineer
+    cover-img: "/assets/img/banner.jpg"
     birthday: 04-10-1999
 about:
 - subtitle: Why me instead of a robot?
