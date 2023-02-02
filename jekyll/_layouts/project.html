@@ -26,3 +26,11 @@ css: "/assets/css/index.css"
 </div>
 
 <p>{{ page.description }}</p>
+
+{% if page.skills %}
+  <div class="skills">
+    {% for skill in page.skills %}
+      <span class="chip">{{ skill }}</span>
+    {% endfor %}
+  </div>
+{% endif %}
