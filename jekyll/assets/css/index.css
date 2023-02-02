@@ -10,6 +10,34 @@
     overflow: hidden;
 }
 
+.post-preview .post-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s cubic-bezier(.2, .3, 0, 1);
+}
+
+.post-preview:hover .post-image {
+    transform: scale(1.2);
+}
+
+.post-preview .post-image-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
 .chip {
     color: rgb(64, 64, 64);
     display: inline-block;
@@ -101,6 +129,10 @@ article.post-preview {
     background-color: rgb(244, 245, 246);
     padding: 0px;
     margin-top: 30px;
+    width: 100%;
+    position: relative;
+    float: left;
+    clear: both;
 }
 
 .post-content-wrap {
@@ -110,6 +142,8 @@ article.post-preview {
     width: 50%;
     box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
     background-color: white;
+    position: relative;
+    z-index: 1;
 }
 
 /* Placing */
