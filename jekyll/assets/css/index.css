@@ -1,6 +1,5 @@
-.post-preview .post-title {
-    font-size: 1.5em;
-}
+/* ***** Custom styles ***** */
+
 
 .post-preview .post-description {
     margin: 0;
@@ -34,4 +33,38 @@
 
 .space-around {
     justify-content: space-around;
+}
+
+/* ***** Overringing styles from beautiful jekyll ***** */
+
+/* Nav bar */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Heading */
+
+.page-heading h1 {
+    text-shadow: none;
+}
+
+.page-heading span {
+    text-shadow: none;
+}
+
+.page-heading hr {
+    display: none;
+}
+
+.post-preview .post-title {
+    font-size: 1.5em;
 }
