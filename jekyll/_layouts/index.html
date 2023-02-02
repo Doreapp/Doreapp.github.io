@@ -1,63 +1,58 @@
 ---
 layout: home
-css: "/assets/css/index.css"
+css:
+- "/assets/css/theme.css"
+- "/assets/css/index.css"
 ---
 
-<div class="post-list">
+<div class="post-list wrap">
   {% for project in site.data.me.projects %}
-    <article class="post-preview">
+    <article class="post">
       <a href="{{ project.title | datapage_url: 'project' }}">
         {% if project.cover-img %}
-          <div class="post-image-wrap">
+          <div class="post__image-wrap">
             <div
-              class="post-image"
+              class="post__image"
               style="background-image: url({{ project.cover-img }});"
               alt="Project thumbnail"></div>
           </div>
         {% endif %}
-        <div class="post-content-wrap">
-          <h1 class="post-title">{{ project.title }}</h1>
-          {% if project.subtitle %}
-            <h2 class="post-subtitle">
-              {{ project.subtitle }}
-            </h2>
-          {% endif %}
+        <div class="post__content-wrap">
+          <div class="post__content">
+            <h2 class="post__title">{{ project.title }}</h2>
+            {% if project.subtitle %}
+              <span class="post__subtitle">
+                {{ project.subtitle }}
+              </span>
+            {% endif %}
 
-          {% if project.start-date %}
-            <span class="date post-meta">
-              {% if project.subtitle %}
-                ·
-              {% endif %}
-              {% if project.end-date %}
-                From {{ project.start-date | date: "%B %-d, %Y" }} to {{ project.end-date | date: "%B %-d, %Y" }}
-              {% else %}
-                Started on {{ project.start-date | date: "%B %-d, %Y" }}
-              {% endif %}
-            </span>
-          {% endif %}
+            {% if project.start-date %}
+              <span class="date post-meta">
+                {% if project.subtitle %}
+                  ·
+                {% endif %}
+                {% if project.end-date %}
+                  From {{ project.start-date | date: "%B %-d, %Y" }} to {{ project.end-date | date: "%B %-d, %Y" }}
+                {% else %}
+                  Started on {{ project.start-date | date: "%B %-d, %Y" }}
+                {% endif %}
+              </span>
+            {% endif %}
 
-          <p class="post-description">
-            {{ project.description }}
-          </p>
+            <p class="post__description">
+              {{ project.description }}
+            </p>
 
-          {% if project.skills %}
-            <div class="chips-inline skills">
-              {% for skill in project.skills %}
-                <span class="chip">{{ skill }}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
+            {% if project.skills %}
+              <div class="chips-inline skills">
+                {% for skill in project.skills %}
+                  <span class="chip">{{ skill }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
         </div>
       </a>
     </article>
   {% endfor %}
 </div>
-
-<h2>Schools</h2>
-<ul>
-  {% for school in site.data.me.education.schools %}
-    <li>
-      <a href="{{ school.name | datapage_url: 'school' }}">{{ school.long-name }}</a>
-    </li>
-  {% endfor %}
-</ul>
