@@ -111,3 +111,31 @@ article.post-preview {
     box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
     background-color: white;
 }
+
+/* Placing */
+
+@media only screen and (min-width:768px) {
+    body>.container-md {
+        padding: 0;
+        max-width: 680px
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    body>.container-md {
+        max-width: 900px
+    }
+}
+
+@media only screen and (min-width:1220px) {
+    body>.container-md {
+        max-width: 1100px
+    }
+}
+
+.row .col-xl-8.offset-xl-2.col-lg-10.offset-lg-1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    flex: 1;
+}
