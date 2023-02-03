@@ -349,4 +349,28 @@
     </li>
   {%- endif -%}
 
+  {%- if site.data.me.profile[0].gitlab -%}
+    <li class="list-inline-item">
+      <a href="https://www.gitlab.com/{{ site.data.me.profile[0].gitlab }}" title="GitLab">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="{{ back-class }}"></i>
+          <i class="fab fa-gitlab {{ front-class }}"></i>
+        </span>
+        <span class="sr-only">GitLab</span>
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if site.data.me.profile[0].google-play -%}
+    <li class="list-inline-item">
+      <a href="{{ site.data.me.profile[0].google-play }}" title="Google Play">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="{{ back-class }}"></i>
+          <i class="fab fa-google-play {{ front-class }}"></i>
+        </span>
+        <span class="sr-only">Google Play</span>
+      </a>
+    </li>
+  {%- endif -%}
+
 </ul>
