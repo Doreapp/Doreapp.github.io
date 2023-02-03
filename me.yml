@@ -59,31 +59,36 @@ education:
     school: INSA Lyon
 work:
   companies:
-  - title: SIREHNA
+  - name: SIREHNA
     description: >-
       SIREHNA develop a large range of products & systems aiming to secure navigation and maritime environment
       on both civil and military markets.
       Small size business (100+ employee), subsidary of Naval Group.
+    cover-img: "/assets/img/sirehna.jpg"
     weblink: https://www.sirehna.com/
     city: Bouguenais
     country: France
-  - title: Kissfly,
+  - name: Kissfly,
     weblink: https://kissfly.co/
     description: >-
       Startup based in San Francisco specialized into autonomous flying drones
+    cover-img: "/assets/img/kissfly.jpg"
     city: San Francisco
     country: US
-  - title: LIRIS
+  - name: LIRIS
     weblink: https://liris.cnrs.fr/
     description: >-
       Research laboratory focused on computer science and image.
       Associated to several Lyon's universities.
+    cover-img: "/assets/img/liris.jpg"
     city: Lyon
     country: France
-  - title: Doreapp
+  - name: Doreapp
     description: >-
       Basically my "company" identity, as a "auto entrepreneur",
       used mostly to publish apps on Google Play Store.
+    cover-img: "/assets/img/doreapp.jpg"
+    weblink: https://play.google.com/store/apps/dev?id=6950241882157030363
   jobs:
   - title: Software engineer
     subtitle: SIREHNA
