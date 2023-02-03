@@ -43,10 +43,24 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `education` | |
 | `education.schools` | List of schools (can be empty) |
 | `education.schools[?].name` | School name |
+| `education.schools[?].cover-img` | Path to a cover image for this school, from [jekyll folder](jekyll/) |
 | `education.schools[?].subtitle` | [Optional] Short subtitle for the school |
 | `education.schools[?].share-title` | [Optional] Explicit name of the webpage |
-| `education.schools[?].description` | Description of the school |
+| `education.schools[?].description` | [Optional] Description of the school |
 | `education.schools[?].weblink` | [Optional] URL of the school's website |
+| `education.schools[?].start-date` | [Optional] Date of your entrance in this school (`dd-mm-yyyy`) |
+| `education.schools[?].end-date` | [Optional] Date when you left this school (`dd-mm-yyyy`) |
+| | |
+| `work` | |
+| `work.companies` | List of companies (can be empty) |
+| `work.companies[?].name` | Company name |
+| `work.companies[?].cover-img` | Path to a cover image for this company, from [jekyll folder](jekyll/) |
+| `work.companies[?].subtitle` | [Optional] Short subtitle for the company |
+| `work.companies[?].share-title` | [Optional] Explicit name of the webpage |
+| `work.companies[?].description` | [Optional] Description of the company |
+| `work.companies[?].weblink` | [Optional] URL of the company's website |
+| `work.companies[?].start-date` | [Optional] Date of your entrance in this company (`dd-mm-yyyy`) |
+| `work.companies[?].end-date` | [Optional] Date when you left the company (`dd-mm-yyyy`) |
 | | |
 | `projects` | List of accomplished or on-going projects |
 | `projects[?].title` | Short title/name of the project |
