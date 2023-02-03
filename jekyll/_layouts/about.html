@@ -1,16 +1,21 @@
 ---
-layout: page
+layout: post
 title: About me
 permalink: /about/
+css:
+- "/assets/css/theme.css"
+- "/assets/css/index.css"
+cover-img: "/assets/img/banner.jpg"
 ---
 
 {% if page.text %}
-<h2>{{ page.text }}</h2>
+  <h2>{{ page.text }}</h2>
 {% endif %}
 {% if page.list %}
-<ul>
-{% for element in page.list %}
-    <li><strong>{{ element.name }}</strong>: {{ element.description }}</li>
-{% endfor %}
-</ul>
+  <ul>
+    {% for element in page.list %}
+      <li>
+        <strong>{{ element.name }}</strong>: {{ element.description }}</li>
+    {% endfor %}
+  </ul>
 {% endif %}
