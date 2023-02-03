@@ -5,10 +5,24 @@ css:
 - "/assets/css/index.css"
 ---
 
+{% if page.city or page.country %}
+  <p>
+    <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fas fa-map-marker fa-stack-1x"></i>
+    </span>
+    {% if page.city %}
+      {{ page.city }}{% if page.country %},{% endif %}
+    {% endif %}
+    {% if page.country %}
+      {{ page.country }}
+    {% endif %}
+  </p>
+{% endif %}
+
 <p>{{ page.description }}</p>
 
 {% if page.weblink %}
-<p>
+  <p>
     <a class="button button--large" href="{{ page.weblink | absolute_url }}">Official website</a>
-</p>
+  </p>
 {% endif %}
