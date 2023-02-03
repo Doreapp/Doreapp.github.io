@@ -36,6 +36,7 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `projects` | List of accomplished or on-going projects |
 | `projects[?].title` | Short title/name of the project |
 | `projects[?].description` | Description of the project, can be quite long |
+| `projects[?].cover-img` | Path to a cover image for this project, from [jekyll folder](jekyll/) |
 | `projects[?].subtitle` | [Optional] Project longer subtitle |
 | `projects[?].start-date` | [Optional] Date of the project beginning (`dd-mm-yyyy`) |
 | `projects[?].end-date` | [Optional] Date of the project ending (`dd-mm-yyyy`) |

@@ -13,7 +13,8 @@ css:
           <div class="post__image-wrap">
             <div
               class="post__image"
-              style="background-image: url({{ project.cover-img }});"
+              style="background-image: url({{ project.cover-img  | absolute_url }});"
+              data-img-src="{{ project.cover-img | absolute_url }}"
               alt="Project thumbnail"></div>
           </div>
         {% endif %}

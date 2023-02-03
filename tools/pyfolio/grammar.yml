@@ -36,3 +36,4 @@ projects:
   source-code(o): url
   weblink(o): url
   share-title(o): str
+  cover-img: str
