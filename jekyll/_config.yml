@@ -24,10 +24,15 @@ remove-ads: true
 # page_gen-dirs: true # uncomment, if you prefer to generate named folders
 page_gen:
   - data: me.education.schools
-    template: school
+    template: company
     name: name
     title: name
     dir: school
+  - data: me.work.companies
+    template: company
+    name: name
+    title: name
+    dir: company
   - data: me.projects
     template: project
     name: title
