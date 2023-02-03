@@ -51,10 +51,23 @@ about(1):
 education:
   schools:
   - name: str
+    cover-img: str
     subtitle(o): str
     share-title(o): str
     description: str
     weblink(o): url
+    start-date(o): date
+    end-date(o): date
+work:
+  companies:
+  - name: str
+    cover-img: str
+    subtitle(o): str
+    share-title(o): str
+    description: str
+    weblink(o): url
+    start-date(o): date
+    end-date(o): date
 projects:
 - title: str
   start-date(o): date
