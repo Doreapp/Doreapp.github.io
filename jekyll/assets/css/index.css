@@ -96,7 +96,6 @@ body {
 }
 
 /* Placing */
-
 .post-list {
     margin-top: -60px;
 }
@@ -127,9 +126,23 @@ body {
     flex: 1;
 }
 
+footer {
+    margin-top: 2em;
+    padding-top: 1em;
+    background-color: inherit;
+    border: none;
+}
+
+footer a {
+    color: #6c7a89;
+}
+
+header .footer-links {
+    margin-top: 2em;
+    margin-bottom: -2em;
+}
 
 /* Post page */
-
 article.blog-post {
     margin: -60px;
     margin-bottom: 60px;
