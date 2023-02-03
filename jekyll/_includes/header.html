@@ -44,16 +44,27 @@
                   {% endif %}
                 {% endif %}
 
-                {% if include.type == "post" and page.date %}
-                  <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
-                  {% if page.last-updated %}
-                    <span class="post-meta">
-                      <span class="d-none d-md-inline middot">&middot;</span>
-                      Last updated {{ page.last-updated | date: date_format }}
+
+                {% if include.type == "post" %}
+                  {% if page.date %}
+                    <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
+                    {% if page.last-updated %}
+                      <span class="post-meta">
+                        <span class="d-none d-md-inline middot">&middot;</span>
+                        Last updated {{ page.last-updated | date: date_format }}
+                      </span>
+                    {% endif %}
+                    {% if page.readtime %}
+                      {% include readtime.html %}
+                    {% endif %}
+                  {% elsif page.start-date %}
+                    <span class="date post-meta">
+                      {% if page.end-date %}
+                        From {{ page.start-date | date: "%B %-d, %Y" }} to {{ page.end-date | date: "%B %-d, %Y" }}
+                      {% else %}
+                        Started on {{ page.start-date | date: "%B %-d, %Y" }}
+                      {% endif %}
                     </span>
-                  {% endif %}
-                  {% if page.readtime %}
-                    {% include readtime.html %}
                   {% endif %}
                 {% endif %}
               </div>
