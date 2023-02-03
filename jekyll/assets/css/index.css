@@ -69,16 +69,20 @@ body {
 }
 
 /* Heading */
-
-.page-heading h1 {
+.post-heading h1,
+.page-heading h1,
+.post-heading h2,
+.page-heading h2 {
     color: white;
     text-shadow: none;
 }
 
+.post-heading span,
 .page-heading span {
     text-shadow: none;
 }
 
+.post-heading hr,
 .page-heading hr {
     display: none;
 }
