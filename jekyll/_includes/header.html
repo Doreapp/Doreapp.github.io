@@ -24,6 +24,9 @@
   <header class="header-section {% if page.cover-img %}has-img{% endif %}">
     {% if page.cover-img %}
       <div class="big-img intro-header">
+        {% if include.type == "post" or include.type == "page" %}
+          <div class="hero__overlay"></div>
+        {% endif %}
         <div class="container-md">
           <div class="row">
             <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">

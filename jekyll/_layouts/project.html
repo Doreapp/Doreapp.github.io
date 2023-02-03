@@ -1,6 +1,8 @@
 ---
-layout: page
-css: "/assets/css/index.css"
+layout: post
+css:
+- "/assets/css/theme.css"
+- "/assets/css/index.css"
 ---
 
 <div class="post-heading">
@@ -34,16 +36,3 @@ css: "/assets/css/index.css"
     {% endfor %}
   </div>
 {% endif %}
-
-<script>
-  let overlayAdded = false;
-  window.addEventListener("load", () => {
-    if (! overlayAdded) {
-      overlayAdded = true;
-      overlay = document.createElement("div");
-      overlay.classList.add("overlay");
-      image = document.querySelector(".big-img.intro-header");
-      image.insertBefore(overlay, image.firstChild);
-    }
-  });
-</script>
