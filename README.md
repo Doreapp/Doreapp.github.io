@@ -16,6 +16,21 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `profile[0].name` | Your name |
 | `profile[0].subtitle` | [Optional] Additional details (e.g. your job) |
 | `profile[0].share-title` | [Optional] Explicit name of the webpage |
+| `profile[0].email` | [Optional] Email where to contact you |
+| `profile[0].github` | [Optional] GitHub username,  e.g. `Doreapp` |
+| `profile[0].linkedin` | [Optional] LinkedIn id (after `linkedin.com/in/` in URL) |
+| `profile[0].stackoverflow` | [Optional] StackOverFlow  username |
+| `profile[0].google-play` | [Optional] Full google play weblink (to an app or list of apps) |
+| `profile[0].gitlab` | [Optional] GitLab username |
+| `profile[0].facebook` | [Optional] [**Not tested**] Facebook id |
+| `profile[0].twitter` | [Optional] [**Not tested**] Twitter id |
+| `profile[0].reddit` | [Optional] [**Not tested**] Reddit id |
+| `profile[0].snapchat` | [Optional] [**Not tested**] Snapchat id |
+| `profile[0].instagram` | [Optional] [**Not tested**] Instagram id |
+| `profile[0].youtube` | [Optional] [**Not tested**] Youtube id |
+| `profile[0].spotify` | [Optional] [**Not tested**] Spotify id |
+| `profile[0].telephone` | [Optional] [**Not tested**] Phone number |
+| `profile[0]....` | [Optional] [**Not tested**] And others... See [social-networks-links.html](jekyll/_includes/social-networks-links.html)|
 | | |
 | `about` | Single-element list |
 | `about[0].subtitle` | [Optional] Any text describing your *about me* section |
