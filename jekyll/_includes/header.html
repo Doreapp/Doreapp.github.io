@@ -3,7 +3,6 @@
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
 {% if page.cover-img or page.title %}
-
   {% if page.cover-img %}
     <div
       id="header-big-imgs"
@@ -66,6 +65,10 @@
                       {% endif %}
                     </span>
                   {% endif %}
+                {% endif %}
+
+                {% if page.layout == "home" %}
+                  {% include social-networks-links.html light=true %}
                 {% endif %}
               </div>
             </div>
