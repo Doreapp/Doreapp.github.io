@@ -40,6 +40,10 @@
     margin-top: 15px;
 }
 
+.chips {
+    margin-top: 15px;
+}
+
 .flex {
     display: flex;
 }
@@ -121,4 +125,14 @@ body {
     max-width: 100%;
     margin: 0px;
     flex: 1;
+}
+
+/* Post page */
+
+article.blog-post {
+    margin: -60px;
+    margin-bottom: 60px;
+    padding: 40px 60px;
+    background: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
 }

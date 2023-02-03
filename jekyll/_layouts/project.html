@@ -5,32 +5,10 @@ css:
 - "/assets/css/index.css"
 ---
 
-<div class="post-heading">
-  <div class="flex space-around">
-    {% if page.weblink %}
-      <a href="{{ page.weblink }}">View it online</a>
-    {% endif %}
-
-    {% if page.source-code %}
-      <a href="{{ page.source-code }}">Source code</a>
-    {% endif %}
-  </div>
-
-  {% if page.start-date %}
-    <p class="date post-meta">
-      {% if page.end-date %}
-        From {{ page.start-date | date: "%B %-d, %Y" }} to {{ page.end-date | date: "%B %-d, %Y" }}
-      {% else %}
-        Started on {{ page.start-date | date: "%B %-d, %Y" }}
-      {% endif %}
-    </p>
-  {% endif %}
-</div>
-
 <p>{{ page.description }}</p>
 
 {% if page.skills %}
-  <div class="skills">
+  <div class="skills chips">
     {% for skill in page.skills %}
       <span class="chip">{{ skill }}</span>
     {% endfor %}
