@@ -12,6 +12,35 @@ profile(1):
 - name: str
   subtitle: str
   share-title(o): str
+  email(o): str
+  calendly(o): str
+  facebook(o): str
+  telegram(o): str
+  github(o): str
+  twitter(o): str
+  reddit(o): str
+  linkedin(o): str
+  xing(o): str
+  stackoverflow(o): str
+  snapchat(o): str
+  instagram(o): str
+  youtube(o): str
+  spotify(o): str
+  telephone(o): str
+  steam(o): str
+  twitch(o): str
+  yelp(o): str
+  mastodon(o): str
+  ORCID(o): str
+  google-scholar(o): str
+  patreon(o): str
+  medium(o): str
+  itchio(o): str
+  discord(o): str
+  kaggle(o): str
+  hackerrank(o): str
+  gitlab(o): str
+  google-play(o): str
 about(1):
 - subtitle: str
   share-title(o): str
