@@ -1,0 +1,152 @@
+/* ***** Custom styles ***** */
+
+.post__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #6c7a89;
+}
+
+.post__title {
+    margin-bottom: 5px;
+}
+
+.post:hover .post__title {
+    color: #3498db;
+}
+
+.post span {
+    font-weight: 400;
+}
+
+
+.chip {
+    color: rgb(64, 64, 64);
+    display: inline-block;
+    background-color: rgb(237, 237, 241);
+    padding: 4px 12px;
+    margin: 1px;
+    font-size: 0.7em;
+    font-weight: 500;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.chips-inline {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 15px;
+}
+
+.chips {
+    margin-top: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+/* ***** Overringing styles from beautiful jekyll ***** */
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Nav bar */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Heading */
+.post-heading h1,
+.page-heading h1,
+.post-heading h2,
+.page-heading h2 {
+    color: white;
+    text-shadow: none;
+}
+
+.post-heading span,
+.page-heading span {
+    text-shadow: none;
+}
+
+.post-heading hr,
+.page-heading hr {
+    display: none;
+}
+
+.intro-header.big-img {
+    margin-bottom: 0px;
+}
+
+/* Placing */
+.post-list {
+    margin-top: -60px;
+}
+
+@media only screen and (min-width:768px) {
+    body>.container-md {
+        padding: 0;
+        max-width: 680px
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    body>.container-md {
+        max-width: 900px
+    }
+}
+
+@media only screen and (min-width:1220px) {
+    body>.container-md {
+        max-width: 1100px
+    }
+}
+
+.row .col-xl-8.offset-xl-2.col-lg-10.offset-lg-1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    flex: 1;
+}
+
+footer {
+    margin-top: 2em;
+    padding-top: 1em;
+    background-color: inherit;
+    border: none;
+}
+
+footer a {
+    color: #6c7a89;
+}
+
+header .footer-links {
+    margin-top: 2em;
+    margin-bottom: -2em;
+}
+
+/* Post page */
+article.blog-post {
+    margin: -60px;
+    margin-bottom: 60px;
+    padding: 40px 60px;
+    background: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
+}
