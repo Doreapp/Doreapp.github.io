@@ -16,6 +16,7 @@ github_username: Doreapp
 
 navbar-links:
   About Me: "about"
+  Contact: "contact"
 remove-ads: true
 
 # Page generation configuration
