@@ -1,11 +1,14 @@
 ---
-layout: page
+layout: post
+css:
+- "/assets/css/theme.css"
+- "/assets/css/index.css"
 ---
 
 <p>{{ page.description }}</p>
 
 {% if page.weblink %}
 <p>
-    <a href="{{ page.weblink }}">Official website</a>
+    <a class="button button--large" href="{{ page.weblink | absolute_url }}">Official website</a>
 </p>
 {% endif %}

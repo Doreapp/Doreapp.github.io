@@ -25,6 +25,7 @@ education:
   schools:
   - name: INSA Lyon
     subtitle: French engineering school
+    cover-img: "/assets/img/insa.jpg"
     share-title: INSA Lyon | Engineering school
     long-name: Institut National des Sciences Appliquées de Lyon
     city: Lyon
@@ -39,6 +40,7 @@ education:
     end-date: 30-06-2022
   - name: KTH
     subtitle: Royal Institue of Technology
+    cover-img: "/assets/img/kth.webp"
     share-title: KTH Royal Institue of Technology
     long-name: KTH Royal Institue of Technology
     city: Stockholm
