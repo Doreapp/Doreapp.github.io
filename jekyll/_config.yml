@@ -49,3 +49,4 @@ page_gen:
     dir: '.'
 
 include: [CNAME]
+url: https://antoine.mandin.dev
