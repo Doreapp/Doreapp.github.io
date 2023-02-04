@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Move me.yml
         run: cp ./me.yml ./jekyll/_data/
+      - name: Move CNAME
+        run: cp ./CNAME ./jekyll/
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -24,3 +26,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: 'gh-pages'
           jekyll_src: 'jekyll'
+          keep_history: true
