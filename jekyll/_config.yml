@@ -47,3 +47,5 @@ page_gen:
     name_expr: '"about"'
     title_expr: '"About me"'
     dir: '.'
+
+include: [CNAME]
