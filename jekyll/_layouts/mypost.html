@@ -1,0 +1,31 @@
+---
+layout: base
+---
+
+{% if page.company %}
+  {% assign tmp-company-name-up = page.company | upcase %}
+  {% for some-company in site.data.me.work.companies %}
+    {% assign tmp-name-up = some-company.name | upcase %}
+    {% if tmp-name-up == tmp-company-name-up %}
+      {% assign company = some-company %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if page.cover-img %}
+  {% assign cover-img = page.cover-img %}
+{% elsif company and company.cover-img %}
+  {% assign cover-img = company.cover-img %}
+{% endif %}
+
+{% include header.html type = "post" cover-img=cover-img %}
+
+<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  <div class="row">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+      <article role="main" class="blog-post">
+        {{ content }}
+      </article>
+    </div>
+  </div>
+</div>
