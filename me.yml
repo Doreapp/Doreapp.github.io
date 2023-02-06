@@ -90,7 +90,7 @@ work:
     cover-img: "/assets/img/doreapp.jpg"
     weblink: https://play.google.com/store/apps/dev?id=6950241882157030363
   jobs:
-  - title: Software engineer
+  - name: Software engineer
     subtitle: SIREHNA
     company: SIREHNA
     share-title: Software engineer job at SIREHNA
@@ -108,7 +108,7 @@ work:
       Additionally, I am involved in the continuous improvement of the software
       development process and ensure the software is optimized for performance
       and scalability.
-  - title: Software engineer intern
+  - name: Software engineer intern
     subtitle: SIREHNA
     company: SIREHNA
     share-title: Software engineer internship at SIREHNA
@@ -129,7 +129,7 @@ work:
       This streamlined the simulation process and allowed for efficient data management.
       This internship allowed me to gain experience in a professional setting and
       develop my skills in software development, data management and automation.
-  - title: IT engineer intern
+  - name: IT engineer intern
     subtitle: Kissfly
     company: Kissfly
     share-title: IT engineer intership at Kissfly
@@ -157,7 +157,7 @@ work:
       approaches to problem-solving.
       I was able to improve my skills in live video streaming, front-end development
       and research.
-  - title: Research intern
+  - name: Research intern
     subtitle: LIRIS
     company: LIRIS
     share-title: Research internship at LIRIS
@@ -177,7 +177,7 @@ work:
       preprocessing, and machine learning. It also helped me to gain a deeper
       understanding of the importance of data quality in machine learning and how to
       ensure the data is correct before training a model.
-  - title: Autoentrepreneur
+  - name: Autoentrepreneur
     subtitle: Doreapp
     company: Doreapp
     share-title: Auto entrepreneur as Doreapp

@@ -36,6 +36,11 @@ page_gen:
     name: name
     title: name
     dir: company
+  - data: me.work.jobs
+    template: job
+    name: name
+    title: name
+    dir: job
   - data: me.projects
     template: project
     name: title
