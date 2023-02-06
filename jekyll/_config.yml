@@ -3,6 +3,7 @@ remote_theme: daattali/beautiful-jekyll
 plugins:
   - jekyll-feed
   - jekyll-datapage-generator
+  - jekyll-sitemap # Be sure to put this under datapage-generator
 
 title: Antoine Mandin | Software engineer
 author: Antoine Mandin
@@ -12,7 +13,6 @@ description: >-
 baseurl: ""
 url: ""
 github_username: Doreapp
-
 
 navbar-links:
   About Me: "about"
