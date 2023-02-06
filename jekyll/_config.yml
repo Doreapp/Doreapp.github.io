@@ -18,6 +18,9 @@ navbar-links:
   About Me: "about"
   Contact: "contact"
 remove-ads: true
+site-css:
+- "/assets/css/theme.css"
+- "/assets/css/index.css"
 
 # Page generation configuration
 # See https://github.com/avillafiorita/jekyll-datapage_gen
