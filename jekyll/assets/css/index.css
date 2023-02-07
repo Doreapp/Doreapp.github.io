@@ -23,6 +23,7 @@
 li.related,
 li.post {
     list-style-type: none;
+    float: none;
 }
 
 .related-list a {
