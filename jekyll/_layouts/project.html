@@ -2,6 +2,49 @@
 layout: mypost
 ---
 
+{% if page.job %}
+  {% assign tmp-job-name = page.job | upcase %}
+  {% for ajob in site.data.me.work.jobs %}
+    {% assign cmp-job-name = ajob.name | upcase %}
+    {% if tmp-job-name == cmp-job-name %}
+      {% assign job = ajob %}
+    {% endif %}
+  {% endfor %}
+  {% if job %}
+    {% if job.company %}
+      {% assign tmp-company-name = job.company | upcase %}
+      {% for acompany in site.data.me.work.companies %}
+        {% assign cmp-company-name = acompany.name | upcase %}
+        {% if tmp-company-name == cmp-company-name %}
+          {% assign company = acompany %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    <p>
+      Project done as
+      <a href="{{ job.name | datapage_url: 'job' | absolute_url }}">{{ job.name }}</a>
+      {% if company %}
+        at
+        <a href="{{ company.name | datapage_url: 'company' | absolute_url }}">{{ company.name }}</a>
+      {% endif %}
+    </p>
+  {% endif %}
+{% elsif page.school %}
+  {% assign tmp-school-name = page.school | upcase %}
+  {% for aschool in site.data.me.education.schools %}
+    {% assign cmp-school-name = aschool.name | upcase %}
+    {% if tmp-school-name == cmp-school-name %}
+      {% assign school = aschool %}
+    {% endif %}
+  {% endfor %}
+  {% if school %}
+    <p>
+      School project done at
+      <a href="{{ school.name | datapage_url: 'school' | absolute_url }}">{{ school.name }}</a>
+    </p>
+  {% endif %}
+{% endif %}
+
 <p>{{ page.description }}</p>
 
 {% if page.skills %}
