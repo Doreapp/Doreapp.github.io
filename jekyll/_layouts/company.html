@@ -18,8 +18,12 @@ layout: mypost
 
 <p>{{ page.description }}</p>
 
+
+<h3>Related</h3>
+
 <ul class="related-list">
   {% assign tmp-name = page.title | upcase %}
+  {% comment %}Display a company's jobs{% endcomment %}
   {% for job in site.data.me.work.jobs %}
     {% assign cmp-name = job.company | upcase %}
     {% if tmp-name == cmp-name %}
@@ -35,6 +39,27 @@ layout: mypost
           </span>
           <p class="related-description post__description">
             {{ job.description }}
+          </p>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  {% comment %}Display a school's projects{% endcomment %}
+  {% for project in site.data.me.projects %}
+    {% assign cmp-name = project.school | upcase %}
+    {% if tmp-name == cmp-name %}
+      <li class="post related">
+        <a href="{{ project.title | datapage_url: 'project' | absolute_url}}">
+          <h3 class="post__title">{{ project.title }}</h3>
+          <span class="date post__subtitle">
+            {% if project.end-date %}
+              From {{ project.start-date | date: "%B %-d, %Y" }} to {{ project.end-date | date: "%B %-d, %Y" }}
+            {% else %}
+              Started on {{ project.start-date | date: "%B %-d, %Y" }}
+            {% endif %}
+          </span>
+          <p class="related-description post__description">
+            {{ project.description }}
           </p>
         </a>
       </li>
