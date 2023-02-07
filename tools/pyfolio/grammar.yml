@@ -68,6 +68,15 @@ work:
     weblink(o): url
     start-date(o): date
     end-date(o): date
+  jobs:
+  - name: str
+    cover-img(o): str
+    subtitle(o): str
+    share-title(o): str
+    description: str
+    start-date(o): date
+    end-date(o): date
+    company(o): str
 projects:
 - title: str
   start-date(o): date

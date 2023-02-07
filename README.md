@@ -61,6 +61,15 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `work.companies[?].weblink` | [Optional] URL of the company's website |
 | `work.companies[?].start-date` | [Optional] Date of your entrance in this company (`dd-mm-yyyy`) |
 | `work.companies[?].end-date` | [Optional] Date when you left the company (`dd-mm-yyyy`) |
+| `work.jobs` | List of jobs (can be empty) |
+| `work.jobs[?].name` | Job name |
+| `work.jobs[?].description` | Description of the job |
+| `work.jobs[?].cover-img` | [Optional] Path to a cover image for this job, from [jekyll folder](jekyll/) |
+| `work.jobs[?].subtitle` | [Optional] Short subtitle for the job |
+| `work.jobs[?].share-title` | [Optional] Explicit name of the webpage |
+| `work.jobs[?].company` | [Optional] Name of the company |
+| `work.jobs[?].start-date` | [Optional] Date of the job beginning (`dd-mm-yyyy`) |
+| `work.jobs[?].end-date` | [Optional] Date of the job end (`dd-mm-yyyy`) |
 | | |
 | `projects` | List of accomplished or on-going projects |
 | `projects[?].title` | Short title/name of the project |
