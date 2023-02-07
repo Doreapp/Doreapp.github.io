@@ -243,7 +243,9 @@
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       <article role="main" class="blog-post">
-        <p>As a personal project, I aimed to create a backend with a relational database to store and serve my experiences and skills. The goal was to use this backend in a portfolio website, both displaying my skills to anybody and allowing myself to edit the data.
+        
+
+<p>As a personal project, I aimed to create a backend with a relational database to store and serve my experiences and skills. The goal was to use this backend in a portfolio website, both displaying my skills to anybody and allowing myself to edit the data.
 From a full-stack template using FastAPI, Postgres, and Vue.js, I developed a full-stack website. The backend is based on FastAPI, which serves a REST API on top of a WSGI Http server (for which I used Gunicorn). Using the SQLAlchemy library, I designed the data model, both for user authentication and authorization workflows and to store professional skills. Good practices of using linters/formaters (Black, Pylint and Isort here), continuous integration (with GitHub Actions) and containerization (with Docker) were used here.
 The front-end is based on React, MUI and Tailwind CSS libraries (in opposition to Vue.js that was used in the original template). It uses Axios to communicate with the backend, including for authentication. Here too, good practices of using linters/formaters (Prettier, ESLint), continuous integration and containerization were applied.
 I also set up a reverse proxy, based on Traefik, in charge of redirecting API calls properly to the backend. It also uses Let's Encrypt to automatically renew a SSL certificate (needed to enable HTTPS protocol).

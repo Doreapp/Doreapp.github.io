@@ -15,7 +15,7 @@
   <meta name="author" content="Antoine Mandin">
   
 
-  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
 
@@ -81,7 +81,7 @@
   
   <meta property="og:site_name" content="Antoine Mandin | Software engineer">
   <meta property="og:title" content="SIREHNA">
-  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
   <meta property="og:image" content="https://antoine.mandin.dev/assets/img/sirehna.jpg">
@@ -100,7 +100,7 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="SIREHNA">
-  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
   <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/sirehna.jpg">
@@ -245,41 +245,120 @@
 
 <p>SIREHNA develop a large range of products & systems aiming to secure navigation and maritime environment on both civil and military markets. Small size business (100+ employee), subsidary of Naval Group.</p>
 
-<ul class="jobs-list">
+
+<h3>Related</h3>
+
+
+
+<ul class="related-list">
   
   
     
     
-      <li class="post job">
+      <li class="post related">
         <a href="https://antoine.mandin.dev/job/software-engineer.html">
-          <h3 class="post__title">Software engineer</h3>
-          <span class="date post__subtitle">
+          <div class="flex">
+            <div class="content-wrap">
+              <h3 class="post__title">Software engineer</h3>
+              <span class="date post__subtitle">
+                
+                  Started on September 1, 2022
+                
+              </span>
+              <p class="description post__description">
+                As a software engineer at Sirehna, I am part of a small team, where we build software and programs that have large connections to naval architecture and science. My role involves working with Gitlab and utilizing its CI/CD and code review processes to ensure high-quality code is produced and deployed. I work with both backend technologies, such as Python, and frontend technologies, such as React.js,to create a seamless user experience. I am responsible for the development, testing, and maintenance of software and programs, collaborating with the team to ensure timely delivery and high-quality products. Additionally, I am involved in the continuous improvement of the software development process and ensure the software is optimized for performance and scalability.
+              </p>
+            </div>
             
-              Started on September 1, 2022
-            
-          </span>
-          <p class="job-description post__description">
-            As a software engineer at Sirehna, I am part of a small team, where we build software and programs that have large connections to naval architecture and science. My role involves working with Gitlab and utilizing its CI/CD and code review processes to ensure high-quality code is produced and deployed. I work with both backend technologies, such as Python, and frontend technologies, such as React.js,to create a seamless user experience. I am responsible for the development, testing, and maintenance of software and programs, collaborating with the team to ensure timely delivery and high-quality products. Additionally, I am involved in the continuous improvement of the software development process and ensure the software is optimized for performance and scalability.
-          </p>
+          </div>
         </a>
       </li>
     
   
     
     
-      <li class="post job">
+      <li class="post related">
         <a href="https://antoine.mandin.dev/job/software-engineer-intern.html">
-          <h3 class="post__title">Software engineer intern</h3>
-          <span class="date post__subtitle">
+          <div class="flex">
+            <div class="content-wrap">
+              <h3 class="post__title">Software engineer intern</h3>
+              <span class="date post__subtitle">
+                
+                  From February 1, 2022 to June 30, 2022
+                
+              </span>
+              <p class="description post__description">
+                During my internship at SIREHNA, I was tasked with building a simulation and data management environment for the hydrodynamic engineers of the company. The goal of the internship was to improve their working processes and automate hydrodynamics simulations. In this context, I developed a full environment, containing the following components: - A large storage system based on MinIO, which provided a robust and scalable storage solution for the simulation data. - A user and permission management web platform based on Girder, which enabled secure access and management of the simulation data. - An automated workflow to run CFD simulations and asynchronously return the results and logs, based on Gitlab. This streamlined the simulation process and allowed for efficient data management. This internship allowed me to gain experience in a professional setting and develop my skills in software development, data management and automation.
+              </p>
+            </div>
             
-              From February 1, 2022 to June 30, 2022
-            
-          </span>
-          <p class="job-description post__description">
-            During my internship at SIREHNA, I was tasked with building a simulation and data management environment for the hydrodynamic engineers of the company. The goal of the internship was to improve their working processes and automate hydrodynamics simulations. In this context, I developed a full environment, containing the following components: - A large storage system based on MinIO, which provided a robust and scalable storage solution for the simulation data. - A user and permission management web platform based on Girder, which enabled secure access and management of the simulation data. - An automated workflow to run CFD simulations and asynchronously return the results and logs, based on Gitlab. This streamlined the simulation process and allowed for efficient data management. This internship allowed me to gain experience in a professional setting and develop my skills in software development, data management and automation.
-          </p>
+          </div>
         </a>
       </li>
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+</ul>
+
+
+
+<ul class="related-list">
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
     

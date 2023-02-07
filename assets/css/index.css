@@ -20,37 +20,74 @@
     font-weight: 400;
 }
 
-li.job,
+li.related,
 li.post {
     list-style-type: none;
+    float: none;
 }
 
-.jobs-list a {
+.related-list a {
     text-decoration: none;
 }
 
-.jobs-list .post__description {
+.related-list .post__description {
     -webkit-line-clamp: 2;
 }
 
-.jobs-list .job {
+.related-list .related {
     background-color: inherit;
     margin: 0.7em;
     border-left: solid;
     border-width: 5px;
     padding-left: 2em;
+    padding-right: 0.5em;
 }
 
-.jobs-list .job:hover {
+.related-list .related:hover {
     border-color: #3498db;
 }
 
-.jobs-list .job * {
+.related-list .related * {
     margin: 0px;
 }
 
-.jobs-list .job:last-child {
+.related-list .related:last-child {
     margin-bottom: 1.5em;
+}
+
+.related-list .content-wrap {
+    flex: 3;
+}
+
+.related .image-wrap {
+    flex: 1;
+    overflow: hidden;
+}
+
+.related .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: all 1s cubic-bezier(.2, .3, 0, 1);
+    -moz-transition: all 1s cubic-bezier(.2, .3, 0, 1);
+    -ms-transition: all 1s cubic-bezier(.2, .3, 0, 1);
+    -o-transition: all 1s cubic-bezier(.2, .3, 0, 1);
+    transition: all 1s cubic-bezier(.2, .3, 0, 1)
+}
+
+.related:hover .image {
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
 }
 
 .chip {

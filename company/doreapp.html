@@ -15,7 +15,7 @@
   <meta name="author" content="Antoine Mandin">
   
 
-  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
 
@@ -81,7 +81,7 @@
   
   <meta property="og:site_name" content="Antoine Mandin | Software engineer">
   <meta property="og:title" content="Doreapp">
-  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
   <meta property="og:image" content="https://antoine.mandin.dev/assets/img/doreapp.jpg">
@@ -100,7 +100,7 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="Doreapp">
-  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
   <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/doreapp.jpg">
@@ -233,7 +233,12 @@
 
 <p>Basically my "company" identity, as a "auto entrepreneur", used mostly to publish apps on Google Play Store.</p>
 
-<ul class="jobs-list">
+
+<h3>Related</h3>
+
+
+
+<ul class="related-list">
   
   
     
@@ -250,19 +255,88 @@
   
     
     
-      <li class="post job">
+      <li class="post related">
         <a href="https://antoine.mandin.dev/job/autoentrepreneur.html">
-          <h3 class="post__title">Autoentrepreneur</h3>
-          <span class="date post__subtitle">
+          <div class="flex">
+            <div class="content-wrap">
+              <h3 class="post__title">Autoentrepreneur</h3>
+              <span class="date post__subtitle">
+                
+                  Started on July 1, 2018
+                
+              </span>
+              <p class="description post__description">
+                Before my formal education and internships, I taught myself how to develop Android applications. This led to the creation of several applications available on the Google Play Store and the establishment of my own small business, Doreapp. Through this experience, I developed my skills in Android development and programming concepts such as object-oriented programming, data structures, and algorithms. I also learned how to use Android Studio, Java, and other related technologies to develop my applications.
+              </p>
+            </div>
             
-              Started on July 1, 2018
-            
-          </span>
-          <p class="job-description post__description">
-            Before my formal education and internships, I taught myself how to develop Android applications. This led to the creation of several applications available on the Google Play Store and the establishment of my own small business, Doreapp. Through this experience, I developed my skills in Android development and programming concepts such as object-oriented programming, data structures, and algorithms. I also learned how to use Android Studio, Java, and other related technologies to develop my applications.
-          </p>
+          </div>
         </a>
       </li>
+    
+  
+</ul>
+
+
+
+<ul class="related-list">
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
 </ul>

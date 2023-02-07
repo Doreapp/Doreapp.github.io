@@ -15,23 +15,7 @@
   <meta name="author" content="Antoine Mandin">
   
 
-  <meta name="description" content="{{ page.description }}
-
-{% if page.skills %}
-  
-    {% for skill in page.skills %}
-      {{ skill }}
-    {% endfor %}
-  
-{% endif %}
-
-
-  {% if page.weblink %}
-    View it online
-  {% endif %}
-  {% if page.source-code %}
-    Source code
-  {% endif %}">
+  <meta name="description" content="{% if page.job %} {% assign tmp-job-name = page.job | upcase %} {% for ajob in site.data.me.work.jobs %} {% assign cmp-job-name = ajob.name | upcase %} {% if tmp-job-name == cmp-job-name %} {% assign job = ajob %} {% endif %} {% endfor %} {% if job %} {% if...">
 
   
 
@@ -97,23 +81,7 @@
   
   <meta property="og:site_name" content="Antoine Mandin | Software engineer">
   <meta property="og:title" content="Arlanda trip">
-  <meta property="og:description" content="{{ page.description }}
-
-{% if page.skills %}
-  
-    {% for skill in page.skills %}
-      {{ skill }}
-    {% endfor %}
-  
-{% endif %}
-
-
-  {% if page.weblink %}
-    View it online
-  {% endif %}
-  {% if page.source-code %}
-    Source code
-  {% endif %}">
+  <meta property="og:description" content="{% if page.job %} {% assign tmp-job-name = page.job | upcase %} {% for ajob in site.data.me.work.jobs %} {% assign cmp-job-name = ajob.name | upcase %} {% if tmp-job-name == cmp-job-name %} {% assign job = ajob %} {% endif %} {% endfor %} {% if job %} {% if...">
 
   
   <meta property="og:image" content="https://antoine.mandin.dev/assets/img/arlanda-trip.jpg">
@@ -132,23 +100,7 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="Arlanda trip">
-  <meta property="twitter:description" content="{{ page.description }}
-
-{% if page.skills %}
-  
-    {% for skill in page.skills %}
-      {{ skill }}
-    {% endfor %}
-  
-{% endif %}
-
-
-  {% if page.weblink %}
-    View it online
-  {% endif %}
-  {% if page.source-code %}
-    Source code
-  {% endif %}">
+  <meta property="twitter:description" content="{% if page.job %} {% assign tmp-job-name = page.job | upcase %} {% for ajob in site.data.me.work.jobs %} {% assign cmp-job-name = ajob.name | upcase %} {% if tmp-job-name == cmp-job-name %} {% assign job = ajob %} {% endif %} {% endfor %} {% if job %} {% if...">
 
   
   <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/arlanda-trip.jpg">
@@ -283,7 +235,9 @@
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       <article role="main" class="blog-post">
-        <p>This project aimed to find the cheapest and most efficient way to Stockholm airport from the city, without paying the fee for the direct subway. Using the API provided by the Stockholm Transport company, I created a set of Python scripts to gather information on transportation options. The result was a set of scripts that could help travelers save money and find the best route to the airport.</p>
+        
+
+<p>This project aimed to find the cheapest and most efficient way to Stockholm airport from the city, without paying the fee for the direct subway. Using the API provided by the Stockholm Transport company, I created a set of Python scripts to gather information on transportation options. The result was a set of scripts that could help travelers save money and find the best route to the airport.</p>
 
 
   <div class="skills chips">

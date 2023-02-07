@@ -15,7 +15,7 @@
   <meta name="author" content="Antoine Mandin">
   
 
-  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
 
@@ -81,7 +81,7 @@
   
   <meta property="og:site_name" content="Antoine Mandin | Software engineer">
   <meta property="og:title" content="Kissfly">
-  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
   <meta property="og:image" content="https://antoine.mandin.dev/assets/img/kissfly.jpg">
@@ -100,7 +100,7 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="Kissfly">
-  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
+  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} Related {% include related-list.html list=site.data.me.work.jobs ref=page.title cmp-key = &quot;company&quot; name-key = &quot;name&quot; datapage-folder...">
 
   
   <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/kissfly.jpg">
@@ -245,7 +245,12 @@
 
 <p>Startup based in San Francisco specialized into autonomous flying drones</p>
 
-<ul class="jobs-list">
+
+<h3>Related</h3>
+
+
+
+<ul class="related-list">
   
   
     
@@ -256,20 +261,89 @@
   
     
     
-      <li class="post job">
+      <li class="post related">
         <a href="https://antoine.mandin.dev/job/it-engineer-intern.html">
-          <h3 class="post__title">IT engineer intern</h3>
-          <span class="date post__subtitle">
-            
-              From May 1, 2021 to August 20, 2021
-            
-          </span>
-          <p class="job-description post__description">
-            During my internship at Kissfly, I gained experience working in a remote environment while being based in France. This internship allowed me to develop my skills in remote collaboration and time management. I was assigned multiple tasks, including: - Improving the live video streaming system between the moving drone and the ground station. The streaming was based on WebRTC, and by testing and updating the parameters, I managed to improve the maximum streaming range as well as the latency and video framerate. - Improving the ground station user interface using Vue.js, including adding control buttons and 3D trajectory display. This helped to enhance the user experience and make the interface more intuitive. - Researching and testing live video streaming technologies, such as WiFi-broadcast. This allowed me to gain knowledge about different technologies and their capabilities, which helped me to make informed decisions about the best technology to use for the project.
+          <div class="flex">
+            <div class="content-wrap">
+              <h3 class="post__title">IT engineer intern</h3>
+              <span class="date post__subtitle">
+                
+                  From May 1, 2021 to August 20, 2021
+                
+              </span>
+              <p class="description post__description">
+                During my internship at Kissfly, I gained experience working in a remote environment while being based in France. This internship allowed me to develop my skills in remote collaboration and time management. I was assigned multiple tasks, including: - Improving the live video streaming system between the moving drone and the ground station. The streaming was based on WebRTC, and by testing and updating the parameters, I managed to improve the maximum streaming range as well as the latency and video framerate. - Improving the ground station user interface using Vue.js, including adding control buttons and 3D trajectory display. This helped to enhance the user experience and make the interface more intuitive. - Researching and testing live video streaming technologies, such as WiFi-broadcast. This allowed me to gain knowledge about different technologies and their capabilities, which helped me to make informed decisions about the best technology to use for the project.
 This internship gave me the opportunity to work on real-world projects, and I was able to apply my technical skills while learning new technologies and approaches to problem-solving. I was able to improve my skills in live video streaming, front-end development and research.
-          </p>
+              </p>
+            </div>
+            
+          </div>
         </a>
       </li>
+    
+  
+    
+    
+  
+    
+    
+  
+</ul>
+
+
+
+<ul class="related-list">
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
     
