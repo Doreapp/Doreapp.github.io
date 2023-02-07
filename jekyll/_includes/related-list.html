@@ -1,0 +1,32 @@
+{% comment %}
+Parameters:
+- list: List of items to iterate through
+- ref: Reference value the items must match
+- cmp-key: Attribute of an item that must match the ref
+- name-key: Attribute of the item name
+- datapage-folder: Name of the datapage folder of the item
+{% endcomment %}
+
+<ul class="related-list">
+  {% assign up-ref = include.ref | upcase %}
+  {% for item in include.list %}
+    {% assign up-cmp = item[include.cmp-key] | upcase %}
+    {% if up-ref == up-cmp %}
+      <li class="post related">
+        <a href="{{ item.[include.name-key] | datapage_url: include.datapage-folder | absolute_url}}">
+          <h3 class="post__title">{{ item.[include.name-key] }}</h3>
+          <span class="date post__subtitle">
+            {% if item.end-date %}
+              From {{ item.start-date | date: "%B %-d, %Y" }} to {{ item.end-date | date: "%B %-d, %Y" }}
+            {% else %}
+              Started on {{ item.start-date | date: "%B %-d, %Y" }}
+            {% endif %}
+          </span>
+          <p class="related-description post__description">
+            {{ item.description }}
+          </p>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

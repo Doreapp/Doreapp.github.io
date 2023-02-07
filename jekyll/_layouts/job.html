@@ -23,28 +23,9 @@ layout: mypost
 
 <h3>Related</h3>
 
-<div>
-  <ul class="related-list">
-    {% assign tmp-job-name = page.title | upcase %}
-    {% for project in site.data.me.projects %}
-      {% assign cmp-job-name = project.job | upcase %}
-      {% if tmp-job-name == cmp-job-name %}
-        <li class="post related">
-          <a href="{{ project.title | datapage_url: 'project' | absolute_url}}">
-            <h3 class="post__title">{{ project.title }}</h3>
-            <span class="date post__subtitle">
-              {% if project.end-date %}
-                From {{ project.start-date | date: "%B %-d, %Y" }} to {{ project.end-date | date: "%B %-d, %Y" }}
-              {% else %}
-                Started on {{ project.start-date | date: "%B %-d, %Y" }}
-              {% endif %}
-            </span>
-            <p class="related-description post__description">
-              {{ project.description }}
-            </p>
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div>
+{% include related-list.html
+ list=site.data.me.projects
+ ref=page.title
+ cmp-key = "job"
+ name-key = "title"
+ datapage-folder = "project" %}
