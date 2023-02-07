@@ -76,7 +76,7 @@ work:
     description: str
     start-date(o): date
     end-date(o): date
-    company(o): str
+    company(o): "*work.companies.name"
 projects:
 - title: str
   start-date(o): date

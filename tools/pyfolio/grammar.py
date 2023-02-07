@@ -115,6 +115,74 @@ class Dict(Type):
         return True
 
 
+@dataclass
+class ForeignKey(Type):
+    """Foreign key node, referencing an instance in the data"""
+
+    path: str
+
+    class _ExplorationException(Exception):
+        """Inner exception"""
+
+        code: int
+        adds_msg: str
+
+        def __init__(self, code: int, adds_msg: str = "") -> None:
+            super().__init__()
+            self.code = code
+            self.adds_msg = adds_msg
+
+    @staticmethod
+    def _check(path, node) -> list:
+        """Recursive path check"""
+        key, *elements = path.split(".")
+        value = node.get(key)
+        if value is None:
+            raise ForeignKey._ExplorationException(1, f"'{path}' not found.")
+        if len(elements) == 0:
+            if not isinstance(value, str):
+                raise ForeignKey._ExplorationException(2, f"{type(value).__name__} != str.")
+            return [value]
+        if isinstance(value, list):
+            result = []
+            for instance in value:
+                result.extend(ForeignKey._check(".".join(elements), instance))
+            return result
+        if isinstance(value, dict):
+            return ForeignKey._check(".".join(elements), value)
+        raise ForeignKey._ExplorationException(3, type(value).__name__)
+
+    def check(self, node, location: str, logger: Logger, root) -> bool:
+        if not isinstance(node, str):
+            logger.error("`%s` is not a string but a %s: '%s'", location, type(node).__name__, node)
+            return False
+        try:
+            options = ForeignKey._check(self.path, root)
+        except ForeignKey._ExplorationException as exc:
+            if exc.code == 1:
+                logger.error("Path to reference '%s' is incorrect. %s", self.path, exc.adds_msg)
+            elif exc.code == 2:
+                logger.error(
+                    "Path '%s' doesn't lead to a string as it should. %s", self.path, exc.adds_msg
+                )
+            elif exc.code == 3:
+                logger.error("Path '%s' leads to an unhandled type. %s", self.path, exc.adds_msg)
+            else:
+                raise Exception("Incorrect exception while checking a Foreign Key") from exc
+            return False
+        options = [option.lower() for option in options]
+        if not node.lower() in options:
+            logger.error(
+                "`%s` reference not found at '%s': '%s' not in %s",
+                location,
+                self.path,
+                node,
+                options,
+            )
+            return False
+        return True
+
+
 def _parse(location: str, element) -> Type:
     """Parse a subelement of the grammar"""
     if isinstance(element, dict):
@@ -142,6 +210,8 @@ def _parse(location: str, element) -> Type:
             return String(url=True)
         if element == "date":
             return String(date=True)
+        if element.startswith("*"):
+            return ForeignKey(element[1:])
         raise Exception(f"{location} is an unknown str '{element}'")
     raise Exception(f"{location} has an unhandled type '{type(element).__name__}'.")
 
