@@ -18,12 +18,12 @@ layout: mypost
 
 <p>{{ page.description }}</p>
 
-<ul class="jobs-list">
+<ul class="related-list">
   {% assign tmp-name = page.title | upcase %}
   {% for job in site.data.me.work.jobs %}
     {% assign cmp-name = job.company | upcase %}
     {% if tmp-name == cmp-name %}
-      <li class="post job">
+      <li class="post related">
         <a href="{{ job.name | datapage_url: 'job' | absolute_url}}">
           <h3 class="post__title">{{ job.name }}</h3>
           <span class="date post__subtitle">
@@ -33,7 +33,7 @@ layout: mypost
               Started on {{ job.start-date | date: "%B %-d, %Y" }}
             {% endif %}
           </span>
-          <p class="job-description post__description">
+          <p class="related-description post__description">
             {{ job.description }}
           </p>
         </a>

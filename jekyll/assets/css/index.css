@@ -20,20 +20,20 @@
     font-weight: 400;
 }
 
-li.job,
+li.related,
 li.post {
     list-style-type: none;
 }
 
-.jobs-list a {
+.related-list a {
     text-decoration: none;
 }
 
-.jobs-list .post__description {
+.related-list .post__description {
     -webkit-line-clamp: 2;
 }
 
-.jobs-list .job {
+.related-list .related {
     background-color: inherit;
     margin: 0.7em;
     border-left: solid;
@@ -41,15 +41,15 @@ li.post {
     padding-left: 2em;
 }
 
-.jobs-list .job:hover {
+.related-list .related:hover {
     border-color: #3498db;
 }
 
-.jobs-list .job * {
+.related-list .related * {
     margin: 0px;
 }
 
-.jobs-list .job:last-child {
+.related-list .related:last-child {
     margin-bottom: 1.5em;
 }
 
