@@ -22,13 +22,14 @@ class Type(ABC):
     """Abstract representation of a type in the grammar"""
 
     @abstractmethod
-    def check(self, node, location: str, logger: Logger) -> bool:
+    def check(self, node, location: str, logger: Logger, root) -> bool:
         """
         Check whether the node matches this type
 
         :param node: Instance to check
         :param location: Position of the instance
         :param logger: Logger instance to broadcast issues to
+        :param root: Root instance (i.e. node) of the data
         :return: False whenever the type isn't matched at all, else true
         """
 
@@ -43,7 +44,7 @@ class String(Type):
     date: bool = False
     """Whether the string represents a date"""
 
-    def check(self, node, location: str, logger: Logger) -> bool:
+    def check(self, node, location: str, logger: Logger, root) -> bool:
         if not isinstance(node, str):
             logger.error("`%s` is not a string but a %s: '%s'", location, type(node).__name__, node)
             return False
@@ -66,7 +67,7 @@ class List(Type):
     must_have_a_single_child: bool = False
     """Whether the list must contain exactly one element"""
 
-    def check(self, node, location: str, logger: Logger) -> bool:
+    def check(self, node, location: str, logger: Logger, root) -> bool:
         if not isinstance(node, list):
             logger.error("`%s` is not a list but a %s: '%s'", location, type(node).__name__, node)
             return False
@@ -74,7 +75,7 @@ class List(Type):
             logger.warning("`%s` should have a single child, but got %s", location, len(node))
         result = True
         for i, child in enumerate(node):
-            result = result and self.children_type.check(child, f"{location}[{i}]", logger)
+            result = result and self.children_type.check(child, f"{location}[{i}]", logger, root)
         return result
 
 
@@ -85,7 +86,7 @@ class Dict(Type):
     needed: TDict[str, Type]
     optional: TDict[str, Type]
 
-    def check(self, node, location: str, logger: Logger) -> bool:
+    def check(self, node, location: str, logger: Logger, root) -> bool:
         if not isinstance(node, dict):
             logger.error(
                 "`%s` is not a dictionary but a %s: '%s'", location, type(node).__name__, node
@@ -94,10 +95,10 @@ class Dict(Type):
         needed_missing, optional_missing = set(self.needed), set(self.optional)
         for key, value in node.items():
             if key in self.needed:
-                self.needed[key].check(value, f"{location}.{key}", logger)
+                self.needed[key].check(value, f"{location}.{key}", logger, root)
                 needed_missing.remove(key)
             elif key in self.optional:
-                self.optional[key].check(value, f"{location}.{key}", logger)
+                self.optional[key].check(value, f"{location}.{key}", logger, root)
                 optional_missing.remove(key)
             else:
                 logger.warning("`%s` contains an unused attribute: '%s'", location, key)
