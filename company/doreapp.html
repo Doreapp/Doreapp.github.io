@@ -15,27 +15,7 @@
   <meta name="author" content="Antoine Mandin">
   
 
-  <meta name="description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
 
@@ -85,10 +65,6 @@
   
 
   
-
-  
-  
-  
     
       <link rel="stylesheet" href="/assets/css/theme.css">
     
@@ -97,40 +73,24 @@
   
 
   
+  
+  
+
+  
 
   
   <meta property="og:site_name" content="Antoine Mandin | Software engineer">
   <meta property="og:title" content="Doreapp">
-  <meta property="og:description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
-  <meta property="og:image" content="/assets/img/doreapp.jpg">
+  <meta property="og:image" content="https://antoine.mandin.dev/assets/img/doreapp.jpg">
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/company/doreapp.html">
-  <link rel="canonical" href="/company/doreapp.html">
+  <meta property="og:url" content="https://antoine.mandin.dev/company/doreapp.html">
+  <link rel="canonical" href="https://antoine.mandin.dev/company/doreapp.html">
   
 
   
@@ -140,30 +100,10 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="Doreapp">
-  <meta property="twitter:description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
-  <meta name="twitter:image" content="/assets/img/doreapp.jpg">
+  <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/doreapp.jpg">
   
 
   
@@ -181,7 +121,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="">Antoine Mandin | Software engineer</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://antoine.mandin.dev/">Antoine Mandin | Software engineer</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -205,7 +145,13 @@
 
 
 
-  <!-- header.html from beautuiful jekyll https://github.com/daattali/beautiful-jekyll/blob/master/_includes/header.html -->
+  
+
+
+
+<!-- header.html from beautuiful jekyll https://github.com/daattali/beautiful-jekyll/blob/master/_includes/header.html -->
+
+
 
 
 
@@ -218,7 +164,7 @@
       
       
       
-      data-img-src-1="/assets/img/doreapp.jpg"
+      data-img-src-1="https://antoine.mandin.dev/assets/img/doreapp.jpg"
       
       
       ></div>
@@ -282,15 +228,44 @@
 <div class=" container-md ">
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
-
-      
-
-      
-
       <article role="main" class="blog-post">
         
 
 <p>Basically my "company" identity, as a "auto entrepreneur", used mostly to publish apps on Google Play Store.</p>
+
+<ul class="jobs-list">
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+      <li class="post job">
+        <a href="https://antoine.mandin.dev/job/autoentrepreneur.html">
+          <h3 class="post__title">Autoentrepreneur</h3>
+          <span class="date post__subtitle">
+            
+              Started on July 1, 2018
+            
+          </span>
+          <p class="job-description post__description">
+            Before my formal education and internships, I taught myself how to develop Android applications. This led to the creation of several applications available on the Google Play Store and the establishment of my own small business, Doreapp. Through this experience, I developed my skills in Android development and programming concepts such as object-oriented programming, data structures, and algorithms. I also learned how to use Android Studio, Java, and other related technologies to develop my applications.
+          </p>
+        </a>
+      </li>
+    
+  
+</ul>
 
 
   <p>
@@ -298,23 +273,9 @@
   </p>
 
       </article>
-
-      
-
-      
-
-      
-
-      <ul class="pagination blog-pager">
-        
-        
-      </ul>
-      
-
     </div>
   </div>
 </div>
-
 
   <footer>
   <div class="container-md beautiful-jekyll-footer">

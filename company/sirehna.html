@@ -15,27 +15,7 @@
   <meta name="author" content="Antoine Mandin">
   
 
-  <meta name="description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
 
@@ -85,10 +65,6 @@
   
 
   
-
-  
-  
-  
     
       <link rel="stylesheet" href="/assets/css/theme.css">
     
@@ -97,40 +73,24 @@
   
 
   
+  
+  
+
+  
 
   
   <meta property="og:site_name" content="Antoine Mandin | Software engineer">
   <meta property="og:title" content="SIREHNA">
-  <meta property="og:description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
-  <meta property="og:image" content="/assets/img/sirehna.jpg">
+  <meta property="og:image" content="https://antoine.mandin.dev/assets/img/sirehna.jpg">
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/company/sirehna.html">
-  <link rel="canonical" href="/company/sirehna.html">
+  <meta property="og:url" content="https://antoine.mandin.dev/company/sirehna.html">
+  <link rel="canonical" href="https://antoine.mandin.dev/company/sirehna.html">
   
 
   
@@ -140,30 +100,10 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="SIREHNA">
-  <meta property="twitter:description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
-  <meta name="twitter:image" content="/assets/img/sirehna.jpg">
+  <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/sirehna.jpg">
   
 
   
@@ -181,7 +121,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="">Antoine Mandin | Software engineer</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://antoine.mandin.dev/">Antoine Mandin | Software engineer</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -205,7 +145,13 @@
 
 
 
-  <!-- header.html from beautuiful jekyll https://github.com/daattali/beautiful-jekyll/blob/master/_includes/header.html -->
+  
+
+
+
+<!-- header.html from beautuiful jekyll https://github.com/daattali/beautiful-jekyll/blob/master/_includes/header.html -->
+
+
 
 
 
@@ -218,7 +164,7 @@
       
       
       
-      data-img-src-1="/assets/img/sirehna.jpg"
+      data-img-src-1="https://antoine.mandin.dev/assets/img/sirehna.jpg"
       
       
       ></div>
@@ -282,11 +228,6 @@
 <div class=" container-md ">
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
-
-      
-
-      
-
       <article role="main" class="blog-post">
         
   <p>
@@ -304,29 +245,63 @@
 
 <p>SIREHNA develop a large range of products & systems aiming to secure navigation and maritime environment on both civil and military markets. Small size business (100+ employee), subsidary of Naval Group.</p>
 
+<ul class="jobs-list">
+  
+  
+    
+    
+      <li class="post job">
+        <a href="https://antoine.mandin.dev/job/software-engineer.html">
+          <h3 class="post__title">Software engineer</h3>
+          <span class="date post__subtitle">
+            
+              Started on September 1, 2022
+            
+          </span>
+          <p class="job-description post__description">
+            As a software engineer at Sirehna, I am part of a small team, where we build software and programs that have large connections to naval architecture and science. My role involves working with Gitlab and utilizing its CI/CD and code review processes to ensure high-quality code is produced and deployed. I work with both backend technologies, such as Python, and frontend technologies, such as React.js,to create a seamless user experience. I am responsible for the development, testing, and maintenance of software and programs, collaborating with the team to ensure timely delivery and high-quality products. Additionally, I am involved in the continuous improvement of the software development process and ensure the software is optimized for performance and scalability.
+          </p>
+        </a>
+      </li>
+    
+  
+    
+    
+      <li class="post job">
+        <a href="https://antoine.mandin.dev/job/software-engineer-intern.html">
+          <h3 class="post__title">Software engineer intern</h3>
+          <span class="date post__subtitle">
+            
+              From February 1, 2022 to June 30, 2022
+            
+          </span>
+          <p class="job-description post__description">
+            During my internship at SIREHNA, I was tasked with building a simulation and data management environment for the hydrodynamic engineers of the company. The goal of the internship was to improve their working processes and automate hydrodynamics simulations. In this context, I developed a full environment, containing the following components: - A large storage system based on MinIO, which provided a robust and scalable storage solution for the simulation data. - A user and permission management web platform based on Girder, which enabled secure access and management of the simulation data. - An automated workflow to run CFD simulations and asynchronously return the results and logs, based on Gitlab. This streamlined the simulation process and allowed for efficient data management. This internship allowed me to gain experience in a professional setting and develop my skills in software development, data management and automation.
+          </p>
+        </a>
+      </li>
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+</ul>
+
 
   <p>
     <a class="button button--large" href="https://www.sirehna.com/">Official website</a>
   </p>
 
       </article>
-
-      
-
-      
-
-      
-
-      <ul class="pagination blog-pager">
-        
-        
-      </ul>
-      
-
     </div>
   </div>
 </div>
-
 
   <footer>
   <div class="container-md beautiful-jekyll-footer">

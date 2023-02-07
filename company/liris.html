@@ -15,27 +15,7 @@
   <meta name="author" content="Antoine Mandin">
   
 
-  <meta name="description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta name="description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
 
@@ -85,10 +65,6 @@
   
 
   
-
-  
-  
-  
     
       <link rel="stylesheet" href="/assets/css/theme.css">
     
@@ -97,40 +73,24 @@
   
 
   
+  
+  
+
+  
 
   
   <meta property="og:site_name" content="Antoine Mandin | Software engineer">
   <meta property="og:title" content="LIRIS">
-  <meta property="og:description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta property="og:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
-  <meta property="og:image" content="/assets/img/liris.jpg">
+  <meta property="og:image" content="https://antoine.mandin.dev/assets/img/liris.jpg">
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/company/liris.html">
-  <link rel="canonical" href="/company/liris.html">
+  <meta property="og:url" content="https://antoine.mandin.dev/company/liris.html">
+  <link rel="canonical" href="https://antoine.mandin.dev/company/liris.html">
   
 
   
@@ -140,30 +100,10 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="LIRIS">
-  <meta property="twitter:description" content="{% if page.city or page.country %}
-  
-    
-      
-    
-    {% if page.city %}
-      {{ page.city }}{% if page.country %},{% endif %}
-    {% endif %}
-    {% if page.country %}
-      {{ page.country }}
-    {% endif %}
-  
-{% endif %}
-
-{{ page.description }}
-
-{% if page.weblink %}
-  
-    Official website
-  
-{% endif %}">
+  <meta property="twitter:description" content="{% if page.city or page.country %} {% if page.city %} {{ page.city }}{% if page.country %},{% endif %} {% endif %} {% if page.country %} {{ page.country }} {% endif %} {% endif %} {{ page.description }} {% assign tmp-name = page.title | upcase %} {% for job in site.data.me.work.jobs...">
 
   
-  <meta name="twitter:image" content="/assets/img/liris.jpg">
+  <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/liris.jpg">
   
 
   
@@ -181,7 +121,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="">Antoine Mandin | Software engineer</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://antoine.mandin.dev/">Antoine Mandin | Software engineer</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -205,7 +145,13 @@
 
 
 
-  <!-- header.html from beautuiful jekyll https://github.com/daattali/beautiful-jekyll/blob/master/_includes/header.html -->
+  
+
+
+
+<!-- header.html from beautuiful jekyll https://github.com/daattali/beautiful-jekyll/blob/master/_includes/header.html -->
+
+
 
 
 
@@ -218,7 +164,7 @@
       
       
       
-      data-img-src-1="/assets/img/liris.jpg"
+      data-img-src-1="https://antoine.mandin.dev/assets/img/liris.jpg"
       
       
       ></div>
@@ -282,11 +228,6 @@
 <div class=" container-md ">
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
-
-      
-
-      
-
       <article role="main" class="blog-post">
         
   <p>
@@ -304,29 +245,49 @@
 
 <p>Research laboratory focused on computer science and image. Associated to several Lyon's universities.</p>
 
+<ul class="jobs-list">
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+      <li class="post job">
+        <a href="https://antoine.mandin.dev/job/research-intern.html">
+          <h3 class="post__title">Research intern</h3>
+          <span class="date post__subtitle">
+            
+              From June 1, 2020 to August 20, 2020
+            
+          </span>
+          <p class="job-description post__description">
+            During my internship in an LIRIS research laboratory, I was assigned to a project that was part of a thesis. The goal was to evaluate a dataset prior to machine learning training in order to identify any incorrect data. To achieve this, I created Python algorithms using blocking methods to analyze the dataset and return the conflicting records. I was responsible for developing and implementing the algorithms, testing them, and analyzing the results. I also had to work with large datasets and manage the data effectively, as well as using various libraries like pandas and numpy. This experience allowed me to develop my skills in data analysis, data preprocessing, and machine learning. It also helped me to gain a deeper understanding of the importance of data quality in machine learning and how to ensure the data is correct before training a model.
+          </p>
+        </a>
+      </li>
+    
+  
+    
+    
+  
+</ul>
+
 
   <p>
     <a class="button button--large" href="https://liris.cnrs.fr/">Official website</a>
   </p>
 
       </article>
-
-      
-
-      
-
-      
-
-      <ul class="pagination blog-pager">
-        
-        
-      </ul>
-      
-
     </div>
   </div>
 </div>
-
 
   <footer>
   <div class="container-md beautiful-jekyll-footer">
