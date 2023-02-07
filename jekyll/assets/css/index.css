@@ -20,6 +20,38 @@
     font-weight: 400;
 }
 
+li.job,
+li.post {
+    list-style-type: none;
+}
+
+.jobs-list a {
+    text-decoration: none;
+}
+
+.jobs-list .post__description {
+    -webkit-line-clamp: 2;
+}
+
+.jobs-list .job {
+    background-color: inherit;
+    margin: 0.7em;
+    border-left: solid;
+    border-width: 5px;
+    padding-left: 2em;
+}
+
+.jobs-list .job:hover {
+    border-color: #3498db;
+}
+
+.jobs-list .job * {
+    margin: 0px;
+}
+
+.jobs-list .job:last-child {
+    margin-bottom: 1.5em;
+}
 
 .chip {
     color: rgb(64, 64, 64);
