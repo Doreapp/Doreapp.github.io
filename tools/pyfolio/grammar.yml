@@ -88,3 +88,5 @@ projects:
   weblink(o): url
   share-title(o): str
   cover-img: str
+  job(o): "*work.jobs.name"
+  school(o): "*education.schools.name"
