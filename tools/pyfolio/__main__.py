@@ -37,7 +37,7 @@ def check_file(gram: grammar.Type, file: str, handler: logging.Handler):
     logger = logging.getLogger(path.basename(file))
     logger.setLevel(logging.INFO)
     logger.addHandler(handler)
-    gram.check(data, "{}", logger)
+    gram.check(data, "{}", logger, data)
 
 
 def get_grammar() -> grammar.Type:
