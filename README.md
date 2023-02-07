@@ -81,6 +81,8 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `projects[?].weblink` | [Optional] URL to the project result (or website) |
 | `projects[?].source-code` | [Optional] URL to the project source code |
 | `projects[?].skills` | [Optional] List of skills involved in the project |
+| `projects[?].job` | [Optional] Name of the job related to this project. Must exist in `work.jobs`. |
+| `projects[?].school` | [Optional] Name of the school related to this project. Must exist in `education.schools`. |
 
 
 ## Automatic format check
