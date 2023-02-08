@@ -18,11 +18,7 @@ Parameters:
             <div class="content-wrap">
               <h3 class="post__title">{{ item.[include.name-key] }}</h3>
               <span class="date post__subtitle">
-                {% if item.end-date %}
-                  From {{ item.start-date | date: "%B %-d, %Y" }} to {{ item.end-date | date: "%B %-d, %Y" }}
-                {% else %}
-                  Started on {{ item.start-date | date: "%B %-d, %Y" }}
-                {% endif %}
+                {% include date.html start-date=item.start-date end-date=item.end-date %}
               </span>
               <p class="description post__description">
                 {{ item.description }}

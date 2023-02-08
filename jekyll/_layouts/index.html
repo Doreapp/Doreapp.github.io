@@ -32,11 +32,7 @@ css:
                 {% if project.subtitle %}
                   ·
                 {% endif %}
-                {% if project.end-date %}
-                  From {{ project.start-date | date: "%B %-d, %Y" }} to {{ project.end-date | date: "%B %-d, %Y" }}
-                {% else %}
-                  Started on {{ project.start-date | date: "%B %-d, %Y" }}
-                {% endif %}
+                {% include date.html start-date=project.start-date end-date=project.end-date %}
               </span>
             {% endif %}
 
@@ -71,11 +67,7 @@ css:
                 at {{ job.company }}{% endif %}
             </h3>
             <span class="date post__subtitle">
-              {% if job.end-date %}
-                From {{ job.start-date | date: "%B %-d, %Y" }} to {{ job.end-date | date: "%B %-d, %Y" }}
-              {% else %}
-                Started on {{ job.start-date | date: "%B %-d, %Y" }}
-              {% endif %}
+              {% include date.html start-date=job.start-date end-date=job.end-date %}
             </span>
             <p class="description post__description">
               {{ job.description }}

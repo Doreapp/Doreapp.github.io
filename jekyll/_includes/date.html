@@ -1,0 +1,11 @@
+{% comment %}
+Parameters:
+- start-date: Needed, format dd-mm-yyyy
+- end-date: Optional, format dd-mm-yyyy
+{% endcomment %}
+
+{% if include.end-date %}
+From {{ include.start-date | date: "%B %-d, %Y" }} to {{ include.end-date | date: "%B %-d, %Y" }}
+{% else %}
+Started on {{ include.start-date | date: "%B %-d, %Y" }}
+{% endif %}
