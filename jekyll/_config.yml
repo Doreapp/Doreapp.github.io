@@ -21,6 +21,8 @@ remove-ads: true
 site-css:
 - "/assets/css/theme.css"
 - "/assets/css/index.css"
+site-js:
+- "/assets/js/index.js"
 
 # Page generation configuration
 # See https://github.com/avillafiorita/jekyll-datapage_gen

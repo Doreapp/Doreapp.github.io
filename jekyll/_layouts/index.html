@@ -7,7 +7,7 @@ css:
 
 <div class="post-list wrap">
   {% for project in site.data.me.projects %}
-    <article class="post">
+    <article class="post {% if forloop.index > 3 %}view-more{% endif %}">
       <a href="{{ project.title | datapage_url: 'project' }}">
         {% if project.cover-img %}
           <div class="post__image-wrap">
@@ -56,4 +56,5 @@ css:
       </a>
     </article>
   {% endfor %}
+  <button class="view-more-button button">View more projects</button>
 </div>

@@ -20,6 +20,10 @@
     font-weight: 400;
 }
 
+.post.view-more {
+    display: none;
+}
+
 li.related,
 li.post {
     list-style-type: none;
@@ -121,6 +125,10 @@ li.post {
     justify-content: space-around;
 }
 
+.view-more-button {
+    margin-top: 1em;
+}
+
 /* ***** Overringing styles from beautiful jekyll ***** */
 
 body {
@@ -167,6 +175,12 @@ body {
 /* Placing */
 .post-list {
     margin-top: -60px;
+    text-align: center;
+}
+
+.post-list a,
+.post-list article {
+    text-align: left;
 }
 
 @media only screen and (min-width:768px) {
