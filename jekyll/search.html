@@ -18,7 +18,7 @@ js:
   <input type="submit" value="search">
 </form>
 
-<ul id="search-results"></ul>
+<ul id="search-results" class="related-list"></ul>
 
 <script>
   window.store = [{% for project in site.data.me.projects %}
@@ -29,7 +29,7 @@ js:
         "subtitle": "{{ project.subtitle | xml_escape }}",
         "description": "{{ project.description | xml_escape | strip_newlines }}",
         "skills": "{{ project.skills | join: " ; " | xml_escape }}",
-        "cover-img": "{{ project.cover-img | absolute_url }}"
+        "coverimg": "{{ project.cover-img | absolute_url }}"
       }
         {% unless forloop.last %},{% endunless %}{% endfor %}];
 </script>
