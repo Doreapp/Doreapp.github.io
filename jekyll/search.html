@@ -1,0 +1,35 @@
+---
+layout: default
+title: Search
+permalink: /search
+
+ext-js:
+- "https://cdn.jsdelivr.net/npm/minisearch@6.0.1/dist/umd/index.min.js"
+js:
+- "assets/js/search.js"
+---
+
+<form action="/search" method="get">
+  <label for="search-box">Search</label>
+  <input
+    type="text"
+    id="search-box"
+    name="query">
+  <input type="submit" value="search">
+</form>
+
+<ul id="search-results"></ul>
+
+<script>
+  window.store = [{% for project in site.data.me.projects %}
+      {
+        "id": "{{ project.title }}",
+        "url": "{{ project.title | datapage_url: 'project' | absolute_url }}",
+        "title": "{{ project.title | xml_escape }}",
+        "subtitle": "{{ project.subtitle | xml_escape }}",
+        "description": "{{ project.description | xml_escape | strip_newlines }}",
+        "skills": "{{ project.skills | join: " ; " | xml_escape }}",
+        "cover-img": "{{ project.cover-img | absolute_url }}"
+      }
+        {% unless forloop.last %},{% endunless %}{% endfor %}];
+</script>
