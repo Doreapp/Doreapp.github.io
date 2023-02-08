@@ -9,20 +9,21 @@ js:
 - "assets/js/search.js"
 ---
 
-<form action="/search" method="get">
-  <label for="search-box">Search</label>
+<form
+  class="search-bar"
+  action="/search"
+  method="get">
   <input
     type="text"
     id="search-box"
-    name="query">
-  <input type="submit" value="search">
+    name="query"
+    placeholder="Search">
 </form>
 
 <ul id="search-results" class="related-list"></ul>
 
 <script>
-  window.store = [{% for project in site.data.me.projects %}
-      {
+  window.store = [{% for project in site.data.me.projects %}{
         "id": "{{ project.title }}",
         "url": "{{ project.title | datapage_url: 'project' | absolute_url }}",
         "title": "{{ project.title | xml_escape }}",
