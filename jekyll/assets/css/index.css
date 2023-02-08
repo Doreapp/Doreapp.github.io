@@ -61,6 +61,7 @@ li.post {
 
 .related-list .content-wrap {
     flex: 3;
+    margin-right: 4px;
 }
 
 .related .image-wrap {
@@ -222,7 +223,11 @@ footer a {
 
 header .footer-links {
     margin-top: 2em;
-    margin-bottom: -2em;
+}
+
+.list-inline-item,
+.list-inline-item:not(:last-child) {
+    margin: 0;
 }
 
 /* Post page */
