@@ -101,3 +101,39 @@ css:
     </li>
   {% endfor %}
 </ul>
+
+<h2>Education</h2>
+
+<ul class="related-list">
+  {% for school in site.data.me.education.schools %}
+    <li class="post related">
+      <a href="{{ school.name | datapage_url: 'school' | absolute_url}}">
+        <div class="flex">
+          <div class="content-wrap">
+            <h3 class="post__title">{{ school.name }}</h3>
+            {% if school.subtitle %}
+              <span class="post__subtitle">
+                {{ school.subtitle }} ·
+              </span>
+            {% endif %}
+            <span class="date post__subtitle">
+              {% include date.html start-date=school.start-date end-date=school.end-date %}
+            </span>
+            <p class="description post__description">
+              {{ school.description }}
+            </p>
+          </div>
+          {% if school.cover-img %}
+            <div class="image-wrap">
+              <div
+                class="image"
+                style="background-image: url({{ school.cover-img  | absolute_url }});"
+                data-img-src="{{ school.cover-img | absolute_url }}"
+                alt="School Thumbnail"></div>
+            </div>
+          {% endif %}
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
