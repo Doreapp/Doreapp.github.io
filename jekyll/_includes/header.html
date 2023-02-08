@@ -64,11 +64,7 @@
                     {% endif %}
                   {% elsif page.start-date %}
                     <span class="date post-meta">
-                      {% if page.end-date %}
-                        From {{ page.start-date | date: "%B %-d, %Y" }} to {{ page.end-date | date: "%B %-d, %Y" }}
-                      {% else %}
-                        Started on {{ page.start-date | date: "%B %-d, %Y" }}
-                      {% endif %}
+                      {% include date.html start-date=page.start-date end-date=page.end-date %}
                     </span>
                   {% endif %}
                 {% endif %}
