@@ -20,6 +20,10 @@
     font-weight: 400;
 }
 
+.post.view-more {
+    display: none;
+}
+
 li.related,
 li.post {
     list-style-type: none;
@@ -57,6 +61,7 @@ li.post {
 
 .related-list .content-wrap {
     flex: 3;
+    margin-right: 4px;
 }
 
 .related .image-wrap {
@@ -121,6 +126,10 @@ li.post {
     justify-content: space-around;
 }
 
+.view-more-button {
+    margin-top: 1em;
+}
+
 /* ***** Overringing styles from beautiful jekyll ***** */
 
 body {
@@ -167,6 +176,12 @@ body {
 /* Placing */
 .post-list {
     margin-top: -60px;
+    text-align: center;
+}
+
+.post-list a,
+.post-list article {
+    text-align: left;
 }
 
 @media only screen and (min-width:768px) {
@@ -208,7 +223,11 @@ footer a {
 
 header .footer-links {
     margin-top: 2em;
-    margin-bottom: -2em;
+}
+
+.list-inline-item,
+.list-inline-item:not(:last-child) {
+    margin: 0;
 }
 
 /* Post page */
