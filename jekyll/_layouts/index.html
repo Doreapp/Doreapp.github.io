@@ -58,3 +58,54 @@ css:
   {% endfor %}
   <button class="view-more-button button">View more projects</button>
 </div>
+
+<h2>Jobs</h2>
+
+<ul class="related-list">
+  {% for job in site.data.me.work.jobs %}
+    <li class="post related">
+      <a href="{{ job.name | datapage_url: 'job' | absolute_url}}">
+        <div class="flex">
+          <div class="content-wrap">
+            <h3 class="post__title">{{ job.name }}{% if job.company %}
+                at {{ job.company }}{% endif %}
+            </h3>
+            <span class="date post__subtitle">
+              {% if job.end-date %}
+                From {{ job.start-date | date: "%B %-d, %Y" }} to {{ job.end-date | date: "%B %-d, %Y" }}
+              {% else %}
+                Started on {{ job.start-date | date: "%B %-d, %Y" }}
+              {% endif %}
+            </span>
+            <p class="description post__description">
+              {{ job.description }}
+            </p>
+          </div>
+          {% if job.cover-img %}
+            {% assign job-cover-img = job.cover-img %}
+          {% elsif job.company %}
+            {% assign tmp-company-name = job.company | upcase %}
+            {% for some-company in site.data.me.work.companies %}
+              {% assign cmp-company-name = some-company.name | upcase %}
+              {% if tmp-company-name == cmp-company-name %}
+                {% assign company = some-company %}
+              {% endif %}
+            {% endfor %}
+            {% if company and company.cover-img %}
+              {% assign job-cover-img = company.cover-img %}
+            {% endif %}
+          {% endif %}
+          {% if job-cover-img %}
+            <div class="image-wrap">
+              <div
+                class="image"
+                style="background-image: url({{ job-cover-img  | absolute_url }});"
+                data-img-src="{{ job-cover-img | absolute_url }}"
+                alt="Job Thumbnail"></div>
+            </div>
+          {% endif %}
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
