@@ -374,6 +374,61 @@ projects:
     I also gained experience in using <code>React</code> and <code>React Native</code>,
     as well as in working with maps, using <code>Leaflet</code> and <code>Open Street Map</code> data.
     It also helped me to understand the challenges and differences in developing a web app and a native app.
+- title: Simulation and data management environment
+  subtitle: Intership at Sirehna
+  cover-img: "/assets/img/simulation-and-data-environment.png"
+  start-date: 01-02-2022
+  end-date: 30-06-2022
+  team-size: 1
+  job: Software engineer intern
+  skills:
+  - Python
+  - Girder
+  - Git
+  - GitLab
+  - GitLab CI
+  - Docker
+  - Docker compose
+  - MinIO
+  - MongoDB
+  - Vue JS
+  - JavaScript
+  - API
+  - VS Code
+  description: >-
+    I worked on a project for SIREHNA, a company that runs computational fluid
+    dynamics (CFD) simulations to evaluate ship performances (amongst other things).
+    My role in this project was to create a simulation and data management environment
+    that would help SIREHNA team track and retrieve their data, as well as automate
+    low value-added tasks.
+    <br><br>
+    After working on understanding the users' needs, I worked with the team on defining the environment architecture.
+    We chose to use a web server as the corner stone of the architecture.
+    We highlighted the functional needs such as User authentication, User management and data storage,
+    and then benchmarked technologies.
+    <br><br>
+    I used <code>Girder</code> library to instantiate a web server dedicated to managing users,
+    their authentication and permissions. Using this library allowed us to gain time in implementing
+    user authentication and management functionalities.
+    <br><br>
+    To answer the large data storage need - coming from geometries involved in the CFD simulations that
+    can weight tens of GB - I set up a <code>MinIO</code> instance.
+    As <code>MinIO</code> uses Amazon <i>Simple Storage Service</i> (<code>S3</code>) standards, I could
+    easily connect it to the <code>Girder</code>-based web server.
+    <br><br>
+    Another main part of the environment, which was very time consuming, was to automated
+    some of the CFD simulation processes.
+    As a <code>GitLab</code> server was hosted internally, I used its pipelines features
+    (which are mostly designed for <code>CI/CD</code> purpose) to fully automate simulations.
+    The idea was to use <code>GitLab</code> pipeline's scheduler to separate the main steps of a simulation.
+    The actual computation scripts were executed through <code>Makefile</code> scripts, while communications with the
+    <code>Girder</code>-based web server were done via <code>Python</code> scripts.
+    In order to execute computations efficiently, we installed a <code>GitLab Runner</code> on a device
+    with a large computational power.
+    <br><br>
+    The final piece of the puzzle was creating a user-friendly web interface using <code>Girder</code>
+    web components, allowing users to easily start automated computations, monitor
+    their progress, and keep track of their results.
 - title: Heads or Tails
   subtitle: Android App
   cover-img: "/assets/img/head-or-tail.png"
@@ -461,38 +516,6 @@ projects:
     Additionally, the app includes functionality to open other apps such as
     the phone dialer or facebook messenger. The app also uses an experimental API
     that allows users to browse their phone's contact list.
-- title: Simulation and data management environment
-  subtitle: Intership at Sirehna
-  cover-img: "/assets/img/simulation-and-data-environment.png"
-  start-date: 01-02-2022
-  end-date: 30-06-2022
-  team-size: 1
-  job: Software engineer intern
-  skills:
-  - Python
-  - Girder
-  - MinIO
-  - GitLab
-  - GitLab CI
-  - Vuejs
-  - Docker
-  description: >-
-    I worked on a project for Sirehna, a company that runs computational fluid
-    dynamics (CFD) simulations to evaluate ship performances (amongst other things).
-    My role in this project was to create a simulation and data management environment
-    that would help the Sirehna team track and retrieve their data, as well as automate
-    low-added-value tasks.
-
-    I used the Girder library to instantiate a web server dedicated to managing users,
-    their authentication and permissions. I also set up a MinIO instance to handle the
-    large amount of data required for the CFD simulations and connected it to the web
-    server. To further improve efficiency, I automated a simulation process by
-    utilizing Gitlab pipelines features and custom Python scripts to facilitate
-    communication between the server and the computation pipeline.
-
-    The final piece of the puzzle was creating a user-friendly web interface using Girder
-    web components, allowing users to easily start automated computations, monitor
-    their progress, and keep track of their results.
 - title: Optimization of drone live video streaming
   subtitle: At Kissfly
   cover-img: "/assets/img/drone.webp"
