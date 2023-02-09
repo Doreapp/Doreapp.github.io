@@ -165,6 +165,10 @@ li.post {
     border-width: 2px;
 }
 
+.search-bar input::placeholder {
+    color: gray;
+}
+
 /* ***** Overringing styles from beautiful jekyll ***** */
 
 body {
