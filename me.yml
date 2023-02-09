@@ -23,6 +23,21 @@ about:
     description: Did we test the tests ?
 education:
   schools:
+  - name: KTH
+    subtitle: Royal Institue of Technology
+    cover-img: "/assets/img/kth.webp"
+    share-title: KTH Royal Institue of Technology
+    long-name: KTH Royal Institue of Technology
+    city: Stockholm
+    country: Sweden
+    description: >-
+      KTH is Sweden's largest largest technical university.
+      <br />
+      I worked in KTH during a full semester,
+      deepening my knowledge in computer science and improving my english.
+    weblink: https://www.kth.se/
+    start-date: 22-08-2021
+    end-date: 15-01-2022
   - name: INSA Lyon
     subtitle: French engineering school
     cover-img: "/assets/img/insa.jpg"
@@ -32,25 +47,16 @@ education:
     country: France
     description: >-
       French engineering school offering a 5-year curriculum.
-      The two first years are general scientific education, with mathematics, physics, chemistry and an pleasant student life.
-      The next three years are devoted to specialization. I joined the Computer science department, which offers
+      <br />
+      The two first years are general scientific education,
+      with mathematics, physics, chemistry and an pleasant student life.
+      <br />
+      The next three years are devoted to specialization.
+      I joined the Computer science department, which offers
       courses about topis ranging from computer architecture to data models.
     weblink: https://www.insa-lyon.fr/
     start-date: 01-09-2017
     end-date: 30-06-2022
-  - name: KTH
-    subtitle: Royal Institue of Technology
-    cover-img: "/assets/img/kth.webp"
-    share-title: KTH Royal Institue of Technology
-    long-name: KTH Royal Institue of Technology
-    city: Stockholm
-    country: Sweden
-    description: >-
-      Sweden's largest largest technical university.
-      I worked in KTH during a full semester, deepening my knowledge in computer science and improving my english.
-    weblink: https://www.kth.se/
-    start-date: 22-08-2021
-    end-date: 15-01-2022
   diplomas:
   - title: Engineering degree in computer science
     subtitle: Awarded by INSA Lyon
@@ -61,8 +67,16 @@ work:
   companies:
   - name: SIREHNA
     description: >-
-      SIREHNA develop a large range of products & systems aiming to secure navigation and maritime environment
-      on both civil and military markets.
+      SIREHNA is a dynamic and innovative company specializing in engineering solutions
+      for the maritime industry. With a team of highly skilled engineers and technicians,
+      SIREHNA provides a wide range of services, including design, development, and manufacturing
+      of high-tech maritime equipment and systems. The company is known for its innovative solutions,
+      which are designed to improve the efficiency, safety, and sustainability of maritime operations.
+      <br />
+      With a strong commitment to customer satisfaction and a culture of collaboration and teamwork,
+      SIREHNA is a trusted partner to the maritime industry. The company's innovative solutions,
+      combined with its expertise and customer-focused approach, make it a leader in its field.
+      <br />
       Small size business (100+ employee), subsidary of Naval Group.
     cover-img: "/assets/img/sirehna.jpg"
     weblink: https://www.sirehna.com/
@@ -78,8 +92,13 @@ work:
   - name: LIRIS
     weblink: https://liris.cnrs.fr/
     description: >-
-      Research laboratory focused on computer science and image.
-      Associated to several Lyon's universities.
+      LIRIS is a cutting-edge research laboratory dedicated to advancing our understanding
+      of intelligent systems and their interactions with humans. With a multidisciplinary
+      team of researchers from fields such as computer science, psychology, and cognitive science,
+      LIRIS is at the forefront of developing innovative solutions to real-world problems.
+      The laboratory's research is characterized by a strong focus on both fundamental and
+      applied research, with the goal of creating practical solutions that have a real
+      impact on society.
     cover-img: "/assets/img/liris.jpg"
     city: Lyon
     country: France
