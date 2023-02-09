@@ -295,12 +295,28 @@ projects:
   - Android
   - Java
   - XML
+  - UI Design
+  - SQL
   - IntelliJ IDEA
+  - Android Studio
   description: >-
-    Android app retrieving the usage history of the phone.
-    It uses UsageEvents API to recover the apps usage and list it
-    in a chronological order. It also displays statistics about the
-    phone's usage.
+    Phone History is an Android application retrieving the usage history of the phone.
+    It gets the phone usage from Android system and displays it in a list
+    starting with the most recent usage.
+    It also explores the phone storage to display file modiciations, such as the pictures taken or
+    the files downloaded.
+    Finally, it display statistics about the phone usage during the last 24 hours. This includes
+    the Top 10 user applications in terms of usage, and the associated duration as well as
+    a chronological graph of the phone usage per hour.
+    <br><br>
+    Technically, the app uses <code>UsageEvents</code> API to recover the apps' usage.
+    An algorithm is dedicated to read data from this API, which only returns <i>events</i>.
+    <br>
+    Android system only keeps record of the phone usage during few days, so the app is
+    unable of showing any older app usage.
+    Therefore, <code>PhoneHistory</code> stores the app usage in an internal <code>SQL</code> database.
+    <br><br>
+    This application is - when I am writing this - my most popular app on the Google Play Store.
 - title: Heads or Tails
   subtitle: Android App
   cover-img: "/assets/img/head-or-tail.png"
