@@ -32,7 +32,7 @@ education:
     country: Sweden
     description: >-
       KTH is Sweden's largest largest technical university.
-      <br />
+      <br>
       I worked in KTH during a full semester,
       deepening my knowledge in computer science and improving my english.
     weblink: https://www.kth.se/
@@ -47,10 +47,10 @@ education:
     country: France
     description: >-
       French engineering school offering a 5-year curriculum.
-      <br />
+      <br>
       The two first years are general scientific education,
       with mathematics, physics, chemistry and an pleasant student life.
-      <br />
+      <br>
       The next three years are devoted to specialization.
       I joined the Computer science department, which offers
       courses about topis ranging from computer architecture to data models.
@@ -72,11 +72,11 @@ work:
       SIREHNA provides a wide range of services, including design, development, and manufacturing
       of high-tech maritime equipment and systems. The company is known for its innovative solutions,
       which are designed to improve the efficiency, safety, and sustainability of maritime operations.
-      <br />
+      <br>
       With a strong commitment to customer satisfaction and a culture of collaboration and teamwork,
       SIREHNA is a trusted partner to the maritime industry. The company's innovative solutions,
       combined with its expertise and customer-focused approach, make it a leader in its field.
-      <br />
+      <br>
       Small size business (100+ employee), subsidary of Naval Group.
     cover-img: "/assets/img/sirehna.jpg"
     weblink: https://www.sirehna.com/
@@ -118,12 +118,17 @@ work:
       As a software engineer at Sirehna, I am part of a small team, where we build
       software and programs that have large connections to naval architecture and
       science.
-      My role involves working with Gitlab and utilizing its CI/CD and code review
+      <br><br>
+      My role involves working with Gitlab and using its CI/CD and code review
       processes to ensure high-quality code is produced and deployed.
-      I work with both backend technologies, such as Python, and frontend technologies, such as React.js,to create a seamless user experience.
+      <br><br>
+      I work with both backend technologies, such as Python, and frontend technologies,
+      such as React.js, to create a seamless user experience.
+      <br>
       I am responsible for the development, testing, and maintenance of software and
       programs, collaborating with the team to ensure timely delivery and high-quality
       products.
+      <br>
       Additionally, I am involved in the continuous improvement of the software
       development process and ensure the software is optimized for performance
       and scalability.
@@ -138,16 +143,21 @@ work:
       and data management environment for the hydrodynamic engineers of the company.
       The goal of the internship was to improve their working processes and automate
       hydrodynamics simulations.
+      <br><br>
       In this context, I developed a full environment, containing the following components:
-      - A large storage system based on MinIO, which provided a robust and
-      scalable storage solution for the simulation data.
-      - A user and permission management web platform based on Girder, which enabled
-      secure access and management of the simulation data.
-      - An automated workflow to run CFD simulations and asynchronously return
-      the results and logs, based on Gitlab.
+      <ul>
+        <li>A large storage system based on MinIO, which provided a robust and
+      scalable storage solution for the simulation data.</li>
+        <li>A user and permission management web platform based on Girder, which enabled
+      secure access and management of the simulation data.</li>
+        <li>An automated workflow to run CFD simulations and asynchronously return
+      the results and logs, based on Gitlab.</li>
+      </ul><br>
+      <p>
       This streamlined the simulation process and allowed for efficient data management.
       This internship allowed me to gain experience in a professional setting and
       develop my skills in software development, data management and automation.
+      </p>
   - name: IT engineer intern
     subtitle: Kissfly
     company: Kissfly
@@ -158,24 +168,27 @@ work:
       During my internship at Kissfly, I gained experience working in a remote
       environment while being based in France.
       This internship allowed me to develop my skills in remote collaboration and time management.
+      <br><br>
       I was assigned multiple tasks, including:
-      - Improving the live video streaming system between the moving drone and the
+      <ul>
+        <li>Improving the live video streaming system between the moving drone and the
       ground station. The streaming was based on WebRTC, and by testing and updating
       the parameters, I managed to improve the maximum streaming range as well as
-      the latency and video framerate.
-      - Improving the ground station user interface using Vue.js, including adding
+      the latency and video framerate.</li>
+        <li>Improving the ground station user interface using Vue.js, including adding
       control buttons and 3D trajectory display. This helped to enhance the user
-      experience and make the interface more intuitive.
-      - Researching and testing live video streaming technologies, such as
+      experience and make the interface more intuitive.</li>
+        <li>Researching and testing live video streaming technologies, such as
       WiFi-broadcast. This allowed me to gain knowledge about different technologies
       and their capabilities, which helped me to make informed decisions about the
-      best technology to use for the project.
-
+      best technology to use for the project.</li>
+      <p>
       This internship gave me the opportunity to work on real-world projects, and
       I was able to apply my technical skills while learning new technologies and
       approaches to problem-solving.
       I was able to improve my skills in live video streaming, front-end development
       and research.
+      </p>
   - name: Research intern
     subtitle: LIRIS
     company: LIRIS
@@ -183,15 +196,17 @@ work:
     start-date: 01-06-2020
     end-date: 20-08-2020
     description: >-
-      During my internship in an LIRIS research laboratory, I was assigned to a
+      During my internship in LIRIS research laboratory, I was assigned to a
       project that was part of a thesis. The goal was to evaluate a dataset prior to
       machine learning training in order to identify any incorrect data. To achieve
       this, I created Python algorithms using blocking methods to analyze the dataset
       and return the conflicting records.
+      <br><br>
       I was responsible for developing and implementing the algorithms, testing
       them, and analyzing the results. I also had to work with large datasets and
       manage the data effectively, as well as using various libraries like pandas and
       numpy.
+      <br><br>
       This experience allowed me to develop my skills in data analysis, data
       preprocessing, and machine learning. It also helped me to gain a deeper
       understanding of the importance of data quality in machine learning and how to
@@ -206,6 +221,7 @@ work:
       develop Android applications. This led to the creation of several applications
       available on the Google Play Store and the establishment of my own small
       business, Doreapp.
+      <br><br>
       Through this experience, I developed my skills in Android development and
       programming concepts such as object-oriented programming, data
       structures, and algorithms.
