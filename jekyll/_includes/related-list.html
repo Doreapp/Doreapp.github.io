@@ -21,7 +21,7 @@ Parameters:
                 {% include date.html start-date=item.start-date end-date=item.end-date %}
               </span>
               <p class="description post__description">
-                {{ item.description }}
+                {{ item.description | xml_escape }}
               </p>
             </div>
             {% if item.cover-img %}
