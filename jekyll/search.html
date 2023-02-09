@@ -9,16 +9,7 @@ js:
 - "assets/js/search.js"
 ---
 
-<form
-  class="search-bar"
-  action="/search"
-  method="get">
-  <input
-    type="text"
-    id="search-box"
-    name="query"
-    placeholder="Search for a project, language, techno...">
-</form>
+{% include search-bar.html mb = "2em" %}
 
 <ul id="search-results" class="related-list"></ul>
 

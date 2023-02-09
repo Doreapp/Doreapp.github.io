@@ -137,12 +137,11 @@ li.post {
     padding-left: 16px;
     border-radius: 4px;
     border: none;
-
-    margin-bottom: 2em;
 }
 
 .search-bar input {
-    width: 100%;
+    width: 80%;
+    margin: 0px 10%;
     height: 100%;
     outline: none;
     border: #3498db solid 1px;
@@ -156,6 +155,9 @@ li.post {
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: 16px 48%;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
 }
 
 .search-bar input:hover,
@@ -166,7 +168,7 @@ li.post {
 }
 
 .search-bar input::placeholder {
-    color: gray;
+    color: rgb(20, 20, 20);
 }
 
 /* ***** Overringing styles from beautiful jekyll ***** */
