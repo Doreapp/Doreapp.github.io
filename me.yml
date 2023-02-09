@@ -237,42 +237,51 @@ volunteering:
   start-date: 01-09-2020
   end-date: 01-03-2021
 projects:
-- title: Estimate of masses
+- title: Mass estimating software
   subtitle: SIREHNA
-  cover-img: "/assets/img/ship.jpeg"
+  cover-img: "/assets/img/digital-twin.jpg"
   job: Software engineer
   start-date: 01-10-2022
   team-size: 3
   skills:
-  - Team working
   - Python
   - SQL
   - SQLite
-  - Pytest
   - Docker
+  - Git
   - GitLab
   - GitLab CI
   - CI/CD
+  - Pytest
+  - Pandas
+  - PySide
+  - PyQT
   description: >-
     As a software engineer at Sirehna, I was tasked with the responsibility of
-    developing a weight estimate software that met the specific needs of our clients.
-    Using the Python programming language, I worked on the core of the app, creating
+    developing a mass estimating software that met the specific needs of our clients.
+    Using Python programming language, I worked on the core of the app, creating
     a database-centered API that was independent of the graphical user
     interface.
-
+    <br><br>
     My focus was on implementing robust file reading and writing operations, and
-    handling incorrect or missing data. I utilized a relational database to ensure
-    the integrity of the data, while also offering efficient computations.
+    handling incorrect or missing data. This included using <code>pandas</code> library to read excel files
+    and manage dataframes.
+    <br>
+    I used a relational database to ensure the integrity of the data, while also offering efficient computations.
+    It implied working with <code>SQL</code> to query and update the software storage.
+    <br>
     Additionally, I implemented features that properly managed the data history,
-    using Git as the versioning tool.
-
+    using <code>Git</code> as the versioning tool.
+    <br><br>
     To ensure the quality of the code, I followed several good practices,
-    including the use of code formatters and linters, conteneurization with Docker,
-    and continuous integration with Gitlab CI and code review. Throughout the project, I
-    collaborated closely with the clients to understand their needs and build a
+    including the use of code formatters and linters (<code>black</code>, <code>pylint</code>, <code>isort</code>...),
+    conteneurization with <code>Docker</code>,
+    and continuous integration with Gitlab CI and code review.
+    <br><br>
+    Throughout the project, I collaborated closely with the clients to understand their needs and build a
     software that was truly useful to them.
-
-    The project is still ongoing while I am writing this.
+    <br><br>
+    <i>The project is still ongoing while I am writing this.</i>
 - title: PhoneHistory
   subtitle: Android App
   cover-img: "/assets/img/phone-history.png"
