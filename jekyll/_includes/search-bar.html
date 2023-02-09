@@ -1,0 +1,25 @@
+{% comment %}
+Parameters:
+- mt: Optional margin-top value
+- mb: Optional margin-bottom value
+{% endcomment %}
+
+{% assign style = "" %}
+{% if include.mt %}
+  {% assign style = style | append: 'margin-top: ' | append: include.mt | append: ';' %}
+{% endif %}
+{% if include.mb %}
+  {% assign style = style | append: 'margin-bottom: ' | append: include.mb | append: ';' %}
+{% endif %}
+
+<form
+  class="search-bar"
+  style="{{ style }}"
+  action="{{ 'search' | absolute_url}}"
+  method="get">
+  <input
+    type="text"
+    id="search-box"
+    name="query"
+    placeholder="Search for a project, language, techno...">
+</form>
