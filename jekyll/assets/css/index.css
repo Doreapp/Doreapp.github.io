@@ -101,7 +101,7 @@ li.post {
     background-color: rgb(237, 237, 241);
     padding: 4px 12px;
     margin: 1px;
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: 500;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -114,8 +114,8 @@ li.post {
     margin-top: 15px;
 }
 
-.chips-inline .chip {
-    font-size: 1em;
+.related .chip {
+    font-size: 0.7em;
 }
 
 .chips {
