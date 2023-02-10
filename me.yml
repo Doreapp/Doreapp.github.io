@@ -537,6 +537,75 @@ projects:
   - UI Design
   - Python
   - CI/CD
+- title: Skillect
+  subtitle: Full stack portfolio website
+  cover-img: "/assets/img/skillect.jpg"
+  start-date: 22-10-2022
+  end-date: 26-11-2022
+  source-code: https://github.com/Doreapp/skillect
+  team-size: 1
+  skills:
+  - Docker
+  - Docker compose
+  - React JS
+  - MUI
+  - Tailwind CSS
+  - TypeScript
+  - FastAPI
+  - Python
+  - PostgreSQL
+  - Traefik
+  - CI/CD
+  - GitHub
+  - GitHub actions
+  - SQL Alchemy
+  - AWS
+  - Elastic Compute Cloud EC2
+  - RabbitMQ
+  - SSL Certificate
+  description: >-
+    As a personal project, I aimed to create a back-end based on a relational database to
+    store and serve my experiences and skills.
+    The goal was to use this backend in a portfolio website, both displaying my
+    skills to anybody and allowing myself to edit the data.
+    <br><br>
+    From a full-stack template using <code>FastAPI</code>, <code>PostgreSQL</code>,
+    and <code>Vue JS</code>, I developed a full-stack website.
+    The back-end was based on <code>FastAPI</code>, which serves a <code>REST</code> API on top
+    of a <code>WSGI HTTP</code> server (for which I used <code>Gunicorn</code>).
+    Using <code>SQLAlchemy</code> library, I designed the data model, both for user
+    authentication and authorization workflows and to store professional skills.
+    Good practices of using linters/formaters (<code>black</code>, <code>pylint</code> and
+    <code>isort</code> here), continuous integration (with <code>GitHub Actions</code>)
+    and containerization (with <code>Docker</code>) were used.
+    <br><br>
+    The front-end is based on <code>React JS</code>, <code>MUI</code> and
+    <code>Tailwind CSS</code> libraries (in opposition to <code>Vue JS</code> that was used
+    in the original template). It uses <code>Axios</code> to communicate with the backend,
+    including for authentication. Here again, good practices
+    of using linters/formaters (<code>Prettier</code> and <code>ESLint</code>),
+    continuous integration and containerization were applied.
+    <br><br>
+    I also set up a reverse proxy, based on <code>Traefik</code>, in charge of redirecting API
+    calls properly to the back-end. It uses <code>Let's Encrypt</code> to automatically renew
+    a <code>SSL</code> certificate (needed to enable <code>HTTPS</code> protocol).
+    <br><br>
+    The architecture is described using <code>Docker Compose</code>, that includes the back-end, the
+    front-end, the reverse proxy, and other services like the <code>PostgreSQL</code> database.
+    <br><br>
+    The back-end was hosted on <i>Amazon Web Service</i> (<code>AWS</code>), using an
+    <i>Elastic Compute Cloud</i> (<code>EC2</code>) instance.
+    A custom domain name (<code>mandin.dev</code>) was dedicated to this website.
+    Finally, Continuous Deployment workflows were setup to deploy automatically
+    the website updates in production.
+    <br><br>
+    During this project, which was ultimately abandoned, I learned how to build a
+    real-world full-stack website, from the technical functionalities (e.g.
+    authentication) to the deployment (<code>GitHub Actions</code>, <code>AWS</code>,
+    domain name, <code>SSL</code> certificates, etc.).
+    I also learned how to set up a reverse proxy and how to work with various
+    libraries and technologies like <code>FastAPI</code>, <code>React</code>, and
+    <code>SQLAlchemy</code>.
 - title: Heads or Tails
   subtitle: Android App
   cover-img: "/assets/img/head-or-tail.png"
@@ -645,61 +714,6 @@ projects:
     This experience allowed me to work with new technologies and to understand how to
     improve the user experience. I was able to improve my skills in front-end
     development, user interface design, and problem-solving.
-- title: Skillect
-  subtitle: Full stack portfolio website
-  cover-img: "/assets/img/skillect.jpg"
-  start-date: 22-10-2022
-  end-date: 26-11-2022
-  source-code: https://github.com/Doreapp/skillect
-  team-size: 1
-  skills:
-  - Docker
-  - Docker compose
-  - React
-  - MUI
-  - Tailwind
-  - FastAPI
-  - Postgres
-  - Traefik
-  - CI/CD
-  - GitHub
-  - GitHub actions
-  - SQL Alchemy
-  - AWS
-  - RabbitMQ
-  description: >-
-    As a personal project, I aimed to create a backend with a relational database to
-    store and serve my experiences and skills.
-    The goal was to use this backend in a portfolio website, both displaying my
-    skills to anybody and allowing myself to edit the data.
-
-    From a full-stack template using FastAPI, Postgres, and Vue.js, I developed a
-    full-stack website. The backend is based on FastAPI, which serves a REST API on top
-    of a WSGI Http server (for which I used Gunicorn). Using the SQLAlchemy library,
-    I designed the data model, both for user authentication and authorization
-    workflows and to store professional skills. Good practices of using
-    linters/formaters (Black, Pylint and Isort here), continuous integration (with
-    GitHub Actions) and containerization (with Docker) were used here.
-
-    The front-end is based on React, MUI and Tailwind CSS libraries (in opposition to
-    Vue.js that was used in the original template). It uses Axios to communicate
-    with the backend, including for authentication. Here too, good practices
-    of using linters/formaters (Prettier, ESLint), continuous integration and
-    containerization were applied.
-
-    I also set up a reverse proxy, based on Traefik, in charge of redirecting API
-    calls properly to the backend. It also uses Let's Encrypt to automatically renew
-    a SSL certificate (needed to enable HTTPS protocol).
-
-    The environment is described using Docker Compose, that includes the backend, the
-    front-end, the reverse proxy, and other services like the Postgres database.
-
-    During this project, which was ultimately abandoned, I learned how to build a
-    real-world full-stack website, from the technical functionalities (e.g.
-    authentication) to the deployment (GitHub Actions, AWS, domain name, SSL
-    certificates...).
-    I also learned how to set up a reverse proxy and how to work with various
-    libraries and technologies like FastAPI, React, and SQLAlchemy.
 - title: sphinx-mermaid
   subtitle: Sphinx extension to enable mermaid graphs in documentation
   cover-img: "/assets/img/sphinx-mermaid.jpg"
