@@ -650,6 +650,45 @@ projects:
     <br><br>
     This experience allowed me to improve my skills in <code>Python</code> development and package
     management, as well as my understanding of the <code>Sphinx</code> documentation system.
+- title: Ground station UI improvement
+  subtitle: At Kissfly
+  cover-img: "/assets/img/drone.webp"
+  start-date: 15-07-2022
+  end-date: 31-07-2021
+  team-size: 1
+  job: IT engineer intern
+  skills:
+  - Vue JS
+  - ThreeJS
+  - JavaScript
+  - GitHub
+  - Git
+  - CSS
+  - HTML
+  - UI Design
+  description: >-
+    At Kissfly, I was an assigned to improve the ground station user interface.
+    The operation of the drones was the following:
+    a classic remote control directed the drone while a microcomputer on board was
+    in charge of broadcasting the live video from the drone in wifi, to the ground station.
+    The ground station could be any device with an internet browser (computer, tablet, phone).
+    Indeed, the microcomputer on board the drone was running a <code>Node JS</code>-based server,
+    serving the interface of the ground station as a website and transmitting the video in peer to peer,
+    using the <code>WebRTC</code> technology.
+    <br><br>
+    During this mission, I did several improvement of the ground station UI.
+    <ul>
+      <li>First, I added a 3D representation of the drone state, which displays the drone position
+    relatively to its start position, computed via <i>SLAM</i> algorithm (which was out of my
+    mission scope).
+    It also displayed the trajectory and the drone's actual angles (pitch, roll and yaw).
+    This representation was done using the <code>Three.js</code> library.</li>
+      <li>Secondly, I added control buttons to the UI, which improved the user's ability to control the
+    drone and made the interface more intuitive.</li>
+    <ul>
+    This experience allowed me to work with new technologies and to understand how to
+    improve the user experience. I was able to improve my skills in front-end
+    development, user interface design, and problem-solving.
 - title: Heads or Tails
   subtitle: Android App
   cover-img: "/assets/img/head-or-tail.png"
@@ -734,30 +773,6 @@ projects:
     This experience allowed me to work with new technologies and to understand their
     limitations and capabilities. I was able to improve my skills in live video
     streaming, web development, and problem-solving.
-- title: Ground station UI improvement
-  subtitle: At Kissfly
-  cover-img: "/assets/img/drone.webp"
-  start-date: 15-07-2022
-  end-date: 31-07-2021
-  team-size: 1
-  job: IT engineer intern
-  skills:
-  - Vuejs
-  - ThreeJS
-  description: >-
-    At Kissfly, I was an assigned to improve the ground station user interface.
-    To accomplish this, I implemented several features:
-    - I added a 3D representation of the drone state, which displays the drone position
-    relatively to its start position, computed via SLAM algorithm (which was out of my
-    mission scope). It also displayed the temporary trajectory
-    and the drone's actual angles (pitch, roll and yaw). This representation was done
-    using the Three.js library.
-    - I added control buttons to the UI, which improved the user's ability to control the
-    drone and made the interface more intuitive.
-
-    This experience allowed me to work with new technologies and to understand how to
-    improve the user experience. I was able to improve my skills in front-end
-    development, user interface design, and problem-solving.
 - title: text-checker
   subtitle: Python library to check a text spelling using reverso
   cover-img: "/assets/img/text-checker.jpg"
