@@ -725,6 +725,47 @@ projects:
   - GitHub
   - Android Studio
   - IntelliJ IDEA
+- title: Prix carburants
+  subtitle: A map of fuell prices
+  cover-img: "/assets/img/prix-carburants.png"
+  start-date: 17-05-2022
+  end-date: 08-06-2022
+  team-size: 1
+  weblink: https://doreapp.github.io/prix-carburants/
+  source-code: https://github.com/Doreapp/prix-carburants
+  skills:
+  - Jekyll
+  - Leaflet
+  - GeoJSON
+  - Python
+  - JavaScript
+  - GitHub
+  - GitHub pages
+  - GitHub actions
+  - CI/CD
+  - VS Code
+  description: >-
+    During this personal project, I build both <code>python</code> scripts to fetch data about
+    french fuel prices from the gouvernment open data and a static website hosted on
+    <code>GitHub</code> to display the prices.
+    <br><br>
+    The first part of the project was building <code>python</code> scripts to fetch data from the
+    french government open data about fuel prices and dump it into a <code>JSON</code> file.
+    <code>Python</code> scripts are accompanied by linters and formatters, run in a Continuous Integration
+    pipeline (via <code>GitHub Actions</code>).
+    The scripts are used in a <code>CRON</code> pipeline dedicated to regularly fetch new data about
+    french fuel prices.
+    <br><br>
+    The second part was the static website. I build it using <code>Jekyll</code> and
+    <code>JavaScript</code>. It is hosted on <code>GitHub pages</code>.
+    It displays a map of France, with gas station locations and their prices. It also
+    display the average fuel price per region in France. Map manipulations are done using
+    <code>Leaflet</code> library.
+    <code>JavaScript</code> code is also associated to linters and formatters that are used during
+    Continuous Integration to enforce code format.
+    <br><br>
+    In the end, this project showcase how to build quickly a static website displaying statistics
+    from open data.
 - title: Heads or Tails
   subtitle: Android App
   cover-img: "/assets/img/head-or-tail.png"
@@ -757,31 +798,6 @@ projects:
   - IntelliJ IDEA
   description: >-
     Android game challenging the user's memory.
-- title: Prix carburants
-  subtitle: A map of fuell prices
-  cover-img: "/assets/img/prix-carburants.png"
-  start-date: 17-05-2022
-  end-date: 08-06-2022
-  team-size: 1
-  weblink: https://doreapp.github.io/prix-carburants/
-  source-code: https://github.com/Doreapp/prix-carburants
-  skills:
-  - Jekyll
-  - Leaflet
-  - GeoJSON
-  - Python
-  - GitHub
-  - GitHub pages
-  - GitHub actions
-  - CI/CD
-  description: >-
-    First, a python module dedicated to fetch french open data
-    about fuel prices.
-    Secondly, a GitHub repository designated to hold the data
-    and to update it recurrently using GitHub actions.
-    Finally, a static website made with Jekyll technology and hosted
-    on GitHub pages, displaying fuel prices in a Map (using Leaflet and GeoJSON)
-    as well as geographic statistics about fuel prices.
 - title: Optimization of drone live video streaming
   subtitle: At Kissfly
   cover-img: "/assets/img/drone.webp"
