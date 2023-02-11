@@ -252,20 +252,21 @@ projects:
   - GitLab
   - GitLab CI
   - CI/CD
+  - VS Code
   - Pytest
   - Pandas
   - PySide
   - PyQT
   description: >-
-    As a software engineer at Sirehna, I was tasked with the responsibility of
-    developing a mass estimating software that met the specific needs of our clients.
-    Using Python programming language, I worked on the core of the app, creating
+    As a software engineer at SIREHNA, I was tasked with the responsibility of
+    developing a <b>mass estimating software</b> that met the specific needs of our clients.
+    Using <code>Python</code> programming language, I worked on the core of the app, creating
     a database-centered API that was independent of the graphical user
     interface.
     <br><br>
     My focus was on implementing robust file reading and writing operations, and
     handling incorrect or missing data. This included using <code>pandas</code> library to read excel files
-    and manage dataframes.
+    and manage <code>dataframes</code>.
     <br>
     I used a relational database to ensure the integrity of the data, while also offering efficient computations.
     It implied working with <code>SQL</code> to query and update the software storage.
@@ -300,9 +301,9 @@ projects:
   - IntelliJ IDEA
   - Android Studio
   description: >-
-    Phone History is an Android application retrieving the usage history of the phone.
-    It gets the phone usage from Android system and displays it in a list
-    starting with the most recent usage.
+    <b>Phone History</b> is an Android application retrieving the usage history of the phone.
+    It gets the phone usage from Android system and displays it in a list starting with the most
+    recent usage.
     It also explores the phone storage to display file modiciations, such as the pictures taken or
     the files downloaded.
     Finally, it display statistics about the phone usage during the last 24 hours. This includes
@@ -397,7 +398,7 @@ projects:
   - VS Code
   description: >-
     I worked on a project for SIREHNA, a company that runs computational fluid
-    dynamics (CFD) simulations to evaluate ship performances (amongst other things).
+    dynamics (<code>CFD</code>) simulations to evaluate ship performances (amongst other things).
     My role in this project was to create a simulation and data management environment
     that would help SIREHNA team track and retrieve their data, as well as automate
     low value-added tasks.
@@ -450,8 +451,8 @@ projects:
   - ES Lint
   - VS Code
   description: >-
-    TakeNews is a mobile-orientied website built with React, MUI components,
-    and Tailwind CSS.
+    <b>TakeNews</b> is a mobile-orientied website built with <code>React</code>, <code>MUI</code>
+    components, and <code>Tailwind CSS</code>.
     The goal of this project was to create a web app that allows users to stay in touch
     with their contacts regularly.
     The app is designed specifically for mobiles as the  main objective was to explore
@@ -537,6 +538,7 @@ projects:
   - UI Design
   - Python
   - CI/CD
+  - VS Code
 - title: Skillect
   subtitle: Full stack portfolio website
   cover-img: "/assets/img/skillect.jpg"
@@ -563,6 +565,7 @@ projects:
   - Elastic Compute Cloud EC2
   - RabbitMQ
   - SSL Certificate
+  - VS Code
   description: >-
     As a personal project, I aimed to create a back-end based on a relational database to
     store and serve my experiences and skills.
@@ -625,9 +628,9 @@ projects:
   - CI/CD
   - VS Code
   description: >-
-    As a personal project, I developed a python library resulting in a Sphinx
-    extension to enable Mermaid graphs in generated documentation. This library
-    allow to create interactive and visually appealing graphs within Sphinx
+    As a personal project, I developed a <code>python</code> library resulting in a <code>Sphinx</code>
+    extension to enable <code>Mermaid</code> graphs in generated documentation. This library
+    allow to create interactive and visually appealing graphs within <code>Sphinx</code>
     documentation, making it more informative and user-friendly.
     <br><br>
     I learned how to create a <code>Sphinx</code> extension and how to deploy a <code>Python</code>
@@ -700,13 +703,13 @@ projects:
   end-date: 22-03-2021
   description: >-
     I developped a free (and ad-free) Android app dedicated to manage a Kanban board.
-    I am a huge consumer of ToDo lists, thus when I discovered the Kanban board concept,
+    I am a huge consumer of <i>ToDo</i> lists, thus when I discovered the Kanban board concept,
     I had to use one for my day-to-day life. However, I did not find applications completely matching
     my needs, I wanted something really simple, without too much settings. I ended up building my
     own application.
-    The code is available on GitHub and the app on Google Play Store.
+    The code is available on <code>GitHub</code> and the app on Google Play Store.
     <br><br>
-    With hindsight, I find that the user experience is not that great, it could clearly be improved,
+    With hindsight, I find that the us er experience is not that great, it could clearly be improved,
     even if I find that the application fulfills its contract well: I can manage my tasks in a
     Kanban board, which was all I asked.
     <br><br>

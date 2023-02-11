@@ -37,7 +37,7 @@ css:
             {% endif %}
 
             <p class="post__description">
-              {{ project.description | xml_escape }}
+              {{ project.description | strip_html }}
             </p>
 
             {% if project.skills %}
