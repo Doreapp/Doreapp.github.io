@@ -689,6 +689,39 @@ projects:
     This experience allowed me to work with new technologies and to understand how to
     improve the user experience. I was able to improve my skills in front-end
     development, user interface design, and problem-solving.
+- title: Kanban App
+  subtitle: Open source android app
+  cover-img: "/assets/img/kanban-app.png"
+  source-code: https://github.com/Doreapp/Kanban_App
+  weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.kanbanapp
+  team-size: 1
+  job: Autoentrepreneur
+  start-date: 09-02-2021
+  end-date: 22-03-2021
+  description: >-
+    I developped a free (and ad-free) Android app dedicated to manage a Kanban board.
+    I am a huge consumer of ToDo lists, thus when I discovered the Kanban board concept,
+    I had to use one for my day-to-day life. However, I did not find applications completely matching
+    my needs, I wanted something really simple, without too much settings. I ended up building my
+    own application.
+    The code is available on GitHub and the app on Google Play Store.
+    <br><br>
+    With hindsight, I find that the user experience is not that great, it could clearly be improved,
+    even if I find that the application fulfills its contract well: I can manage my tasks in a
+    Kanban board, which was all I asked.
+    <br><br>
+    Developping this application made me improve my skills in <code>Kotlin</code>, which was new to me
+    at this time. It also chanllenged me in building a <i>Data Access Object</i> (<code>DAO</code>)
+    database using <code>Kotlin</code> standards.
+  skills:
+  - Kotlin
+  - Android
+  - XML
+  - Git
+  - SQL
+  - GitHub
+  - Android Studio
+  - IntelliJ IDEA
 - title: Heads or Tails
   subtitle: Android App
   cover-img: "/assets/img/head-or-tail.png"
@@ -832,17 +865,6 @@ projects:
   - unity
   start-date: 26-04-2021
   end-date: 06-05-2021
-- title: Kanban App
-  subtitle: Open source android app
-  cover-img: "/assets/img/kanban-app.png"
-  source-code: https://github.com/Doreapp/Kanban_App
-  weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.kanbanapp
-  team-size: 1
-  job: Autoentrepreneur
-  start-date: 09-02-2021
-  end-date: 22-03-2021
-  description: >-
-    Android app to manage a Kanban board easily. Fully open source.
   skills:
    - Kotlin
    - xml
