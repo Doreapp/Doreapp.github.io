@@ -865,20 +865,34 @@ projects:
   skills:
   - WebRTC
   - Video streaming
+  - JavaScript
+  - VS Code
+  - Frontend
+  - Node JS
+  - Tests
   description: >-
-    At Kissfly, I was in charge of improving the live video streaming system that
+    At Kissfly, I was in charge of <b>improving the live video streaming system</b> that
     broadcasted the video taken on the drone to the ground station.
-    The system was built with a Node.js Express server running on the drone and a
-    headless Chromium instance running as a server's client, offering a connection in
-    peer-to-peer to the ground station in order to stream the live video via
-    WebRTC (RTC for Real Time Communication).
-
+    <br>
+    The system was built with a <code>Node.js Express</code> server running on the drone and a
+    headless <i>Chromium</i> instance running as a server's client (on the drone as well),
+    offering a connection in <i>peer-to-peer</i> to the ground station.
+    This allowed to stream the live video taken on the drone via <code>WebRTC</code>
+    (RTC stands for Real Time Communication).
+    <br><br>
     My mission was to test multiple configurations in different environments
-    in order to improve the maximum streaming distance, as well as the video latency and
-    framerate. After several tests, I managed to improve these parameters, but I also
-    concluded that these technologies were not well-suited for this specific use case
+    in order to improve the <b>maximum streaming distance</b>, as well as the video <b>latency</b> and
+    <b>framerate</b>.
+    <br>
+    I did many tests twicking <code>WebRTC</code> parameters, and a lot of research in the
+    documentation and on the Internet. This taught me a lot on peer-to-peer and video streaming
+    systems.
+    <br>
+    In the end, I managed to improve the maximum streaming distance to the goal we had defined
+    beforehand while reducing the latency and increasing the framerate. This mission was a success,
+    but I also concluded that these technologies were not well-suited for this specific use case
     and that they had reached their limits.
-
+    <br><br>
     This experience allowed me to work with new technologies and to understand their
     limitations and capabilities. I was able to improve my skills in live video
     streaming, web development, and problem-solving.
