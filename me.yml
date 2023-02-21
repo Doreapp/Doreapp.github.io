@@ -855,6 +855,54 @@ projects:
     <br><br>
     In the end, this project showcase how to build quickly a static website displaying statistics
     from open data.
+- title: Optimization of drone live video streaming
+  subtitle: At Kissfly
+  cover-img: "/assets/img/drone.webp"
+  start-date: 01-06-2021
+  end-date: 16-07-2021
+  team-size: 1
+  job: IT engineer intern
+  skills:
+  - WebRTC
+  - Video streaming
+  description: >-
+    At Kissfly, I was in charge of improving the live video streaming system that
+    broadcasted the video taken on the drone to the ground station.
+    The system was built with a Node.js Express server running on the drone and a
+    headless Chromium instance running as a server's client, offering a connection in
+    peer-to-peer to the ground station in order to stream the live video via
+    WebRTC (RTC for Real Time Communication).
+
+    My mission was to test multiple configurations in different environments
+    in order to improve the maximum streaming distance, as well as the video latency and
+    framerate. After several tests, I managed to improve these parameters, but I also
+    concluded that these technologies were not well-suited for this specific use case
+    and that they had reached their limits.
+
+    This experience allowed me to work with new technologies and to understand their
+    limitations and capabilities. I was able to improve my skills in live video
+    streaming, web development, and problem-solving.
+- title: Randos map
+  start-date: 23-07-2022
+  end-date: 24-07-2022
+  subtitle: Static website displaying hikes in Loire-Atlantique (French region).
+  cover-img: "/assets/img/randos-map.jpg"
+  team-size: 1
+  source-code: https://github.com/Doreapp/Randos-map
+  weblink: https://doreapp.github.io/Randos-map
+  skills:
+  - GitHub
+  - GitHub Actions
+  - GitHub pages
+  - Jekyll
+  - JavaScript
+  - Python
+  - Leaflet
+  description: >-
+    Small static website, built with casual html, js and CSS.
+    Using leaflet, it displays a Map and the hikes' trajectories.
+    It also displays hikes' details like the length, estimated duration or estimated difficulty.
+    The data comes from the French open data.
 - title: Heads or Tails
   subtitle: Android App
   cover-img: "/assets/img/head-or-tail.png"
@@ -886,93 +934,6 @@ projects:
     <i>code better</i> and the app was still used by hundreds of people, I decided to refactor
     the code base. This taught me the importance of documentation and of maintaining a clean code
     base.
-- title: NuMemory
-  subtitle: Android Game
-  cover-img: "/assets/img/numemory.png"
-  share-title: NuMemory game
-  job: Autoentrepreneur
-  start-date: 01-08-2020
-  end-date: 01-09-2020
-  team-size: 1
-  weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.nummemory
-  skills:
-  - Android
-  - Java
-  - XML
-  - IntelliJ IDEA
-  description: >-
-    Android game challenging the user's memory.
-- title: Optimization of drone live video streaming
-  subtitle: At Kissfly
-  cover-img: "/assets/img/drone.webp"
-  start-date: 01-06-2021
-  end-date: 16-07-2021
-  team-size: 1
-  job: IT engineer intern
-  skills:
-  - WebRTC
-  - Video streaming
-  description: >-
-    At Kissfly, I was in charge of improving the live video streaming system that
-    broadcasted the video taken on the drone to the ground station.
-    The system was built with a Node.js Express server running on the drone and a
-    headless Chromium instance running as a server's client, offering a connection in
-    peer-to-peer to the ground station in order to stream the live video via
-    WebRTC (RTC for Real Time Communication).
-
-    My mission was to test multiple configurations in different environments
-    in order to improve the maximum streaming distance, as well as the video latency and
-    framerate. After several tests, I managed to improve these parameters, but I also
-    concluded that these technologies were not well-suited for this specific use case
-    and that they had reached their limits.
-
-    This experience allowed me to work with new technologies and to understand their
-    limitations and capabilities. I was able to improve my skills in live video
-    streaming, web development, and problem-solving.
-- title: text-checker
-  subtitle: Python library to check a text spelling using reverso
-  cover-img: "/assets/img/text-checker.jpg"
-  source-code: https://github.com/Doreapp/text-checker
-  team-size: 1
-  start-date: 11-05-2022
-  end-date: 16-05-2022
-  skills:
-  - Python
-  - GitHub
-  description: A python package able to check a text spelling using reverso, and suggest corrections.
-- title: Randos map
-  start-date: 23-07-2022
-  end-date: 24-07-2022
-  subtitle: Static website displaying hikes in Loire-Atlantique (French region).
-  cover-img: "/assets/img/randos-map.jpg"
-  team-size: 1
-  source-code: https://github.com/Doreapp/Randos-map
-  weblink: https://doreapp.github.io/Randos-map
-  skills:
-  - GitHub
-  - GitHub Actions
-  - GitHub pages
-  - Jekyll
-  - JavaScript
-  - Python
-  - Leaflet
-  description: >-
-    Small static website, built with casual html, js and CSS.
-    Using leaflet, it displays a Map and the hikes' trajectories.
-    It also displays hikes' details like the length, estimated duration or estimated difficulty.
-    The data comes from the French open data.
-- title: Arlanda trip
-  source-code: https://github.com/Doreapp/ArlandaTrip
-  cover-img: "/assets/img/arlanda-trip.jpg"
-  description: >-
-    This project aimed to find the cheapest and most efficient way to Stockholm airport from the city, without paying the fee for the direct subway.
-    Using the API provided by the Stockholm Transport company, I created a set of Python scripts to gather information on transportation options.
-    The result was a set of scripts that could help travelers save money and find the best route to the airport.
-  start-date: 20-10-2021
-  end-date: 22-10-2021
-  skills:
-  - Python
-  team-size: 1
 - title: SMART VR
   source-code: https://github.com/Doreapp/Smart_VR
   cover-img: "/assets/img/smart.jpg"
@@ -1009,3 +970,42 @@ projects:
   - Kotlin
   - android studio
   - github
+- title: text-checker
+  subtitle: Python library to check a text spelling using reverso
+  cover-img: "/assets/img/text-checker.jpg"
+  source-code: https://github.com/Doreapp/text-checker
+  team-size: 1
+  start-date: 11-05-2022
+  end-date: 16-05-2022
+  skills:
+  - Python
+  - GitHub
+  description: A python package able to check a text spelling using reverso, and suggest corrections.
+- title: NuMemory
+  subtitle: Android Game
+  cover-img: "/assets/img/numemory.png"
+  share-title: NuMemory game
+  job: Autoentrepreneur
+  start-date: 01-08-2020
+  end-date: 01-09-2020
+  team-size: 1
+  weblink: https://play.google.com/store/apps/details?id=com.mandin.antoine.nummemory
+  skills:
+  - Android
+  - Java
+  - XML
+  - IntelliJ IDEA
+  description: >-
+    Android game challenging the user's memory.
+- title: Arlanda trip
+  source-code: https://github.com/Doreapp/ArlandaTrip
+  cover-img: "/assets/img/arlanda-trip.jpg"
+  description: >-
+    This project aimed to find the cheapest and most efficient way to Stockholm airport from the city, without paying the fee for the direct subway.
+    Using the API provided by the Stockholm Transport company, I created a set of Python scripts to gather information on transportation options.
+    The result was a set of scripts that could help travelers save money and find the best route to the airport.
+  start-date: 20-10-2021
+  end-date: 22-10-2021
+  skills:
+  - Python
+  team-size: 1
