@@ -70,7 +70,7 @@ css:
               {% include date.html start-date=job.start-date end-date=job.end-date %}
             </span>
             <p class="description post__description">
-              {{ job.description | xml_escape }}
+              {{ job.description | strip_html }}
             </p>
           </div>
           {% if job.cover-img %}
@@ -120,7 +120,7 @@ css:
               {% include date.html start-date=school.start-date end-date=school.end-date %}
             </span>
             <p class="description post__description">
-              {{ school.description | xml_escape}}
+              {{ school.description | strip_html }}
             </p>
           </div>
           {% if school.cover-img %}
