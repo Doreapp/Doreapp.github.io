@@ -869,8 +869,23 @@ projects:
   - Java
   - XML
   - IntelliJ IDEA
+  - Android STudio
   description: >-
-    Android app making random draws.
+    <code>Heads or Tails</code> is the very first Android application that I published on the google
+    play store. I had no ambition for this application, but it still was installed by more
+    than 10K users.
+    <br><br>
+    The concept is simple, <b>make random draws quickly</b>. The app enables the user to create
+    draws between pre-defined choices or simple numbers.
+    <br><br>
+    Animating the draw makes the result legitimate.
+    At first the draw was instantaneous, but that made it illegitimate, and I found
+    myself redoing the draw several times and averaging the results to accept a result.
+    <br><br>
+    This project was one of my very first Android application projets, and as I learnt to
+    <i>code better</i> and the app was still used by hundreds of people, I decided to refactor
+    the code base. This taught me the importance of documentation and of maintaining a clean code
+    base.
 - title: NuMemory
   subtitle: Android Game
   cover-img: "/assets/img/numemory.png"
