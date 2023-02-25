@@ -966,21 +966,25 @@ projects:
   team-size: 7
   school: INSA Lyon
   description: >-
-    As part of a two-week school project for the ANTS (Advanced Neuro-rehabilitation Therapies & Sport) Association, I was part of a team of 7 engineer students tasked with creating virtual reality workshops to make gym and mobilization exercises more fun for disabled individuals.
-    The final product was a game running on Oculus Quest, developed using Unity.
-    The player takes flight in a real city and must complete repetitive exercises to move through gates and collect points in the sky.
+    As part of a two-week school project for the ANTS (Advanced Neuro-rehabilitation Therapies & Sport)
+    association, I was part of a team of 7 engineer students tasked with creating virtual
+    reality workshops to make gym and mobilization exercises more fun for disabled individuals.
+    <br><br>
+    The final product was a game running on <code>Oculus Quest</code>, developed using
+    <code>Unity</code>.
+    <br>
+    The player takes flight in a real city and must complete repetitive exercises to move
+    through gates and collect points in the sky.
+    <br><br>
+    This project made me learn about virtual reality concepts and game creation using
+    <code>Unity</code> engine.
   skills:
-  - team working
   - C#
-  - unity
+  - Unity
+  - Virtual Reality
+  - GitHub
   start-date: 26-04-2021
   end-date: 06-05-2021
-  skills:
-   - Kotlin
-   - xml
-   - Android
-   - github
-   - Android Studio
 - title: My data analyser
   source-code: https://github.com/Doreapp/My_data_analyser
   cover-img: "/assets/img/my-data-analyser.jpg"
