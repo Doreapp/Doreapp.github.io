@@ -101,7 +101,7 @@ li.post {
     background-color: rgb(237, 237, 241);
     padding: 4px 12px;
     margin: 1px;
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: 500;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -112,6 +112,10 @@ li.post {
     overflow: hidden;
     white-space: nowrap;
     margin-top: 15px;
+}
+
+.related .chip {
+    font-size: 0.7em;
 }
 
 .chips {
@@ -134,17 +138,17 @@ li.post {
     height: 40px;
     display: flex;
     width: 100%;
-    padding-left: 16px;
     border-radius: 4px;
     border: none;
+    margin: 0px;
 }
 
 .search-bar input {
-    width: 80%;
-    margin: 0px 10%;
+    width: 30%;
+    margin: 0px 35%;
     height: 100%;
     outline: none;
-    border: #3498db solid 1px;
+    border: rgba(20, 20, 20, 0.5) solid 1px;
     border-radius: 4px;
     font-family: var(--body-font);
     font-size: 15px;
@@ -158,13 +162,20 @@ li.post {
 
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(8px);
+
+    -webkit-transition: all 1s cubic-bezier(.2, .3, 0, 1);
+    -moz-transition: all 1s cubic-bezier(.2, .3, 0, 1);
+    -ms-transition: all 1s cubic-bezier(.2, .3, 0, 1);
+    -o-transition: all 1s cubic-bezier(.2, .3, 0, 1);
+    transition: all 1s cubic-bezier(.2, .3, 0, 1)
 }
 
 .search-bar input:hover,
 .search-bar input:focus,
 .search-bar input:focus-visible,
 .search-bar input:active {
-    border-width: 2px;
+    width: 60%;
+    margin: 0px 20%;
 }
 
 .search-bar input::placeholder {
@@ -218,6 +229,8 @@ body {
 .post-list {
     margin-top: -60px;
     text-align: center;
+    margin-bottom: 1em;
+    overflow: auto;
 }
 
 .post-list a,

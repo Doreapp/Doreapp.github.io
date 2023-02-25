@@ -12,7 +12,7 @@
                 }
             }
             if (toDisplay.length <= 3) { // Hide the button
-                target.style.display = "none";
+                event.target.style.display = "none";
             }
         }
         document.querySelectorAll("button.view-more-button").forEach((button) => {

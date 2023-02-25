@@ -247,20 +247,18 @@ Started on December 6, 2022
       <article role="main" class="blog-post">
         
 
-<p>A mobile-specific website designed using React (with TypeScript), MUI components, and Tailwind CSS.
-The goal of this project was to create a web app that allows users to stay in touch with their contacts regularly. The main objective was to explore the potential of building a web application that can communicate with various mobile device features, similar to native mobile apps. To achieve this, the app utilizes the local storage feature of browsers to store user data locally.
-Additionally, the app includes functionality to open other apps such as the phone dialer or facebook messenger. The app also uses an experimental API that allows users to browse their phone's contact list.</p>
+<p><b>TakeNews</b> is a mobile-orientied website built with <code>React</code>, <code>MUI</code> components, and <code>Tailwind CSS</code>. The goal of this project was to create a web app that allows users to stay in touch with their contacts regularly. The app is designed specifically for mobiles as the  main objective was to explore the potential of a web application to take advantage of various mobile device features, similarly to native mobile apps. <br><br> First, the app uses <code>local storage</code> feature of browsers, which enable user-specific storage on the client side. As the goal was to create a standalone website (i.e. without a back-end), this kind of storage was answering every need. I also though of using <code>IndexedDB</code> API but as the data stored was small, I prefered to use <code>local storage</code>. <br><br> Then, as the app goal was to make the user keep contacts with friends and familly, the app is able of openning the phone dialer app. This is done simply by using <code>tel:</code> scheme. <br> In the future, I hope I'll be able of openning other external applications, such as <i>Facebook Messenger</i>. <br><br> Finally, using <code>Navigator.contacts</code> experimental API, the app is able (on <i>Chrome</i>) of browsing the phone's contact list and let the user pick one to import in the app. <br><br> The app development is still in progress, and soon enough I would like to enable notifications, that would remember the user to contact the persons he/she haven't be talking for a while. <br><br> Technically, <i>TakeNews</i> is hosted on <code>GitHub pages</code> as a standalone web app. It is build with <code>React JS</code> using <code>MUI</code> components and icons in addition to <code>Tailwind CSS</code> for some styling. <br> <code>ESLint</code> and <code>Prettier</code> are used locally and in <i>Continuous Integration</i> workflows to enforce code format. <code>Docker</code> is used to offer a portable container, usable regardless of the <i>Operating System</i>.</p>
 
 
   <div class="skills chips">
     
       <span class="chip">TypeScript</span>
     
-      <span class="chip">React</span>
+      <span class="chip">React JS</span>
     
       <span class="chip">MUI</span>
     
-      <span class="chip">Tailwind</span>
+      <span class="chip">Tailwind CSS</span>
     
       <span class="chip">GitHub</span>
     
@@ -271,6 +269,12 @@ Additionally, the app includes functionality to open other apps such as the phon
       <span class="chip">CI/CD</span>
     
       <span class="chip">Docker</span>
+    
+      <span class="chip">Prettier</span>
+    
+      <span class="chip">ES Lint</span>
+    
+      <span class="chip">VS Code</span>
     
   </div>
 

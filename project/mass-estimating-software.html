@@ -9,13 +9,13 @@
 
   
 
-  <title>Skillect</title>
+  <title>Mass estimating software</title>
 
   
   <meta name="author" content="Antoine Mandin">
   
 
-  <meta name="description" content="Full stack portfolio website">
+  <meta name="description" content="SIREHNA">
 
   
 
@@ -80,17 +80,17 @@
 
   
   <meta property="og:site_name" content="Antoine Mandin | Software engineer">
-  <meta property="og:title" content="Skillect">
-  <meta property="og:description" content="Full stack portfolio website">
+  <meta property="og:title" content="Mass estimating software">
+  <meta property="og:description" content="SIREHNA">
 
   
-  <meta property="og:image" content="https://antoine.mandin.dev/assets/img/skillect.jpg">
+  <meta property="og:image" content="https://antoine.mandin.dev/assets/img/digital-twin.jpg">
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://antoine.mandin.dev/project/skillect.html">
-  <link rel="canonical" href="https://antoine.mandin.dev/project/skillect.html">
+  <meta property="og:url" content="https://antoine.mandin.dev/project/mass-estimating-software.html">
+  <link rel="canonical" href="https://antoine.mandin.dev/project/mass-estimating-software.html">
   
 
   
@@ -99,11 +99,11 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Skillect">
-  <meta property="twitter:description" content="Full stack portfolio website">
+  <meta property="twitter:title" content="Mass estimating software">
+  <meta property="twitter:description" content="SIREHNA">
 
   
-  <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/skillect.jpg">
+  <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/digital-twin.jpg">
   
 
   
@@ -164,7 +164,7 @@
       
       
       
-      data-img-src-1="https://antoine.mandin.dev/assets/img/skillect.jpg"
+      data-img-src-1="https://antoine.mandin.dev/assets/img/digital-twin.jpg"
       
       
       ></div>
@@ -182,11 +182,11 @@
               <div class="post-heading">
                 <h1>
                   
-                    Skillect
+                    Mass estimating software
                 </h1>
                 
                   
-                    <h2 class="post-subheading">Full stack portfolio website</h2>
+                    <h2 class="post-subheading">SIREHNA</h2>
                   
                 
 
@@ -197,7 +197,7 @@
                       
 
 
-From October 22, 2022 to November 26, 2022
+Started on October 1, 2022
 
                     </span>
                   
@@ -218,11 +218,11 @@ From October 22, 2022 to November 26, 2022
             <div class="post-heading">
               <h1>
                 
-                  Skillect
+                  Mass estimating software
               </h1>
               
                 
-                  <h2 class="post-subheading">Full stack portfolio website</h2>
+                  <h2 class="post-subheading">SIREHNA</h2>
                 
               
 
@@ -246,57 +246,57 @@ From October 22, 2022 to November 26, 2022
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       <article role="main" class="blog-post">
         
+  
+  
+  
+    
+    <p>
+      Project done as
+      <a href="https://antoine.mandin.dev/job/software-engineer.html">Software engineer</a>
+      
+        at
+        <a href="https://antoine.mandin.dev/company/sirehna.html">SIREHNA</a>
+      
+    </p>
+  
 
-<p>As a personal project, I aimed to create a back-end based on a relational database to store and serve my experiences and skills. The goal was to use this backend in a portfolio website, both displaying my skills to anybody and allowing myself to edit the data. <br><br> From a full-stack template using <code>FastAPI</code>, <code>PostgreSQL</code>, and <code>Vue JS</code>, I developed a full-stack website. The back-end was based on <code>FastAPI</code>, which serves a <code>REST</code> API on top of a <code>WSGI HTTP</code> server (for which I used <code>Gunicorn</code>). Using <code>SQLAlchemy</code> library, I designed the data model, both for user authentication and authorization workflows and to store professional skills. Good practices of using linters/formaters (<code>black</code>, <code>pylint</code> and <code>isort</code> here), continuous integration (with <code>GitHub Actions</code>) and containerization (with <code>Docker</code>) were used. <br><br> The front-end is based on <code>React JS</code>, <code>MUI</code> and <code>Tailwind CSS</code> libraries (in opposition to <code>Vue JS</code> that was used in the original template). It uses <code>Axios</code> to communicate with the backend, including for authentication. Here again, good practices of using linters/formaters (<code>Prettier</code> and <code>ESLint</code>), continuous integration and containerization were applied. <br><br> I also set up a reverse proxy, based on <code>Traefik</code>, in charge of redirecting API calls properly to the back-end. It uses <code>Let's Encrypt</code> to automatically renew a <code>SSL</code> certificate (needed to enable <code>HTTPS</code> protocol). <br><br> The architecture is described using <code>Docker Compose</code>, that includes the back-end, the front-end, the reverse proxy, and other services like the <code>PostgreSQL</code> database. <br><br> The back-end was hosted on <i>Amazon Web Service</i> (<code>AWS</code>), using an <i>Elastic Compute Cloud</i> (<code>EC2</code>) instance. A custom domain name (<code>mandin.dev</code>) was dedicated to this website. Finally, Continuous Deployment workflows were setup to deploy automatically the website updates in production. <br><br> During this project, which was ultimately abandoned, I learned how to build a real-world full-stack website, from the technical functionalities (e.g. authentication) to the deployment (<code>GitHub Actions</code>, <code>AWS</code>, domain name, <code>SSL</code> certificates, etc.). I also learned how to set up a reverse proxy and how to work with various libraries and technologies like <code>FastAPI</code>, <code>React</code>, and <code>SQLAlchemy</code>.</p>
+
+<p>As a software engineer at SIREHNA, I was tasked with the responsibility of developing a <b>mass estimating software</b> that met the specific needs of our clients. Using <code>Python</code> programming language, I worked on the core of the app, creating a database-centered API that was independent of the graphical user interface. <br><br> My focus was on implementing robust file reading and writing operations, and handling incorrect or missing data. This included using <code>pandas</code> library to read excel files and manage <code>dataframes</code>. <br> I used a relational database to ensure the integrity of the data, while also offering efficient computations. It implied working with <code>SQL</code> to query and update the software storage. <br> Additionally, I implemented features that properly managed the data history, using <code>Git</code> as the versioning tool. <br><br> To ensure the quality of the code, I followed several good practices, including the use of code formatters and linters (<code>black</code>, <code>pylint</code>, <code>isort</code>...), conteneurization with <code>Docker</code>, and continuous integration with Gitlab CI and code review. <br><br> Throughout the project, I collaborated closely with the clients to understand their needs and build a software that was truly useful to them. <br><br> <i>The project is still ongoing while I am writing this.</i></p>
 
 
   <div class="skills chips">
     
-      <span class="chip">Docker</span>
-    
-      <span class="chip">Docker compose</span>
-    
-      <span class="chip">React JS</span>
-    
-      <span class="chip">MUI</span>
-    
-      <span class="chip">Tailwind CSS</span>
-    
-      <span class="chip">TypeScript</span>
-    
-      <span class="chip">FastAPI</span>
-    
       <span class="chip">Python</span>
     
-      <span class="chip">PostgreSQL</span>
+      <span class="chip">SQL</span>
     
-      <span class="chip">Traefik</span>
+      <span class="chip">SQLite</span>
+    
+      <span class="chip">Docker</span>
+    
+      <span class="chip">Git</span>
+    
+      <span class="chip">GitLab</span>
+    
+      <span class="chip">GitLab CI</span>
     
       <span class="chip">CI/CD</span>
     
-      <span class="chip">GitHub</span>
-    
-      <span class="chip">GitHub actions</span>
-    
-      <span class="chip">SQL Alchemy</span>
-    
-      <span class="chip">AWS</span>
-    
-      <span class="chip">Elastic Compute Cloud EC2</span>
-    
-      <span class="chip">RabbitMQ</span>
-    
-      <span class="chip">SSL Certificate</span>
-    
       <span class="chip">VS Code</span>
+    
+      <span class="chip">Pytest</span>
+    
+      <span class="chip">Pandas</span>
+    
+      <span class="chip">PySide</span>
+    
+      <span class="chip">PyQT</span>
     
   </div>
 
 
 <p>
   
-  
-    <a class="button button--large" href="https://github.com/Doreapp/skillect">Source code</a>
   
 </p>
       </article>

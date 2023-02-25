@@ -250,7 +250,7 @@ Started on July 1, 2018
   </p>
 
 
-<p>Before my formal education and internships, I taught myself how to develop Android applications. This led to the creation of several applications available on the Google Play Store and the establishment of my own small business, Doreapp. Through this experience, I developed my skills in Android development and programming concepts such as object-oriented programming, data structures, and algorithms. I also learned how to use Android Studio, Java, and other related technologies to develop my applications.</p>
+<p>Before my formal education and internships, I taught myself how to develop Android applications. This led to the creation of several applications available on the Google Play Store and the establishment of my own small business, Doreapp. <br><br> Through this experience, I developed my skills in Android development and programming concepts such as object-oriented programming, data structures, and algorithms. I also learned how to use Android Studio, Java, and other related technologies to develop my applications.</p>
 
 <h3>Related</h3>
 
@@ -277,7 +277,7 @@ From September 15, 2019 to November 14, 2020
 
               </span>
               <p class="description post__description">
-                Android app retrieving the usage history of the phone. It uses UsageEvents API to recover the apps usage and list it in a chronological order. It also displays statistics about the phone's usage.
+                Phone History is an Android application retrieving the usage history of the phone. It gets the phone usage from Android system and displays it in a list starting with the most recent usage. It also explores the phone storage to display file modiciations, such as the pictures taken or the files downloaded. Finally, it display statistics about the phone usage during the last 24 hours. This includes the Top 10 user applications in terms of usage, and the associated duration as well as a chronological graph of the phone usage per hour.  Technically, the app uses UsageEvents API to recover the apps' usage. An algorithm is dedicated to read data from this API, which only returns events.  Android system only keeps record of the phone usage during few days, so the app is unable of showing any older app usage. Therefore, PhoneHistory stores the app usage in an internal SQL database.  This application is - when I am writing this - my most popular app on the Google Play Store.
               </p>
             </div>
             
@@ -292,85 +292,6 @@ From September 15, 2019 to November 14, 2020
           </div>
         </a>
       </li>
-    
-  
-    
-    
-      <li class="post related">
-        <a href="https://antoine.mandin.dev/project/heads-or-tails.html">
-          <div class="flex">
-            <div class="content-wrap">
-              <h3 class="post__title">Heads or Tails</h3>
-              <span class="date post__subtitle">
-                
-
-
-From September 15, 2017 to March 15, 2018
-
-              </span>
-              <p class="description post__description">
-                Android app making random draws.
-              </p>
-            </div>
-            
-              <div class="image-wrap">
-                <div
-                  class="image"
-                  style="background-image: url(https://antoine.mandin.dev/assets/img/head-or-tail.png);"
-                  data-img-src="https://antoine.mandin.dev/assets/img/head-or-tail.png"
-                  alt="Thumbnail"></div>
-              </div>
-            
-          </div>
-        </a>
-      </li>
-    
-  
-    
-    
-      <li class="post related">
-        <a href="https://antoine.mandin.dev/project/numemory.html">
-          <div class="flex">
-            <div class="content-wrap">
-              <h3 class="post__title">NuMemory</h3>
-              <span class="date post__subtitle">
-                
-
-
-From August 1, 2020 to September 1, 2020
-
-              </span>
-              <p class="description post__description">
-                Android game challenging the user's memory.
-              </p>
-            </div>
-            
-              <div class="image-wrap">
-                <div
-                  class="image"
-                  style="background-image: url(https://antoine.mandin.dev/assets/img/numemory.png);"
-                  data-img-src="https://antoine.mandin.dev/assets/img/numemory.png"
-                  alt="Thumbnail"></div>
-              </div>
-            
-          </div>
-        </a>
-      </li>
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
     
   
     
@@ -412,7 +333,7 @@ From February 9, 2021 to March 22, 2021
 
               </span>
               <p class="description post__description">
-                Android app to manage a Kanban board easily. Fully open source.
+                I developped a free (and ad-free) Android app dedicated to manage a Kanban board. I am a huge consumer of ToDo lists, thus when I discovered the Kanban board concept, I had to use one for my day-to-day life. However, I did not find applications completely matching my needs, I wanted something really simple, without too much settings. I ended up building my own application. The code is available on GitHub and the app on Google Play Store.  With hindsight, I find that the us er experience is not that great, it could clearly be improved, even if I find that the application fulfills its contract well: I can manage my tasks in a Kanban board, which was all I asked.  Developping this application made me improve my skills in Kotlin, which was new to me at this time. It also chanllenged me in building a Data Access Object (DAO) database using Kotlin standards.
               </p>
             </div>
             
@@ -421,6 +342,88 @@ From February 9, 2021 to March 22, 2021
                   class="image"
                   style="background-image: url(https://antoine.mandin.dev/assets/img/kanban-app.png);"
                   data-img-src="https://antoine.mandin.dev/assets/img/kanban-app.png"
+                  alt="Thumbnail"></div>
+              </div>
+            
+          </div>
+        </a>
+      </li>
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+      <li class="post related">
+        <a href="https://antoine.mandin.dev/project/heads-or-tails.html">
+          <div class="flex">
+            <div class="content-wrap">
+              <h3 class="post__title">Heads or Tails</h3>
+              <span class="date post__subtitle">
+                
+
+
+From September 15, 2017 to March 15, 2018
+
+              </span>
+              <p class="description post__description">
+                Heads or Tails is the very first Android application that I published on the google play store. I had no ambition for this application, but it still was installed by more than 10K users.  The concept is simple, make random draws quickly. The app enables the user to create draws between pre-defined choices or simple numbers.  Animating the draw makes the result legitimate. At first the draw was instantaneous, but that made it illegitimate, and I found myself redoing the draw several times and averaging the results to accept a result.  This project was one of my very first Android application projets, and as I learnt to code better and the app was still used by hundreds of people, I decided to refactor the code base. This taught me the importance of documentation and of maintaining a clean code base.
+              </p>
+            </div>
+            
+              <div class="image-wrap">
+                <div
+                  class="image"
+                  style="background-image: url(https://antoine.mandin.dev/assets/img/head-or-tail.png);"
+                  data-img-src="https://antoine.mandin.dev/assets/img/head-or-tail.png"
+                  alt="Thumbnail"></div>
+              </div>
+            
+          </div>
+        </a>
+      </li>
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+      <li class="post related">
+        <a href="https://antoine.mandin.dev/project/numemory.html">
+          <div class="flex">
+            <div class="content-wrap">
+              <h3 class="post__title">NuMemory</h3>
+              <span class="date post__subtitle">
+                
+
+
+From August 1, 2020 to September 1, 2020
+
+              </span>
+              <p class="description post__description">
+                Android game published on the Play Store challenging the user's memory.  The user sees multiples squares numbered. He/she then has to click on the squares, starting by the one numbered 1 going in ascending order. The game starts with two squares, and add one square when the player succeed. It ends when the player makes a mistake in the squares' order.
+              </p>
+            </div>
+            
+              <div class="image-wrap">
+                <div
+                  class="image"
+                  style="background-image: url(https://antoine.mandin.dev/assets/img/numemory.png);"
+                  data-img-src="https://antoine.mandin.dev/assets/img/numemory.png"
                   alt="Thumbnail"></div>
               </div>
             

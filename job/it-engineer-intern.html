@@ -250,8 +250,13 @@ From May 1, 2021 to August 20, 2021
   </p>
 
 
-<p>During my internship at Kissfly, I gained experience working in a remote environment while being based in France. This internship allowed me to develop my skills in remote collaboration and time management. I was assigned multiple tasks, including: - Improving the live video streaming system between the moving drone and the ground station. The streaming was based on WebRTC, and by testing and updating the parameters, I managed to improve the maximum streaming range as well as the latency and video framerate. - Improving the ground station user interface using Vue.js, including adding control buttons and 3D trajectory display. This helped to enhance the user experience and make the interface more intuitive. - Researching and testing live video streaming technologies, such as WiFi-broadcast. This allowed me to gain knowledge about different technologies and their capabilities, which helped me to make informed decisions about the best technology to use for the project.
-This internship gave me the opportunity to work on real-world projects, and I was able to apply my technical skills while learning new technologies and approaches to problem-solving. I was able to improve my skills in live video streaming, front-end development and research.</p>
+<p>During my internship at Kissfly, I gained experience working in a remote environment while being based in France. This internship allowed me to develop my skills in remote collaboration and time management. <br><br> I was assigned multiple tasks, including: <ul>
+  <li>Improving the live video streaming system between the moving drone and the
+ground station. The streaming was based on WebRTC, and by testing and updating the parameters, I managed to improve the maximum streaming range as well as the latency and video framerate.</li>
+  <li>Improving the ground station user interface using Vue.js, including adding
+control buttons and 3D trajectory display. This helped to enhance the user experience and make the interface more intuitive.</li>
+  <li>Researching and testing live video streaming technologies, such as
+WiFi-broadcast. This allowed me to gain knowledge about different technologies and their capabilities, which helped me to make informed decisions about the best technology to use for the project.</li> <p> This internship gave me the opportunity to work on real-world projects, and I was able to apply my technical skills while learning new technologies and approaches to problem-solving. I was able to improve my skills in live video streaming, front-end development and research. </p></p>
 
 <h3>Related</h3>
 
@@ -283,36 +288,8 @@ This internship gave me the opportunity to work on real-world projects, and I wa
   
     
     
-      <li class="post related">
-        <a href="https://antoine.mandin.dev/project/optimization-of-drone-live-video-streaming.html">
-          <div class="flex">
-            <div class="content-wrap">
-              <h3 class="post__title">Optimization of drone live video streaming</h3>
-              <span class="date post__subtitle">
-                
-
-
-From June 1, 2021 to July 16, 2021
-
-              </span>
-              <p class="description post__description">
-                At Kissfly, I was in charge of improving the live video streaming system that broadcasted the video taken on the drone to the ground station. The system was built with a Node.js Express server running on the drone and a headless Chromium instance running as a server's client, offering a connection in peer-to-peer to the ground station in order to stream the live video via WebRTC (RTC for Real Time Communication).
-My mission was to test multiple configurations in different environments in order to improve the maximum streaming distance, as well as the video latency and framerate. After several tests, I managed to improve these parameters, but I also concluded that these technologies were not well-suited for this specific use case and that they had reached their limits.
-This experience allowed me to work with new technologies and to understand their limitations and capabilities. I was able to improve my skills in live video streaming, web development, and problem-solving.
-              </p>
-            </div>
-            
-              <div class="image-wrap">
-                <div
-                  class="image"
-                  style="background-image: url(https://antoine.mandin.dev/assets/img/drone.webp);"
-                  data-img-src="https://antoine.mandin.dev/assets/img/drone.webp"
-                  alt="Thumbnail"></div>
-              </div>
-            
-          </div>
-        </a>
-      </li>
+  
+    
     
   
     
@@ -330,8 +307,11 @@ From July 15, 2022 to July 31, 2021
 
               </span>
               <p class="description post__description">
-                At Kissfly, I was an assigned to improve the ground station user interface. To accomplish this, I implemented several features: - I added a 3D representation of the drone state, which displays the drone position relatively to its start position, computed via SLAM algorithm (which was out of my mission scope). It also displayed the temporary trajectory and the drone's actual angles (pitch, roll and yaw). This representation was done using the Three.js library. - I added control buttons to the UI, which improved the user's ability to control the drone and made the interface more intuitive.
-This experience allowed me to work with new technologies and to understand how to improve the user experience. I was able to improve my skills in front-end development, user interface design, and problem-solving.
+                At Kissfly, I was an assigned to improve the ground station user interface. The operation of the drones was the following: a classic remote control directed the drone while a microcomputer on board was in charge of broadcasting the live video from the drone in wifi, to the ground station. The ground station could be any device with an internet browser (computer, tablet, phone). Indeed, the microcomputer on board the drone was running a Node JS-based server, serving the interface of the ground station as a website and transmitting the video in peer to peer, using the WebRTC technology.  During this mission, I did several improvement of the ground station UI. 
+  First, I added a 3D representation of the drone state, which displays the drone position
+relatively to its start position, computed via SLAM algorithm (which was out of my mission scope). It also displayed the trajectory and the drone's actual angles (pitch, roll and yaw). This representation was done using the Three.js library.
+  Secondly, I added control buttons to the UI, which improved the user's ability to control the
+drone and made the interface more intuitive.  This experience allowed me to work with new technologies and to understand how to improve the user experience. I was able to improve my skills in front-end development, user interface design, and problem-solving.
               </p>
             </div>
             
@@ -355,6 +335,35 @@ This experience allowed me to work with new technologies and to understand how t
     
   
     
+    
+      <li class="post related">
+        <a href="https://antoine.mandin.dev/project/optimization-of-drone-live-video-streaming.html">
+          <div class="flex">
+            <div class="content-wrap">
+              <h3 class="post__title">Optimization of drone live video streaming</h3>
+              <span class="date post__subtitle">
+                
+
+
+From June 1, 2021 to July 16, 2021
+
+              </span>
+              <p class="description post__description">
+                At Kissfly, I was in charge of improving the live video streaming system that broadcasted the video taken on the drone to the ground station.  The system was built with a Node.js Express server running on the drone and a headless Chromium instance running as a server's client (on the drone as well), offering a connection in peer-to-peer to the ground station. This allowed to stream the live video taken on the drone via WebRTC (RTC stands for Real Time Communication).  My mission was to test multiple configurations in different environments in order to improve the maximum streaming distance, as well as the video latency and framerate.  I did many tests twicking WebRTC parameters, and a lot of research in the documentation and on the Internet. This taught me a lot on peer-to-peer and video streaming systems.  In the end, I managed to improve the maximum streaming distance to the goal we had defined beforehand while reducing the latency and increasing the framerate. This mission was a success, but I also concluded that these technologies were not well-suited for this specific use case and that they had reached their limits.  This experience allowed me to work with new technologies and to understand their limitations and capabilities. I was able to improve my skills in live video streaming, web development, and problem-solving.
+              </p>
+            </div>
+            
+              <div class="image-wrap">
+                <div
+                  class="image"
+                  style="background-image: url(https://antoine.mandin.dev/assets/img/drone.webp);"
+                  data-img-src="https://antoine.mandin.dev/assets/img/drone.webp"
+                  alt="Thumbnail"></div>
+              </div>
+            
+          </div>
+        </a>
+      </li>
     
   
     
