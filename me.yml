@@ -906,17 +906,29 @@ projects:
   weblink: https://doreapp.github.io/Randos-map
   skills:
   - GitHub
-  - GitHub Actions
   - GitHub pages
   - Jekyll
   - JavaScript
-  - Python
   - Leaflet
+  - Open data
   description: >-
-    Small static website, built with casual html, js and CSS.
-    Using leaflet, it displays a Map and the hikes' trajectories.
-    It also displays hikes' details like the length, estimated duration or estimated difficulty.
-    The data comes from the French open data.
+    As a personnal project, I built a static website displaying some hiking trajectories in
+    <i>Loire-Atlantique</i>.
+    <br><br>
+    The website is built using <code>Jekyll</code> and some <code>JavaScript</code>.
+    It is hosted on <code>GitHub</code> as a single-page website.
+    <br><br>
+    The data about hikes is from the French government open data, as a <code>JSON</code> file.
+    Using <code>Leaflet</code> library, I displayed hikes, their difficulty, description and some
+    other attributes like the length or the esitmated duration.
+    <br>
+    <code>Leaflet</code> is also used to display the user current location.
+    <br><br>
+    Finally, the user can filter the hikes based on their length, estimated duration and whether there
+    are markups.
+    <br><br>
+    In the end, this small static website showcase how to simply use the open data along with
+    libraries like <code>Leaflet</code> to create a usable website.
 - title: Heads or Tails
   subtitle: Android App
   cover-img: "/assets/img/head-or-tail.png"
