@@ -1072,11 +1072,19 @@ projects:
   source-code: https://github.com/Doreapp/ArlandaTrip
   cover-img: "/assets/img/arlanda-trip.jpg"
   description: >-
-    This project aimed to find the cheapest and most efficient way to Stockholm airport from the city, without paying the fee for the direct subway.
-    Using the API provided by the Stockholm Transport company, I created a set of Python scripts to gather information on transportation options.
-    The result was a set of scripts that could help travelers save money and find the best route to the airport.
+    This project aimed to find the cheapest and most efficient way to
+    Stockholm airport from the city, without paying the fee for the direct subway.
+    <br><br>
+    Using the <code>API</code> provided by the Stockholm Transport company,
+    I created a set of <code>Python</code> scripts to gather information on transportation options.
+    <br><br>
+    The result was a set of scripts that could help travelers save money and find the best
+    route to the airport.
   start-date: 20-10-2021
   end-date: 22-10-2021
   skills:
   - Python
+  - API
+  - VS code
+  - GitHub
   team-size: 1
