@@ -1062,7 +1062,12 @@ projects:
   - XML
   - IntelliJ IDEA
   description: >-
-    Android game challenging the user's memory.
+    Android game published on the <i>Play Store</i> challenging the user's memory.
+    <br><br>
+    The user sees multiples squares numbered. He/she then has to click on the squares, starting
+    by the one numbered <code>1</code> going in ascending order.
+    The game starts with two squares, and add one square when the player succeed.
+    It ends when the player makes a mistake in the squares' order.
 - title: Arlanda trip
   source-code: https://github.com/Doreapp/ArlandaTrip
   cover-img: "/assets/img/arlanda-trip.jpg"
