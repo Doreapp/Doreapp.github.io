@@ -1032,7 +1032,21 @@ projects:
   skills:
   - Python
   - GitHub
-  description: A python package able to check a text spelling using reverso, and suggest corrections.
+  - GitHub actions
+  - API
+  - requests
+  - Command line tool
+  - VS code
+  description: >-
+    This personal project is a command line tool, built with <code>python</code>,
+    allowing the user to spell check its text, using online tools such as <i>Reverso</i>.
+    <br><br>
+    From a text, the tool find mistakes and suggest corrections.
+    <br><br>
+    A continuous integration pipeline is setup, which checks the structure of the code using
+    <code>black</code>, <code>pylint</code> and <code>isort</code>.
+    <br>
+    The tool uses <code>requests</code> library to interact with <i>Reverso</i> API.
 - title: NuMemory
   subtitle: Android Game
   cover-img: "/assets/img/numemory.png"
