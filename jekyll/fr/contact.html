@@ -1,0 +1,41 @@
+---
+layout: post
+title: Contact
+permalink: /contact/
+cover-img: "/assets/img/banner.jpg"
+---
+
+<p>
+  Hey there! Je suis ravi que tu sois tombé sur mon coin d'Internet.
+  Si tu es ici, je suppose que tu veux entrer en contact avec moi.
+  Eh bien, tu as de la chance ! Que tu aies une offre d'emploi, un projet en tête ou que tu veuilles simplement me dire bonjour, je suis tout ouïe !
+  
+{% if site.data.me.profile[0].email and site.data.me.profile[0].linkedin %}
+  <p>
+    Pour les emails, c'est par là:
+    <a href="mailto:{{ site.data.me.profile[0].email }}">{{ site.data.me.profile[0].email }}</a>.
+  </p>
+
+  <p>
+    Si tu es plus du genre LinkedIn, j'y suis: 
+    <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}">this link</a>.
+  </p>
+{% elsif site.data.me.profile[0].email %}
+  <p>
+    Tu peux m'envoyer un message à 
+    <a href="mailto:{{ site.data.me.profile[0].email }}">{{ site.data.me.profile[0].email }}</a>.
+  </p>
+{% elsif site.data.me.profile[0].linkedin %}
+  <p>
+    Je suis sur LinkedIn:
+    <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}">this link</a>.
+  </p>
+{% else %}
+  <p>
+    Désolé, il va falloir creuser un peu plus pour me contacter...
+  </p>
+{% endif %}
+
+<p>
+  Merci de ta visite!
+</p>
