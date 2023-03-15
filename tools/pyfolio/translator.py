@@ -8,7 +8,7 @@ import shutil
 
 def _init_dest_dir(directory: str, force: bool = False):
     """Init the destination directory"""
-    if os.path.exists(directory):
+    if os.path.exists(directory) and os.listdir(directory):
         if force:
             shutil.rmtree(directory)
         else:
