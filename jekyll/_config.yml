@@ -15,6 +15,7 @@ url: ""
 github_username: Doreapp
 
 navbar-links:
+  En français: "fr"
   About Me: "about"
   Contact: "contact"
 remove-ads: true
