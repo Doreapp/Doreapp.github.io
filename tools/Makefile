@@ -88,3 +88,15 @@ check_me.yml: build
 		--entrypoint /work/venv/bin/python3 \
 		$(OPTIONS) -t $(DOCKER_IMAGE) \
 		-m $(PROJECT_NAME) check me.yml --fail-at ERROR
+
+translate_%: ## Translate jekyll source using overrides in `jekyll-%` folder using docker
+translate_%: build
+	@echo Translating jekyll in '$(shell echo $@ | cut -d_ -f2-)'
+	mkdir -p "$(shell pwd)/../$(shell echo $@ | cut -d_ -f2-)-tmp/"
+	$(DOCKER_RUN) \
+		-v  $(shell pwd)/../jekyll-$(shell echo $@ | cut -d_ -f2-)/:/work/override/ \
+		-v  $(shell pwd)/../$(shell echo $@ | cut -d_ -f2-)-tmp/:/work/dest/ \
+		-v  $(shell pwd)/../jekyll/:/work/source/ \
+		--entrypoint /work/venv/bin/python3 \
+		$(OPTIONS) -t $(DOCKER_IMAGE) \
+		-m $(PROJECT_NAME) translate /work/source/ /work/dest/ /work/override/ --force
