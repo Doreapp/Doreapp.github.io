@@ -87,4 +87,4 @@ check_me.yml: build
 		-v  $(shell pwd)/../me.yml:/work/me.yml \
 		--entrypoint /work/venv/bin/python3 \
 		$(OPTIONS) -t $(DOCKER_IMAGE) \
-		-m $(PROJECT_NAME) me.yml --fail-at ERROR
+		-m $(PROJECT_NAME) check me.yml --fail-at ERROR

@@ -1,3 +1,4 @@
 [GLOBAL]
 disable=
-    attribute-defined-outside-init
+    attribute-defined-outside-init,
+    fixme
