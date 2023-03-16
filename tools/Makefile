@@ -33,6 +33,10 @@ lint: ## Check Python code with isort, black and pylint to identify any problem
 	${PYTHON} -m black --line-length ${LINE_LENGTH} --check *.py ${PROJECT_NAME}/**.py ${TEST_DIR}/**.py
 	${PYTHON} -m pylint --ignore-patterns='.*\.yml' ${PROJECT_NAME} ${TEST_DIR}
 
+test: ## Run python tests with pytest
+	pytest
+
+
 dist: ## Build wheel for the package
 ifndef VERSION
 	$(error VERSION variable missing. It defines the package version name.)
