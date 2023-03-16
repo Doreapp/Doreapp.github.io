@@ -1,63 +1,9 @@
-remote_theme: daattali/beautiful-jekyll
-
-plugins:
-  - jekyll-feed
-  - jekyll-datapage-generator
-  - jekyll-sitemap # Be sure to put this under datapage-generator
-
 title: Antoine Mandin | Ingénieur Logiciel
-author: Antoine Mandin
-email: antoine.mandin.am@gmail.com
 description: >-
   Portfolio d'Antoine Mandin. Ingénieur Logiciel.
 baseurl: "/fr"
-url: ""
-github_username: Doreapp
 
 navbar-links:
   In english: ".."
   About Me: "about"
   Contact: "contact"
-remove-ads: true
-site-css:
-- "/assets/css/theme.css"
-- "/assets/css/index.css"
-site-js:
-- "/assets/js/index.js"
-
-# Page generation configuration
-# See https://github.com/avillafiorita/jekyll-datapage_gen
-# page_gen-dirs: true # uncomment, if you prefer to generate named folders
-page_gen:
-  - data: me.education.schools
-    template: company
-    name: name
-    title: name
-    dir: school
-  - data: me.work.companies
-    template: company
-    name: name
-    title: name
-    dir: company
-  - data: me.work.jobs
-    template: job
-    name: name
-    title: name
-    dir: job
-  - data: me.projects
-    template: project
-    name: title
-    dir: project
-  - data: me.profile
-    template: index
-    name_expr: '"index"'
-    title: name
-    dir: '.'
-  - data: me.about
-    template: about
-    name_expr: '"about"'
-    title_expr: '"About me"'
-    dir: '.'
-
-include: [CNAME]
-url: https://antoine.mandin.dev

@@ -34,8 +34,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Translate website
       run: |
+        cp ./me.yml ./jekyll/_data/
+        cp ./me.fr.yml ./jekyll-fr/_data/me.yml
         make --directory=tools translate_fr
-        cp ./me.yml ./fr-tmp/_data/
         cp ./CNAME ./fr-tmp/
     - uses: actions/cache@v2
       with:
