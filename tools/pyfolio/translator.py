@@ -35,14 +35,61 @@ def load(filename: str) -> dict:
     return data
 
 
-def _merge_objects(source_obj: dict, dest_obj: dict):
+def merge_arrays(source_arr: list, dest_arr: list):
+    """
+    Update dest_arr to match source_arr content, while merging some of the children.
+
+    The correspondance between a child element of `source_arr` and one of `dest_arr` can be
+    made using an attribute `_xxx` in `source_arr` having the exact same value as the `xxx`
+    attribute in `dest_arr`.
+
+    However, if no `_xxx` attribute is found for a children from `dest_arr`, then it will be
+    removed.
+    All the elements from `source_arr` will be moved to `dest_arr` anyway.
+    """
+    mapping = {}
+    copied_source = list(source_arr)
+    for element in copied_source:
+        if isinstance(element, dict):
+            for key, value in element.items():
+                if key.startswith("_"):
+                    prev = mapping.get(key[1:], {})
+                    prev[value] = element
+                    mapping[key[1:]] = prev
+                    break
+    result = []
+    for element in dest_arr:
+        if isinstance(element, dict):
+            source_value, match_key = None, None
+            for key, value in element.items():
+                source_value = mapping.get(key)
+                if source_value is None:
+                    continue
+                source_value = source_value.get(value)
+                if source_value is not None:
+                    match_key = key
+                    break
+            if source_value is not None:
+                merge_objects(source_value, element)
+                del element[f"_{match_key}"]
+                result.append(element)
+                copied_source.remove(source_value)
+                continue
+    dest_arr.clear()
+    dest_arr.extend(result)
+    dest_arr.extend(copied_source)
+
+
+def merge_objects(source_obj: dict, dest_obj: dict):
     """
     Update dest_obj to add attributes from source_obj and override existing keys in conflict
     """
     for key, value in source_obj.items():
         current = dest_obj.get(key)
         if isinstance(current, dict) and isinstance(value, dict):
-            _merge_objects(current, value)
+            merge_objects(value, current)
+        elif isinstance(current, list) and isinstance(value, list):
+            merge_arrays(value, current)
         else:
             dest_obj[key] = value
 
@@ -54,7 +101,7 @@ def _merge_yml_files(source_file: str, dest_file: str):
     """
     src_dict = load(source_file)
     dest_dict = load(dest_file)
-    _merge_objects(src_dict, dest_dict)
+    merge_objects(src_dict, dest_dict)
     with open(dest_file, "w", encoding="utf-8") as fos:
         yaml.dump(dest_dict, fos, encoding="utf-8", allow_unicode=True)
 
@@ -92,4 +139,4 @@ def translate(source: str, dest: str, overrides: str, force: bool = False):
     _check_dir(source)
     _check_dir(overrides)
     shutil.copytree(source, dest, dirs_exist_ok=True)
-    _merge_directories(source, dest)
+    _merge_directories(overrides, dest)
