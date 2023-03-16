@@ -4,6 +4,6 @@ description: >-
 baseurl: "/fr"
 
 navbar-links:
-  In english: ".."
-  About Me: "about"
-  Contact: "contact"
+  - ["In english", ".."]
+  - ["A propos", "about"]
+  - [Contact, "contact"]
