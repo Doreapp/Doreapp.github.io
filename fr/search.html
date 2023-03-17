@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Search</title>
+
+  
+  <meta name="author" content="Antoine Mandin">
+  
+
+  <meta name="description" content="{% include search-bar.html mb = &quot;2em&quot; %}">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/fr/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/fr/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/fr/assets/css/theme.css">
+    
+      <link rel="stylesheet" href="/fr/assets/css/index.css">
+    
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Antoine Mandin | Ingénieur Logiciel">
+  <meta property="og:title" content="Search">
+  <meta property="og:description" content="{% include search-bar.html mb = &quot;2em&quot; %}">
+
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://antoine.mandin.dev/fr/search">
+  <link rel="canonical" href="https://antoine.mandin.dev/fr/search">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Search">
+  <meta property="twitter:description" content="{% include search-bar.html mb = &quot;2em&quot; %}">
+
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://antoine.mandin.dev/fr">Antoine Mandin | Ingénieur Logiciel</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">In english</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/about">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/contact">Contact</a>
+          </li></ul>
+  </div>
+
+  
+
+  
+
+</nav>
+
+
+
+
+
+  <div class="intro-header"></div>
+
+<div role="main" class=" container-md ">
+  
+
+  
+
+
+
+
+
+<form
+  class="search-bar"
+  style="margin-bottom: 2em;"
+  action="https://antoine.mandin.dev/fr/search"
+  method="get">
+  <input
+    type="text"
+    id="search-box"
+    name="query"
+    placeholder="Search for a project, language, techno...">
+</form>
+
+<ul id="search-results" class="related-list"></ul>
+
+<script>
+  window.store = [{
+        "id": "Logiciel de devis des masses",
+        "url": "https://antoine.mandin.dev/fr/project/logiciel-de-devis-des-masses.html",
+        "title": "Logiciel de devis des masses",
+        "subtitle": "SIREHNA",
+        "description": "En tant qu'ingénieur logiciel chez SIREHNA, j'ai été chargé de développer un &lt;b&gt;logiciel de devis des masses&lt;/b&gt; qui répondait aux besoins spécifiques de nos clients. En utilisant le langage de programmation &lt;code&gt;Python&lt;/code&gt;, j'ai travaillé sur le cœur de l'application, en créant une &lt;code&gt;API&lt;/code&gt; centrée sur la base de données, indépendante de l'interface utilisateur. &lt;br&gt;&lt;br&gt; Je me suis concentré sur l'implémentation d'opérations robustes de lecture et d'écriture de fichiers, et sur la gestion des données incorrectes ou manquantes. J'ai notamment utilisé la bibliothèque &lt;code&gt;pandas&lt;/code&gt; pour lire des fichiers &lt;i&gt;Excel&lt;/i&gt; et gérer des &lt;i&gt;dataframe&lt;/i&gt;. &lt;br&gt;&lt;br&gt; J'ai utilisé une base de données relationnelle pour garantir l'intégrité des données, tout en offrant des calculs efficaces. Cela impliquait de travailler avec &lt;code&gt;SQL&lt;/code&gt; pour interroger et mettre à jour le stockage du logiciel. &lt;br&gt;&lt;br&gt; En outre, j'ai mis en œuvre des fonctionnalités afin de gérer correctement l'historique des données, en utilisant &lt;code&gt;Git&lt;/code&gt; comme outil de gestion des versions. &lt;br&gt;&lt;br&gt; Pour assurer la qualité du code, j'ai suivi plusieurs bonnes pratiques, notamment l'utilisation de formateurs de code et de &lt;i&gt;linters&lt;/i&gt; (&lt;code&gt;black&lt;/code&gt;, &lt;code&gt;pylint&lt;/code&gt;, &lt;code&gt;isort&lt;/code&gt;...), la conteneurisation avec &lt;code&gt;Docker&lt;/code&gt;, et l'intégration continue avec &lt;code&gt;Gitlab CI&lt;/code&gt; et la revue de code. &lt;br&gt;&lt;br&gt; Tout au long du projet, j'ai collaboré étroitement avec les clients pour comprendre leurs besoins et construire un logiciel qui leur soit vraiment utile. &lt;br&gt;&lt;br&gt; &lt;i&gt;Ce projet est en cours au moment où j'écris ces lignes.&lt;/i&gt;",
+        "skills": "Python ; SQL ; SQLite ; Docker ; Git ; GitLab ; GitLab CI ; CI/CD ; VS Code ; Pytest ; Pandas ; PySide ; PyQT",
+        "coverimg": "https://antoine.mandin.dev/fr/assets/img/digital-twin.jpg"
+      }
+        ,{
+        "id": "PhoneHistory",
+        "url": "https://antoine.mandin.dev/fr/project/phonehistory.html",
+        "title": "PhoneHistory",
+        "subtitle": "Application Android",
+        "description": "&lt;b&gt;Phone History&lt;/b&gt; est une application &lt;code&gt;Android&lt;/code&gt; qui récupère l'historique de l'utilisation du téléphone. Elle obtient l'utilisation du téléphone à partir du système &lt;code&gt;Android&lt;/code&gt; et l'affiche dans une liste en commençant par l'utilisation la plus récente. Elle explore également le stockage du téléphone afin d'afficher les modifications de fichiers, telles que les photos prises ou les fichiers téléchargés. Enfin, l'application affiche des statistiques sur l'utilisation du téléphone au cours des dernières 24 heures. Ces statistiques comprennent les 10 applications les plus utilisées par l'utilisateur en termes d'utilisation et la durée associée, ainsi qu'un graphique chronologique de l'utilisation du téléphone par heure. &lt;br&gt;&lt;br&gt; Techniquement, l'application utilise l'&lt;code&gt;API UsageEvents&lt;/code&gt; pour récupérer l'utilisation des applications. Un algorithme est dédié à la lecture des données de cette &lt;code&gt;API&lt;/code&gt;, qui ne renvoie que des événements. &lt;br&gt;&lt;br&gt; Le système &lt;code&gt;Android&lt;/code&gt; ne conserve l'utilisation du téléphone que pendant quelques jours, de sorte que l'application n'est pas en mesure d'afficher l'utilisation d'applications plus anciennes. Par conséquent, &lt;code&gt;PhoneHistory&lt;/code&gt; stocke l'utilisation des applications dans une base de données &lt;code&gt;SQL&lt;/code&gt; interne, afin d'afficher l'utilisation du téléphone sur du plus long terme. &lt;br&gt;&lt;br&gt; Cette application est - au moment où j'écris ces lignes - mon application &lt;b&gt;la plus téléchargée&lt;/b&gt; sur le &lt;b&gt;Google Play Store&lt;/b&gt;.",
+        "skills": "Android ; Java ; XML ; UI Design ; SQL ; IntelliJ IDEA ; Android Studio",
+        "coverimg": "https://antoine.mandin.dev/fr/assets/img/phone-history.png"
+      }
+        ,{
+        "id": "E scooters",
+        "url": "https://antoine.mandin.dev/fr/project/e-scooters.html",
+        "title": "E scooters",
+        "subtitle": "Application modile pour un projet scolaire",
+        "description": "Dans le cadre d'un projet scolaire, j'ai fait partie d'une équipe chargée de trouver une idée pour une application mobile. Nous avons décidé de créer une application qui regroupe toutes les marques de trottinettes électriques à Stockholm. L'idée était que l'utilisateur n'ait besoin que d'une seule application pour comparer les emplacements et les prix des trottinettes électriques à proximité, et y accéder. &lt;br&gt;&lt;br&gt; Nous avons d'abord créé une &lt;b&gt;application web&lt;/b&gt;. En utilisant &lt;code&gt;React JS&lt;/code&gt; et &lt;code&gt;Tailwind CSS&lt;/code&gt;, nous avons conçu le &lt;code&gt;front-end&lt;/code&gt;. L'application était &lt;i&gt;standalone&lt;/i&gt;, car la partie &lt;code&gt;back-end&lt;/code&gt; était constituée des &lt;code&gt;API&lt;/code&gt; des marques de trottinettes électrique directement. &lt;br&gt;&lt;br&gt; Je me suis concentré sur l'utilisation de la bibliothèque &lt;code&gt;Leaflet&lt;/code&gt; pour afficher la carte, la position de l'utilisateur et des trottinettes électriques. Les autres membres de l'équipe ont développé différentes parties de l'application, comme la communication avec les &lt;code&gt;API&lt;/code&gt; des marques de trottinettes. &lt;br&gt;&lt;br&gt; Au final, nous avons obtenu une application web &lt;i&gt;standalone&lt;/i&gt; qui affichait les emplacements des trottinettes électriques, mais sans la possibilité de louer une. &lt;br&gt;&lt;br&gt; Dans la deuxième partie du cours, nous devions créer une application native. Nous avons choisi d'utiliser &lt;code&gt;React Native&lt;/code&gt; pour être &lt;i&gt;cross-platform&lt;/i&gt; et en quelque sorte proche de ce que nous avions fait lors de la première mission. &lt;br&gt;&lt;br&gt; Une fois de plus, j'étais chargé de m'occuper des fonctionnalités de la carte. Cependant, je n'ai pas trouvé de bibliothèque facile à utiliser et cross-platform pour &lt;code&gt;React Native&lt;/code&gt; permettant d'afficher une carte, comme le fait &lt;code&gt;Leaflet&lt;/code&gt; avec &lt;code&gt;React JS&lt;/code&gt;. J'ai donc implémenté moi-même le &lt;i&gt;workflow&lt;/i&gt; des &lt;code&gt;Map tiles&lt;/code&gt;, en utilisant les données &lt;code&gt;Open Street Map&lt;/code&gt;, reproduisant ainsi le comportement d'un composant cartographique. Cela a fini par fonctionner correctement, à l'exception des fonctionnalités de zoom. &lt;br&gt;&lt;br&gt; Nous avons atteint presque le même point avec l'application native qu'avec l'application web. &lt;br&gt;&lt;br&gt; Cette expérience m'a permis de travailler au sein d'une équipe, entièrement en anglais puisque nous venions de différents pays d'Europe, et de développer mes compétences en développement web frontend et cross-platform. J'ai également acquis de l'expérience dans l'utilisation de &lt;code&gt;React&lt;/code&gt; et &lt;code&gt;React Native&lt;/code&gt;, ainsi que dans le travail avec des cartes, en utilisant les données &lt;code&gt;Leaflet&lt;/code&gt; et &lt;code&gt;Open Street Map&lt;/code&gt;. Cela m'a également aidé à comprendre les défis et les différences dans le développement d'une application web et d'une application native.",
+        "skills": "React JS ; React Native ; Tailwind CSS ; Leaflet ; JavaScript ; UI Design ; Web ; Mobile ; API ; VS Code",
+        "coverimg": "https://antoine.mandin.dev/fr/assets/img/escooters.jpg"
+      }
+        ,{
+        "id": "Environnement de gestion des simulations et des données",
+        "url": "https://antoine.mandin.dev/fr/project/environnement-de-gestion-des-simulations-et-des-donnees.html",
+        "title": "Environnement de gestion des simulations et des données",
+        "subtitle": "Stage de fin d'études chez Sirehna",
+        "description": "J'ai travaillé sur un projet pour SIREHNA, une entreprise qui effectue des simulations de dynamique des fluides numériques (CFD) pour évaluer les performances des navires (entre autres). Mon rôle dans ce projet était de créer un environnement de simulation et de gestion de données qui aiderait l'équipe de SIREHNA à suivre et à récupérer ses données, ainsi qu'à automatiser les tâches à faible valeur ajoutée. &lt;br&gt;&lt;br&gt; Après avoir travaillé sur la compréhension des besoins des utilisateurs, j'ai participer avec l'équipe sur la définition de l'architecture de l'environnement. Nous avons choisi d'utiliser un serveur web comme pierre angulaire de l'architecture. Nous avons mis en évidence les besoins fonctionnels tels que l'authentification, la gestion des utilisateurs et le stockage des données, puis nous avons procédé à une analyse comparative des technologies. &lt;br&gt;&lt;br&gt; J'ai utilisé la bibliothèque &lt;code&gt;Girder&lt;/code&gt; pour instancier un serveur web dédié à la gestion des utilisateurs, de leur authentification et de leurs permissions. L'utilisation de cette bibliothèque nous a permis de gagner du temps dans la mise en œuvre des fonctionnalités d'authentification et de gestion des utilisateurs. &lt;br&gt;&lt;br&gt; Pour répondre au besoin de stockage de données volumineuses - provenant des géométries impliquées dans les simulations &lt;i&gt;CFD&lt;/i&gt; qui peuvent peser des dizaines de Go - j'ai mis en place une instance &lt;code&gt;MinIO&lt;/code&gt;. Comme &lt;code&gt;MinIO&lt;/code&gt; utilise les normes &lt;code&gt;Amazon Simple Storage Service&lt;/code&gt; (&lt;code&gt;S3&lt;/code&gt;), j'ai pu facilement connecter l'instance au serveur web basé sur &lt;code&gt;Girder&lt;/code&gt;. &lt;br&gt;&lt;br&gt; Une autre partie importante de l'environnement, qui a pris beaucoup de temps, consistait à automatiser certains processus de simulation &lt;i&gt;CFD&lt;/i&gt;. Partant du fait qu'un serveur &lt;code&gt;GitLab&lt;/code&gt; était hébergé en interne à l'entreprise, j'ai utilisé ses fonctions de &lt;code&gt;pipelines&lt;/code&gt; (qui sont principalement conçues à des fins de &lt;code&gt;CI/CD&lt;/code&gt;) pour automatiser entièrement une simulation. L'idée était d'utiliser l'ordonnanceur de pipeline de &lt;code&gt;GitLab&lt;/code&gt; pour séparer les principales étapes de la simulation. Les scripts de calcul proprement dits ont été exécutés à l'aide de scripts &lt;code&gt;Makefile&lt;/code&gt;, tandis que les communications avec le serveur web &lt;code&gt;Girder&lt;/code&gt; ont été effectuées à l'aide de scripts &lt;code&gt;Python&lt;/code&gt;. Afin d'exécuter les calculs efficacement, nous avons installé un &lt;code&gt;GitLab Runner&lt;/code&gt; sur un appareil doté d'une grande puissance de calcul. &lt;br&gt;&lt;br&gt; La dernière pièce du puzzle a été la création d'une interface web conviviale à l'aide des &lt;b&gt;composants web&lt;/b&gt; &lt;code&gt;Girder&lt;/code&gt;, permettant aux utilisateurs de lancer facilement des calculs automatisés, de surveiller leur progression et de garder une trace de leurs résultats.",
+        "skills": "Python ; Girder ; Git ; GitLab ; GitLab CI ; Docker ; Docker compose ; MinIO ; MongoDB ; Vue JS ; JavaScript ; API ; VS Code",
+        "coverimg": "https://antoine.mandin.dev/fr/assets/img/simulation-and-data-environment.png"
+      }
+        ,{
+        "id": "TakeNews",
+        "url": "https://antoine.mandin.dev/fr/project/takenews.html",
+        "title": "TakeNews",
+        "subtitle": "Application mobile Web pour garder le contact",
+        "description": "&lt;code&gt;TakeNews&lt;/code&gt; est un &lt;b&gt;site web orienté mobile&lt;/b&gt; construit avec &lt;code&gt;React&lt;/code&gt;, des composants &lt;code&gt;MUI&lt;/code&gt; et &lt;code&gt;Tailwind CSS&lt;/code&gt;. Le but de ce projet était de créer une application web qui permet aux utilisateurs de rester en contact avec leurs proches régulièrement. L'application est conçue spécifiquement pour les mobiles car l'objectif principal était d'explorer le potentiel d'une application web pour tirer parti de diverses fonctionnalités des appareils mobiles, de la même manière que les applications mobiles natives. &lt;br&gt;&lt;br&gt; Tout d'abord, l'application utilise la fonction de stockage local (&lt;code&gt;local storage&lt;/code&gt;) des navigateurs, qui permet un stockage spécifique à l'utilisateur côté client. L'objectif étant de créer un site web autonome (i.e. &lt;i&gt;standalone&lt;/i&gt;, c'est-à-dire sans &lt;code&gt;back-end&lt;/code&gt;), ce type de stockage répondait à tous les besoins. J'ai également pensé à utiliser l'API &lt;code&gt;IndexedDB&lt;/code&gt;, mais comme les données stockées étaient peu nombreuses, j'ai priviligié l'utilisation de &lt;code&gt;localStorage&lt;/code&gt;. &lt;br&gt;&lt;br&gt; Ensuite, le but de l'application étant de permettre à l'utilisateur de garder des contacts avec ses amis et sa famille, elle est capable d'ouvrir l'application d'appel téléphonique. Cela se fait simplement en utilisant le schéma &lt;code&gt;tel:&lt;/code&gt;. &lt;br&gt; Dans le futur, j'espère pouvoir ouvrir d'autres applications externes, comme Facebook Messenger. &lt;br&gt;&lt;br&gt; Enfin, en utilisant l'&lt;code&gt;API&lt;/code&gt; expérimentale &lt;code&gt;Navigator.contacts&lt;/code&gt;, l'application est capable (sur &lt;code&gt;Chrome&lt;/code&gt; uniquement) de parcourir la liste des contacts du téléphone et de permettre à l'utilisateur d'en choisir un pour l'importer dans l'application. &lt;br&gt;&lt;br&gt; Le développement de l'application est toujours en cours (bien qu'en pause), et j'aimerais activer les notifications, qui rappelleraient à l'utilisateur de contacter les personnes avec lesquelles il n'a pas parlé depuis un certain temps. &lt;br&gt;&lt;br&gt; Techniquement, &lt;b&gt;TakeNews&lt;/b&gt; est hébergé sur les &lt;i&gt;pages &lt;code&gt;GitHub&lt;/code&gt;&lt;/i&gt; en tant qu'application web &lt;i&gt;standalone&lt;/i&gt;. Elle est construite avec &lt;code&gt;React JS&lt;/code&gt; en utilisant des composants &lt;code&gt;MUI&lt;/code&gt; et &lt;code&gt;Tailwind CSS&lt;/code&gt;. &lt;br&gt; &lt;code&gt;ESLint&lt;/code&gt; et &lt;code&gt;Prettier&lt;/code&gt; sont utilisés localement et dans les &lt;i&gt;workflow&lt;/i&gt; d'intégration continue pour imposer le format du code. &lt;code&gt;Docker&lt;/code&gt; est également utilisé, pour offrir un conteneur portable, utilisable quel que soit le &lt;i&gt;système d'exploitation&lt;/i&gt;.",
+        "skills": "TypeScript ; React JS ; MUI ; Tailwind CSS ; GitHub ; GitHub pages ; GitHub actions ; CI/CD ; Docker ; Prettier ; ES Lint ; VS Code",
+        "coverimg": "https://antoine.mandin.dev/fr/assets/img/take-news.png"
+      }
+        ,{
+        "id": "Mon portfolio",
+        "url": "https://antoine.mandin.dev/fr/project/mon-portfolio.html",
+        "title": "Mon portfolio",
+        "subtitle": "Site web static mettant en avant mes expériences",
+        "description": "Projet de construction de mon &lt;b&gt;portfolio&lt;/b&gt;, en utilisant des technologies de haut niveau et en &lt;b&gt;centrant le développement sur les données&lt;/b&gt;. L'idée était d'abord d'écrire mes expériences, mes projets, mon profil, ma formation, etc. et ensuite de construire un site web de portfolio autour de cela. Cela s'est terminé par un simple fichier &lt;code&gt;yaml&lt;/code&gt;, un site web et des scripts &lt;code&gt;python&lt;/code&gt;. &lt;br&gt;&lt;br&gt; Vous lisez probablement ceci sur le site web résultant de ce projet (&lt;a href=&quot;https://antoine.mandin.dev&quot;&gt;&lt;code&gt;https://antoine.mandin.dev&lt;/code&gt;&lt;/a&gt;). &lt;br&gt;&lt;br&gt; La première - et principale - partie de ce projet, ce sont les données proprement dites. J'ai condensé mes expériences, mes projets et mes compétences dans un seul fichier &lt;code&gt;yaml&lt;/code&gt;. &lt;br&gt;&lt;br&gt; La deuxième partie du projet est le site web portfolio. Il est construit en utilisant &lt;code&gt;Jekyll&lt;/code&gt;, et hébergé en tant que page &lt;code&gt;GitHub&lt;/code&gt;. J'ai utilisé un thème préexistant (nommé &lt;code&gt;Beautiful Jekyll&lt;/code&gt;) auquel j'ai ajouté des styles personnalisés inspirés d'autres thèmes &lt;code&gt;Jekyll&lt;/code&gt;. En utilisant un plugin, j'ai réussi à créer presque entièrement le site web à partir du fichier de données &lt;code&gt;yaml&lt;/code&gt;. J'ai également implémenté une barre de recherche en utilisant la bibliothèque &lt;code&gt;MiniSearch&lt;/code&gt;. Enfin, j'ai introduit la traduction de mon site web, initialement en anglais, et ici en français! &lt;br&gt; Au final, j'ai construit un site web statique, hébergé sur les pages &lt;code&gt;GitHub&lt;/code&gt;, avec son propre style, son propre moteur de recherche et son propre nom de domaine. &lt;br&gt;&lt;br&gt; Enfin, la troisième partie du projet était un petit module &lt;code&gt;python&lt;/code&gt; dédié à la gestion des données du portfolio. Cela inclus la vérification du format des données et leur traduction intéligente. J'ai construit un fichier de grammaire en &lt;code&gt;yaml&lt;/code&gt;, représentant le contenu attendu des données (par exemple, un projet doit avoir un titre, qui est un texte, et peut avoir une date de fin au format &lt;code&gt;jj-mm-aaaa&lt;/code&gt;). En effet, l'idée était d'avoir un site web cohérent, où les projets peuvent être liés à un emploi, et un emploi à une entreprise, etc. &lt;br&gt; Ce module &lt;code&gt;python&lt;/code&gt; a été accompagné de formateurs et de linteurs, et utilisé dans un &lt;i&gt;workflow&lt;/i&gt; d'intégration continue, pour s'assurer que les données sont bien formatées tout au long de leur durée de vie.",
+        "skills": "Jekyll ; GitHub pages ; GitHub actions ; GitHub ; Git ; JavaScript ; CSS ; HTML ; Web ; UI Design ; Python ; CI/CD ; VS Code",
+        "coverimg": "https://antoine.mandin.dev/fr/assets/img/portfolio.jpg"
+      }
+        ,{
+        "id": "Exploration de données et identification des zones conflictuelles",
+        "url": "https://antoine.mandin.dev/fr/project/exploration-de-donnees-et-identification-des-zones-conflictuelles.html",
+        "title": "Exploration de données et identification des zones conflictuelles",
+        "subtitle": "Stage dans un laboratoire de recherche en informatiques",
+        "description": "Lors de mon stage au sein du laboratoire de recherche LIRIS, j'ai été chargé de trouver des méthodes de calcul pour analyser un jeu de données avant l'entrainement d'un algorithme de &lt;i&gt;Machine Learning&lt;/i&gt;. J'ai fini par créer des modules &lt;code&gt;python&lt;/code&gt; capables d'analyser et de mettre en évidence d'éventuelles données incorrectes ou des valeurs problématiques pour l'entrainement d'un algorithme de &lt;i&gt;Machine Learning&lt;/i&gt;. &lt;br&gt;&lt;br&gt; Au tout début de mon stage, j'ai appris les théories sur les méthodes et technologies de &lt;i&gt;Machine Learning&lt;/i&gt;, appliquées à &lt;code&gt;Python&lt;/code&gt;. Je me suis familiarisé avec les concepts d'intéligence artificiels et de &lt;i&gt;Machine Learning&lt;/i&gt; tels que l'apprentissage supervisé/non supervisé ou l'underfiting/overfiting. &lt;br&gt;&lt;br&gt; Suivant une thèse, l'idée du projet était de construire des scripts capables d'identifier des données incorrectes dans un grand ensemble de données. L'idée générale était la suivante : &lt;br&gt; Visant un algorithme de classification, le jeu de données a plusieurs attributs d'entrée qui sont utilisés pour deviner un attribut cible. L'objectif était alors d'évaluer la possibilité de deviner l'attribut cible en partant de l'idée que, s'il existe plusieurs instances dans l'ensemble de données avec les mêmes attributs d'entrée mais une cible différente, alors tout algorithme (quelle que soit sa complexité) sera incapable de réussir à 100 %. &lt;br&gt;&lt;br&gt; Illustrons cela avec un jeu de données courant dans l'apprentissage automatique : l'ensemble de données &lt;code&gt;Iris&lt;/code&gt;. Il est constitué de données sur les fleurs d'iris et contient 5 attributs : la largeur et la longueur des sépales, la largeur et la longueur des pétales et l'espèce. Un algorithme de classification doit alors deviner l'espèce en fonction de la largeur et de la longueur des sépales et des pétales. Appliquée à cet ensemble de données, l'idée du projet était de vérifier si deux fleurs ont la même longueur/largeur des sépales et des pétales tout en étant de deux espèces différentes. &lt;br&gt;&lt;br&gt; En considérant l'égalité parfaite comme la fonction de comparaison entre les attributs d'entrée, l'algorithme a une complexité de &lt;code&gt;O(n.log(n))&lt;/code&gt; (en utilisant une &lt;code&gt;Map&lt;/code&gt; comme structure de données). Cependant, en considérant une tolérance dans la fonction de comparaison, l'algorithme naïf a une complexité de &lt;code&gt;O(n²)&lt;/code&gt;, ce qui n'est pas acceptable pour les grands ensembles de données. Mon objectif était donc de trouver des moyens d'effectuer cette recherche dans un temps de calcul acceptable. &lt;br&gt;&lt;br&gt; J'ai effectué une recherche bibliographique pour résoudre le problème de la comparaison de chaque élément de l'ensemble de données à tous les autres éléments dans un temps de calcul raisonnable. &lt;br&gt; Ensuite, j'ai mis en œuvre une méthode appelée &lt;code&gt;Blocking&lt;/code&gt;. L'idée sous-jacente est la suivante : &lt;ol&gt;  &lt;li&gt;&lt;code&gt;Mapping&lt;/code&gt; - Tout d'abord, les valeurs sont mappées en blocs de valeurs similaires.  L'objectif est d'éviter les comparaisons entre des valeurs manifestement différentes.&lt;/li&gt;  &lt;li&gt;&lt;code&gt;Reducing&lt;/code&gt; - La deuxième étape consiste à comparer les valeurs, à l'aide d'un algorithme naïf,  bloc par bloc. Cette étape peut être parallélisée, car chaque bloc est indépendant.&lt;/li&gt;&lt;/ol&gt; &lt;p&gt; J'ai ajouté une étape au processus, afin de m'assurer d'être exhaustif, en profitant du fait que nous connaissons la tolérance dans la fonction de comparaison. Cette étape consiste à dupliquer les valeurs aux bords des blocs au sein des blocs environnants, de sorte que chaque valeur soit comparée à toutes ses voisines, quelle que soit sa position absolue dans l'ensemble de données. &lt;br&gt;&lt;br&gt; L'algorithme qui en résulte renvoie des paires de valeurs contradictoires, c'est-à-dire des valeurs dont les attributs d'entrée sont similaires alors que les attributs cibles sont différents. &lt;br&gt; Ces valeurs peuvent être introduites dans des visualisations de zones problématiques/conflictuelles, c'est-à-dire des zones du jeu de données qui contiennent un grand nombre de valeurs contradictoires. Ce type de visualisation peut être utile aux experts de la source de données pour expliquer pourquoi des valeurs contradictoires sont apparues à ces &quot;endroits&quot; ou pour remettre en question la manière dont les données ont été collectées. &lt;br&gt; Enfin, les paires contradictoires peuvent faire l'objet d'un post-traitement afin de rechercher l'ensemble minimal de valeurs à supprimer de l'ensemble de données pour qu'il n'y ait plus de paires contradictoires. Cette recherche est similaire à la recherche d'une &lt;b&gt;couverture minimale de sommets&lt;/b&gt;, en ayant comme sommets les valeurs et comme arêtes le fait d'être contradictoires. En effet, si une seule valeur est contradictoire avec 10 autres, on peut facilement conclure à la suppression de cette valeur, mais dans le cas de réseaux plus complexes, la décision est plus difficile à prendre. La recherche de la couverture minimale des sommets est prouvée comme étant &lt;i&gt;NP-complet&lt;/i&gt;. &lt;br&gt;&lt;br&gt; Au final, les scripts &lt;code&gt;python&lt;/code&gt; développés ont été capables d'identifier en 30 minutes les paires de valeurs contradictoires sur un jeu de données pour lequel l'algorithme naïf aurait pris environ 1 an de calcul. &lt;br&gt;&lt;br&gt; Ce projet m'a permis d'apprendre les concepts et les problèmes liés au &lt;i&gt;Machine Learning&lt;/i&gt;, ainsi que d'approfondir mes compétences en algorithmies et en calcul parallèle. &lt;/p&gt;",
+        "skills": "python ; algorithm ; machine learning ; artificial intelligence ; parallel computing ; research ; sphinx",
+        "coverimg": "https://antoine.mandin.dev/fr/assets/img/datavalor.jpg"
+      }
+        ];
+</script>
+
+  
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <!-- From beautiful jekyll https://github.com/daattali/beautiful-jekyll/blob/master/_includes/social-networks-links.html -->
+
+
+
+<ul class="list-inline text-center footer-links"><li class="list-inline-item">
+      <a href="mailto:antoine.mandin.am@gmail.com" title="Email me">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">Email me</span>
+      </a>
+    </li><li class="list-inline-item">
+      <a href="https://github.com/Doreapp" title="GitHub">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">GitHub</span>
+      </a>
+    </li><li class="list-inline-item">
+      <a href="https://linkedin.com/in/antoine-mandin-4079551a2" title="LinkedIn">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+    </li><li class="list-inline-item">
+      <a href="https://stackoverflow.com/users/12102246/doreapp" title="StackOverflow">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">StackOverflow</span>
+      </a>
+    </li><li class="list-inline-item">
+      <a href="https://www.gitlab.com/AntoineMdn" title="GitLab">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">GitLab</span>
+      </a>
+    </li><li class="list-inline-item">
+      <a href="https://play.google.com/store/apps/dev?id=6950241882157030363" title="Google Play">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-google-play fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">Google Play</span>
+      </a>
+    </li></ul>
+      
+      <p class="copyright text-muted">
+      
+        Antoine Mandin
+        &nbsp;&bull;&nbsp;
+      
+      2023
+
+      
+
+      
+
+      
+
+      </p>
+      
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/fr/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+  
+    <script src="/fr/assets/js/index.js"></script>
+  
+
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/minisearch@6.0.1/dist/umd/index.min.js"></script>
+
+
+  
+
+
+
+  
+    <script src="/fr/assets/js/search.js"></script>
+  
+
+
+
+</body>
+</html>
