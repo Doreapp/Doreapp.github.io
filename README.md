@@ -88,3 +88,16 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 ## Automatic format check
 
 If you want to check the format of your `me.yml` file, you can use `pyfolio` python library in [`tools` directory](tools/).
+
+## Translation
+
+It is possible to translate the website manually. In this repository, you can see an example of portfolio
+originally in english that has a translation in french.
+
+To translate in a language, one needs to:
+1. Translate the data by creating a `data.<language>.yml` file aside to `data.yml` (e.g. `data.en.yml`)
+2. Create an override of the `jekyll` directory, named `jekyll-<language>` (e.g. `jekyll-en`)
+3. Override the configuration of the website in this folder: copy-paste the `_config.yml` file from `jekyll` folder into `jekyll-<language>` and override the fields you want to.
+4. Add `baseurl: /<language>` to the overriding configuration
+5. Update the `github-pages.yml` workflow to generate the translated wesite along with the original one. Look at this repository `github-pages.yml` workflow for an example.
+6. You're done! Go to `https://<username>.github.io/<language>` and you should see the translated website! 🎉
