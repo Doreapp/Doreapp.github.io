@@ -146,7 +146,7 @@ work:
         recherche.
       </p>
   - _name: Research intern
-    name: Stagiare en recherche
+    name: Stagiaire en recherche
     share-title: Stagiaire en recherche au LIRIS
     description: >-
       Lors de mon stage au sein du laboratoire de recherche LIRIS, j'ai participé à un projet faisant
@@ -176,3 +176,530 @@ work:
       et de concepts de programmation tels que la programmation orientée objet, les structures de données et
       les algorithmes. J'ai également appris à utiliser <code>Android Studio</code>, <code>Java</code> et
       d'autres technologies connexes pour développer mes applications.
+volunteering: []
+projects:
+- _title: Mass estimating software
+  title: Logiciel de devis des masses
+  job: Ingénieur Logiciel
+  description: >-
+    En tant qu'ingénieur logiciel chez SIREHNA, j'ai été chargé de développer un
+    <b>logiciel de devis des masses</b> qui répondait aux besoins spécifiques de nos clients.
+    En utilisant le langage de programmation <code>Python</code>, j'ai travaillé sur le cœur de l'application,
+    en créant une <code>API</code> centrée sur la base de données, indépendante de l'interface utilisateur.
+    <br><br>
+    Je me suis concentré sur l'implémentation d'opérations robustes de lecture et d'écriture de fichiers,
+    et sur la gestion des données incorrectes ou manquantes. J'ai notamment utilisé la bibliothèque
+    <code>pandas</code> pour lire des fichiers <i>Excel</i> et gérer des <i>dataframe</i>.
+    <br><br>
+    J'ai utilisé une base de données relationnelle pour garantir l'intégrité des données, tout en offrant des
+    calculs efficaces. Cela impliquait de travailler avec <code>SQL</code> pour interroger et mettre à jour
+    le stockage du logiciel.
+    <br><br>
+    En outre, j'ai mis en œuvre des fonctionnalités afin de gérer correctement l'historique des données,
+    en utilisant <code>Git</code> comme outil de gestion des versions.
+    <br><br>
+    Pour assurer la qualité du code, j'ai suivi plusieurs bonnes pratiques, notamment l'utilisation de formateurs de
+    code et de <i>linters</i> (<code>black</code>, <code>pylint</code>, <code>isort</code>...), la conteneurisation
+    avec <code>Docker</code>, et l'intégration continue avec <code>Gitlab CI</code> et la revue de code.
+    <br><br>
+    Tout au long du projet, j'ai collaboré étroitement avec les clients pour comprendre leurs besoins et
+    construire un logiciel qui leur soit vraiment utile.
+    <br><br>
+    <i>Ce projet est en cours au moment où j'écris ces lignes.</i>
+- _title: PhoneHistory
+  subtitle: Application Android
+  share-title: Application PhoneHistory
+  job: Auto-entrepreneur
+  description: >-
+    <b>Phone History</b> est une application <code>Android</code> qui récupère l'historique de l'utilisation
+    du téléphone. Elle obtient l'utilisation du téléphone à partir du système <code>Android</code> et l'affiche
+    dans une liste en commençant par l'utilisation la plus récente. Elle explore également le stockage du
+    téléphone afin d'afficher les modifications de fichiers, telles que les photos prises ou les fichiers téléchargés.
+    Enfin, l'application affiche des statistiques sur l'utilisation du téléphone au cours des dernières 24 heures.
+    Ces statistiques comprennent les 10 applications les plus utilisées par l'utilisateur en termes d'utilisation
+    et la durée associée, ainsi qu'un graphique chronologique de l'utilisation du téléphone par heure.
+    <br><br>
+    Techniquement, l'application utilise l'<code>API UsageEvents</code> pour récupérer l'utilisation des applications.
+    Un algorithme est dédié à la lecture des données de cette <code>API</code>, qui ne renvoie que des événements.
+    <br><br>
+    Le système <code>Android</code> ne conserve l'utilisation du téléphone que pendant quelques jours, de sorte
+    que l'application n'est pas en mesure d'afficher l'utilisation d'applications plus anciennes.
+    Par conséquent, <code>PhoneHistory</code> stocke l'utilisation des applications dans une base de données
+    <code>SQL</code> interne, afin d'afficher l'utilisation du téléphone sur du plus long terme.
+    <br><br>
+    Cette application est - au moment où j'écris ces lignes - mon application <b>la plus téléchargée</b> sur le
+    <b>Google Play Store</b>.
+- _title: E scooters
+  subtitle: Application modile pour un projet scolaire
+  description: >-
+    Dans le cadre d'un projet scolaire, j'ai fait partie d'une équipe chargée de trouver une idée pour une
+    application mobile. Nous avons décidé de créer une application qui regroupe toutes les marques
+    de trottinettes électriques à Stockholm. L'idée était que l'utilisateur n'ait besoin que d'une seule
+    application pour comparer les emplacements et les prix des trottinettes électriques à proximité, et y accéder.
+    <br><br>
+    Nous avons d'abord créé une <b>application web</b>. En utilisant <code>React JS</code> et <code>Tailwind CSS</code>,
+    nous avons conçu le <code>front-end</code>. L'application était <i>standalone</i>, car la partie
+    <code>back-end</code> était constituée des <code>API</code> des marques de trottinettes électrique directement.
+    <br><br>
+    Je me suis concentré sur l'utilisation de la bibliothèque <code>Leaflet</code> pour afficher la carte,
+    la position de l'utilisateur et des trottinettes électriques. Les autres membres de l'équipe ont
+    développé différentes parties de l'application, comme la communication avec les <code>API</code>
+    des marques de trottinettes.
+    <br><br>
+    Au final, nous avons obtenu une application web <i>standalone</i> qui affichait les emplacements des
+    trottinettes électriques, mais sans la possibilité de louer une.
+    <br><br>
+    Dans la deuxième partie du cours, nous devions créer une application native. Nous avons choisi d'utiliser
+    <code>React Native</code> pour être <i>cross-platform</i> et en quelque sorte proche de ce que nous avions
+    fait lors de la première mission.
+    <br><br>
+    Une fois de plus, j'étais chargé de m'occuper des fonctionnalités de la carte. Cependant, je n'ai pas
+    trouvé de bibliothèque facile à utiliser et cross-platform pour <code>React Native</code> permettant d'afficher
+    une carte, comme le fait <code>Leaflet</code> avec <code>React JS</code>. J'ai donc implémenté moi-même le
+    <i>workflow</i> des <code>Map tiles</code>, en utilisant les données <code>Open Street Map</code>,
+    reproduisant ainsi le comportement d'un composant cartographique. Cela a fini par fonctionner correctement,
+    à l'exception des fonctionnalités de zoom.
+    <br><br>
+    Nous avons atteint presque le même point avec l'application native qu'avec l'application web.
+    <br><br>
+    Cette expérience m'a permis de travailler au sein d'une équipe, entièrement en anglais puisque nous
+    venions de différents pays d'Europe, et de développer mes compétences en développement web frontend et
+    cross-platform. J'ai également acquis de l'expérience dans l'utilisation de <code>React</code> et
+    <code>React Native</code>, ainsi que dans le travail avec des cartes, en utilisant les données
+    <code>Leaflet</code> et <code>Open Street Map</code>. Cela m'a également aidé à comprendre les défis
+    et les différences dans le développement d'une application web et d'une application native.
+- _title: Simulation and data management environment
+  title: Environnement de gestion des simulations et des données
+  subtitle: Stage de fin d'études chez Sirehna
+  job: Ingénieur logiciel stagiaire
+  description: >-
+    J'ai travaillé sur un projet pour SIREHNA, une entreprise qui effectue des simulations de dynamique
+    des fluides numériques (CFD) pour évaluer les performances des navires (entre autres). Mon rôle dans ce projet
+    était de créer un environnement de simulation et de gestion de données qui aiderait l'équipe de SIREHNA
+    à suivre et à récupérer ses données, ainsi qu'à automatiser les tâches à faible valeur ajoutée.
+    <br><br>
+    Après avoir travaillé sur la compréhension des besoins des utilisateurs, j'ai participer avec l'équipe sur
+    la définition de l'architecture de l'environnement. Nous avons choisi d'utiliser un serveur web comme pierre
+    angulaire de l'architecture. Nous avons mis en évidence les besoins fonctionnels tels que l'authentification,
+    la gestion des utilisateurs et le stockage des données, puis nous avons procédé à une analyse comparative
+    des technologies.
+    <br><br>
+    J'ai utilisé la bibliothèque <code>Girder</code> pour instancier un serveur web dédié à la gestion des utilisateurs,
+    de leur authentification et de leurs permissions. L'utilisation de cette bibliothèque nous a permis de
+    gagner du temps dans la mise en œuvre des fonctionnalités d'authentification et de gestion des utilisateurs.
+    <br><br>
+    Pour répondre au besoin de stockage de données volumineuses - provenant des géométries impliquées dans les
+    simulations <i>CFD</i> qui peuvent peser des dizaines de Go - j'ai mis en place une instance <code>MinIO</code>.
+    Comme <code>MinIO</code> utilise les normes <code>Amazon Simple Storage Service</code> (<code>S3</code>),
+    j'ai pu facilement connecter l'instance au serveur web basé sur <code>Girder</code>.
+    <br><br>
+    Une autre partie importante de l'environnement, qui a pris beaucoup de temps, consistait à automatiser
+    certains processus de simulation <i>CFD</i>. Partant du fait qu'un serveur <code>GitLab</code> était hébergé en
+    interne à l'entreprise, j'ai utilisé ses fonctions de <code>pipelines</code> (qui sont principalement conçues
+    à des fins de <code>CI/CD</code>) pour automatiser entièrement une simulation. L'idée était d'utiliser
+    l'ordonnanceur de pipeline de <code>GitLab</code> pour séparer les principales étapes de la simulation.
+    Les scripts de calcul proprement dits ont été exécutés à l'aide de scripts <code>Makefile</code>, tandis que
+    les communications avec le serveur web <code>Girder</code> ont été effectuées à l'aide de scripts <code>Python</code>.
+    Afin d'exécuter les calculs efficacement, nous avons installé un <code>GitLab Runner</code> sur un appareil
+    doté d'une grande puissance de calcul.
+    <br><br>
+    La dernière pièce du puzzle a été la création d'une interface web conviviale à l'aide des <b>composants web</b>
+    <code>Girder</code>, permettant aux utilisateurs de lancer facilement des calculs automatisés, de surveiller
+    leur progression et de garder une trace de leurs résultats.
+- _title: TakeNews
+  subtitle: Application mobile Web pour garder le contact
+  description: >-
+    <code>TakeNews</code> est un <b>site web orienté mobile</b> construit avec <code>React</code>, des
+    composants <code>MUI</code> et <code>Tailwind CSS</code>. Le but de ce projet était de créer une
+    application web qui permet aux utilisateurs de rester en contact avec leurs proches régulièrement.
+    L'application est conçue spécifiquement pour les mobiles car l'objectif principal était d'explorer
+    le potentiel d'une application web pour tirer parti de diverses fonctionnalités des appareils mobiles,
+    de la même manière que les applications mobiles natives.
+    <br><br>
+    Tout d'abord, l'application utilise la fonction de stockage local (<code>local storage</code>) des navigateurs,
+    qui permet un stockage spécifique à l'utilisateur côté client. L'objectif étant de créer un site web autonome
+    (i.e. <i>standalone</i>, c'est-à-dire sans <code>back-end</code>), ce type de stockage répondait à tous
+    les besoins. J'ai également pensé à utiliser l'API <code>IndexedDB</code>, mais comme les données stockées
+    étaient peu nombreuses, j'ai priviligié l'utilisation de <code>localStorage</code>.
+    <br><br>
+    Ensuite, le but de l'application étant de permettre à l'utilisateur de garder des contacts avec ses amis et sa
+    famille, elle est capable d'ouvrir l'application d'appel téléphonique. Cela se fait simplement en utilisant
+    le schéma <code>tel:</code>.
+    <br>
+    Dans le futur, j'espère pouvoir ouvrir d'autres applications externes, comme Facebook Messenger.
+    <br><br>
+    Enfin, en utilisant l'<code>API</code> expérimentale <code>Navigator.contacts</code>, l'application est
+    capable (sur <code>Chrome</code> uniquement) de parcourir la liste des contacts du téléphone et de permettre
+    à l'utilisateur d'en choisir un pour l'importer dans l'application.
+    <br><br>
+    Le développement de l'application est toujours en cours (bien qu'en pause), et j'aimerais
+    activer les notifications, qui rappelleraient à l'utilisateur de contacter les personnes avec lesquelles
+    il n'a pas parlé depuis un certain temps.
+    <br><br>
+    Techniquement, <b>TakeNews</b> est hébergé sur les <i>pages <code>GitHub</code></i> en tant qu'application web
+    <i>standalone</i>. Elle est construite avec <code>React JS</code> en utilisant des composants <code>MUI</code> et
+    <code>Tailwind CSS</code>.
+    <br>
+    <code>ESLint</code> et <code>Prettier</code> sont utilisés localement et dans les <i>workflow</i>
+    d'intégration continue pour imposer le format du code. <code>Docker</code> est également utilisé, pour offrir
+    un conteneur portable, utilisable quel que soit le <i>système d'exploitation</i>.
+- _title: My portfolio
+  title: Mon portfolio
+  subtitle: Site web static mettant en avant mes expériences
+  weblink: https://antoine.mandin.dev/fr
+  description: >-
+    Projet de construction de mon <b>portfolio</b>, en utilisant des technologies de haut niveau et en <b>centrant le
+    développement sur les données</b>. L'idée était d'abord d'écrire mes expériences, mes projets, mon profil,
+    ma formation, etc. et ensuite de construire un site web de portfolio autour de cela.
+    Cela s'est terminé par un simple fichier <code>yaml</code>, un site web et des scripts <code>python</code>.
+    <br><br>
+    Vous lisez probablement ceci sur le site web résultant de ce projet
+    (<a href="https://antoine.mandin.dev"><code>https://antoine.mandin.dev</code></a>).
+    <br><br>
+    La première - et principale - partie de ce projet, ce sont les données proprement dites. J'ai condensé mes
+    expériences, mes projets et mes compétences dans un seul fichier <code>yaml</code>.
+    <br><br>
+    La deuxième partie du projet est le site web portfolio. Il est construit en utilisant <code>Jekyll</code>, et
+    hébergé en tant que page <code>GitHub</code>. J'ai utilisé un thème préexistant (nommé <code>Beautiful Jekyll</code>)
+    auquel j'ai ajouté des styles personnalisés inspirés d'autres thèmes <code>Jekyll</code>. En utilisant un plugin,
+    j'ai réussi à créer presque entièrement le site web à partir du fichier de données <code>yaml</code>. J'ai
+    également implémenté une barre de recherche en utilisant la bibliothèque <code>MiniSearch</code>.
+    Enfin, j'ai introduit la traduction de mon site web, initialement en anglais, et ici en français!
+    <br>
+    Au final, j'ai construit un site web statique, hébergé sur les pages <code>GitHub</code>, avec son propre style,
+    son propre moteur de recherche et son propre nom de domaine.
+    <br><br>
+    Enfin, la troisième partie du projet était un petit module <code>python</code> dédié à la gestion des données du portfolio.
+    Cela inclus la vérification du format des données et leur traduction intéligente. J'ai construit un fichier de
+    grammaire en <code>yaml</code>, représentant le contenu attendu des données (par exemple, un projet doit avoir
+    un titre, qui est un texte, et peut avoir une date de fin au format <code>jj-mm-aaaa</code>). En effet, l'idée
+    était d'avoir un site web cohérent, où les projets peuvent être liés à un emploi, et un emploi à une entreprise, etc.
+    <br>
+    Ce module <code>python</code> a été accompagné de formateurs et de linteurs, et utilisé dans un <i>workflow</i>
+    d'intégration continue, pour s'assurer que les données sont bien formatées tout au long de leur durée de vie.
+- _title: Data mining and conflicting areas identification
+  title: Exploration de données et identification des zones conflictuelles
+  subtitle: Stage dans un laboratoire de recherche en informatiques
+  job: Stagiaire en recherche
+  description: >-
+    Lors de mon stage au sein du laboratoire de recherche LIRIS, j'ai été chargé de trouver des méthodes de calcul
+    pour analyser un jeu de données avant l'entrainement d'un algorithme de <i>Machine Learning</i>.
+    J'ai fini par créer des modules <code>python</code> capables d'analyser et de mettre en évidence d'éventuelles
+    données incorrectes ou des valeurs problématiques pour l'entrainement d'un algorithme de <i>Machine Learning</i>.
+    <br><br>
+    Au tout début de mon stage, j'ai appris les théories sur les méthodes et technologies de <i>Machine Learning</i>,
+    appliquées à <code>Python</code>. Je me suis familiarisé avec les concepts d'intéligence artificiels et de
+    <i>Machine Learning</i> tels que l'apprentissage supervisé/non supervisé ou l'underfiting/overfiting.
+    <br><br>
+    Suivant une thèse, l'idée du projet était de construire des scripts capables d'identifier des données incorrectes
+    dans un grand ensemble de données. L'idée générale était la suivante :
+    <br>
+    Visant un algorithme de classification, le jeu de données a plusieurs attributs d'entrée qui sont utilisés pour
+    deviner un attribut cible. L'objectif était alors d'évaluer la possibilité de deviner l'attribut cible en partant
+    de l'idée que, s'il existe plusieurs instances dans l'ensemble de données avec les mêmes attributs d'entrée mais
+    une cible différente, alors tout algorithme (quelle que soit sa complexité) sera incapable de réussir à 100 %.
+    <br><br>
+    Illustrons cela avec un jeu de données courant dans l'apprentissage automatique : l'ensemble de données <code>Iris</code>.
+    Il est constitué de données sur les fleurs d'iris et contient 5 attributs : la largeur et la longueur des sépales,
+    la largeur et la longueur des pétales et l'espèce. Un algorithme de classification doit alors deviner l'espèce
+    en fonction de la largeur et de la longueur des sépales et des pétales. Appliquée à cet ensemble de données,
+    l'idée du projet était de vérifier si deux fleurs ont la même longueur/largeur des sépales et des pétales tout
+    en étant de deux espèces différentes.
+    <br><br>
+    En considérant l'égalité parfaite comme la fonction de comparaison entre les attributs d'entrée,
+    l'algorithme a une complexité de <code>O(n.log(n))</code> (en utilisant une <code>Map</code> comme structure de données).
+    Cependant, en considérant une tolérance dans la fonction de comparaison, l'algorithme naïf a une complexité de
+    <code>O(n²)</code>, ce qui n'est pas acceptable pour les grands ensembles de données. Mon objectif était donc de
+    trouver des moyens d'effectuer cette recherche dans un temps de calcul acceptable.
+    <br><br>
+    J'ai effectué une recherche bibliographique pour résoudre le problème de la comparaison de chaque élément de
+    l'ensemble de données à tous les autres éléments dans un temps de calcul raisonnable.
+    <br>
+    Ensuite, j'ai mis en œuvre une méthode appelée <code>Blocking</code>. L'idée sous-jacente est la suivante :
+    <ol>
+      <li><code>Mapping</code> - Tout d'abord, les valeurs sont mappées en blocs de valeurs similaires.
+      L'objectif est d'éviter les comparaisons entre des valeurs manifestement différentes.</li>
+      <li><code>Reducing</code> - La deuxième étape consiste à comparer les valeurs, à l'aide d'un algorithme naïf,
+      bloc par bloc. Cette étape peut être parallélisée, car chaque bloc est indépendant.</li>
+    </ol>
+    <p>
+    J'ai ajouté une étape au processus, afin de m'assurer d'être exhaustif, en profitant du fait que nous connaissons
+    la tolérance dans la fonction de comparaison. Cette étape consiste à dupliquer les valeurs aux bords des blocs
+    au sein des blocs environnants, de sorte que chaque valeur soit comparée à toutes ses voisines, quelle que soit
+    sa position absolue dans l'ensemble de données.
+    <br><br>
+    L'algorithme qui en résulte renvoie des paires de valeurs contradictoires, c'est-à-dire des valeurs dont les
+    attributs d'entrée sont similaires alors que les attributs cibles sont différents.
+    <br>
+    Ces valeurs peuvent être introduites dans des visualisations de zones problématiques/conflictuelles, c'est-à-dire
+    des zones du jeu de données qui contiennent un grand nombre de valeurs contradictoires. Ce type de visualisation
+    peut être utile aux experts de la source de données pour expliquer pourquoi des valeurs contradictoires sont
+    apparues à ces "endroits" ou pour remettre en question la manière dont les données ont été collectées.
+    <br>
+    Enfin, les paires contradictoires peuvent faire l'objet d'un post-traitement afin de rechercher l'ensemble
+    minimal de valeurs à supprimer de l'ensemble de données pour qu'il n'y ait plus de paires contradictoires.
+    Cette recherche est similaire à la recherche d'une <b>couverture minimale de sommets</b>, en ayant comme sommets
+    les valeurs et comme arêtes le fait d'être contradictoires. En effet, si une seule valeur est contradictoire
+    avec 10 autres, on peut facilement conclure à la suppression de cette valeur, mais dans le cas de réseaux plus
+    complexes, la décision est plus difficile à prendre. La recherche de la couverture minimale des sommets
+    est prouvée comme étant <i>NP-complet</i>.
+    <br><br>
+    Au final, les scripts <code>python</code> développés ont été capables d'identifier en 30 minutes les
+    paires de valeurs contradictoires sur un jeu de données pour lequel l'algorithme naïf aurait pris environ 1 an
+    de calcul.
+    <br><br>
+    Ce projet m'a permis d'apprendre les concepts et les problèmes liés au <i>Machine Learning</i>, ainsi que
+    d'approfondir mes compétences en algorithmies et en calcul parallèle.
+    </p>
+- _title: Skillect
+  subtitle: Site portfolio full stack
+  description: >-
+    Dans le cadre d'un projet personnel, j'ai cherché à créer un back-end basé sur une base de données relationnelle
+    pour stocker et <i>servir</i> mes expériences et mes compétences. L'objectif était d'utiliser ce
+    <i>back-end</i> dans un site web de portfolio, à la fois pour afficher mes compétences à n'importe qui et pour
+    me permettre d'éditer les données.
+    <br><br>
+    À partir d'une <i>template</i> complète utilisant <code>FastAPI</code>, <code>PostgreSQL</code> et
+    <code>Vue JS</code>, j'ai développé un site web complet. Le <i>back-end</i> était basé sur <code>FastAPI</code>,
+    qui offre une <code>API REST</code> à partir d'un serveur <code>HTTP WSGI</code> (pour lequel j'ai utilisé
+    <code>Gunicorn</code>). Via la bibliothèque <code>SQLAlchemy</code>, j'ai conçu le modèle de données, à la fois
+    pour l'authentification de l'utilisateur et les flux d'autorisation et pour représenter et stocker des compétences
+    professionnelles. Les bonnes pratiques d'utilisation de linters/formateurs (<code>black</code>, <code>pylint</code>
+    et <code>isort</code> ici), d'intégration continue (avec <code>GitHub Actions</code>) et de conteneurisation
+    (avec <code>Docker</code>) ont été utilisées.
+    <br><br>
+    Le <i>front-end</i> est basé sur <code>React JS</code>, <code>MUI</code> et <code>Tailwind CSS</code> (en
+    opposition à <code>Vue JS</code> qui était utilisé dans le modèle original).
+    Le <i>front-end</i> utilise <code>Axios</code> pour communiquer avec le <i>back-end</i>, notamment pour
+    l'authentification. Là encore, les bonnes pratiques d'utilisation de linters/formateurs (<code>Prettier</code>
+    et <code>ESLint</code>), d'intégration continue et de conteneurisation ont été appliquées.
+    <br><br>
+    J'ai également mis en place un <i>reverse proxy</i>, basé sur <code>Traefik</code>, chargé de rediriger
+    correctement les appels à l'<code>API REST</code> vers le <i>back-end</i>. Il utilise <code>Let's Encrypt</code> pour
+    renouveler automatiquement un certificat <code>SSL</code> (nécessaire pour activer le protocole <code>HTTPS</code>).
+    <br><br>
+    L'architecture est décrite en utilisant <code>Docker Compose</code>, qui inclut le <i>back-end</i>, le
+    <i>front-end</i>, le <i>reverse proxy</i>, et d'autres services comme la base de données <code>PostgreSQL</code>.
+    <br><br>
+    Le <i>back-end</i> a été hébergé sur <i>Amazon Web Service</i> (<code>AWS</code>), en utilisant une
+    instance <i>Elastic Compute Cloud</i> (<code>EC2</code>). Un nom de domaine personnalisé (<code>mandin.dev</code>)
+    a été dédié à ce site web. Enfin, des workflows de déploiement continu ont été mis en place pour déployer
+    automatiquement les mises à jour du site web en production.
+    <br><br>
+    Au cours de ce projet, qui a finalement été abandonné, j'ai appris à construire un site web complet,
+    des fonctionnalités techniques (comme l'authentification) au déploiement (<code>actions GitHub</code>,
+    <code>AWS</code>, nom de domaine, certificats <code>SSL</code>, etc.) J'ai également appris à mettre en
+    place un <i>reverse proxy</i> et à travailler avec diverses bibliothèques et technologies telles que
+    <code>FastAPI</code>, <code>React</code> et <code>SQLAlchemy</code>.
+- _title: sphinx-mermaid
+  subtitle: Extension Sphinx pour permettre les graphs mermaid dans de la documentation
+  description: >-
+    Dans le cadre d'un projet personnel, j'ai développé une bibliothèque <code>python</code> résultant en une extension
+    <code>Sphinx</code> permettant d'activer les graphiques <code>Mermaid</code> dans la documentation générée.
+    Cette bibliothèque permet de créer des graphiques interactifs et visuellement attrayants dans la
+    documentation <code>Sphinx</code>, la rendant plus informative et conviviale.
+    <br><br>
+    J'ai appris à créer une extension <code>Sphinx</code> et à déployer un paquet <code>Python</code> sur
+    <code>PyPI</code> (<i>Python Package Index</i>).
+    <br><br>
+    Personnellement, j'utilise beaucoup les graphs <code>mermaid</code>, faciles à utiliser et permettant de créer
+    de beaux graphiques à partir de très peut de configuration. Par conséquent, je voulais une extension
+    <code>Sphinx</code> avec une licence ouverte (ici <i>MIT</i>), qui permettrait l'utilisation de tels graphiques
+    dans les documents générés.
+    <br><br>
+    Ce projet est Open Source sur <code>GitHub</code>. Pendant le développement de cette extension, un ensemble de
+    bonnes pratiques a été mis en place. Tout d'abord, des linters et des formateurs ont été utilisés
+    (<code>black</code>, <code>pylint</code> et <code>isort</code>), pour imposer le format du code. Deuxièmement,
+    une intégration continue, via les <code>actions GitHub</code>, a été mise en place. Elle était chargée
+    de s'assurer que les règles de formatage étaient respectées. Enfin, un déploiement continu a également été
+    mis en place sous la forme d'une <code>action GitHub</code>, poussant le paquet <code>python</code> vers
+    <code>PyPI</code> lorsqu'une <i>release GitHub</i> était créée.
+    <br><br>
+    Cette expérience m'a permis d'améliorer mes compétences en développement <code>Python</code> et en gestion de
+    paquets, ainsi que ma compréhension du système de documentation <code>Sphinx</code>.
+- _title: Ground station UI improvement
+  title: Amélioration de l'interface de la station au sol
+  subtitle: Pour le controle de drones
+  job: Ingénieur informatique stagiaire
+  description: >-
+    Chez Kissfly, j'ai été chargé d'améliorer l'interface utilisateur de la station au sol. Le fonctionnement
+    des drones était le suivant : une télécommande classique dirigeait le drone tandis qu'un micro-ordinateur
+    embarqué était chargé de diffuser la vidéo en direct du drone en wifi, vers la station au sol. La station au sol
+    pouvait donc être n'importe quel appareil disposant d'un navigateur internet (ordinateur, tablette, téléphone...).
+    En effet, le micro-ordinateur à bord du drone faisait tourner un serveur basé sur <code>Node JS</code>, servant
+    l'interface de la station au sol comme un site web et transmettant la vidéo en <i>peer to peer</i>, en utilisant
+    la technologie <code>WebRTC</code>.
+    <br><br>
+    Au cours de cette mission, j'ai apporté plusieurs améliorations à l'interface utilisateur de la station au sol.
+    <ul>
+      <li>Tout d'abord, j'ai ajouté une représentation 3D de l'état du drone, qui affiche la position du drone par
+      rapport à sa position de départ, calculée via un algorithme de <code>SLAM</code> (qui n'entrait pas dans le
+      cadre de ma mission). Elle affiche également la trajectoire et les angles réels du drone (tangage, roulis et lacet).
+      Cette représentation a été réalisée à l'aide de la bibliothèque <code>Three.js</code>.</li>
+      <li>Deuxièmement, j'ai ajouté des boutons de contrôle à l'interface utilisateur, ce qui a amélioré la capacité de
+      l'utilisateur à contrôler le drone et a rendu l'interface plus intuitive.</li>
+    <ul>
+    <p>
+      Cette expérience m'a permis de travailler avec de nouvelles technologies et de comprendre comment améliorer
+      l'expérience utilisateur. J'ai pu améliorer mes compétences en matière de développement <i>frontend</i>, de
+      conception d'interface utilisateur et de résolution de problèmes.
+    <p>
+- _title: Prix carburants
+  subtitle: Une carte et des statistiques sur les prix des carburants français
+  description: >-
+    Au cours de ce projet personnel, j'ai construit à la fois des scripts <code>python</code> pour récupérer des
+    données sur les prix des carburants en France à partir des données ouvertes du gouvernement et un site
+    web statique hébergé sur <code>GitHub</code> pour afficher les prix.
+    <br><br>
+    La première partie du projet consistait à construire des scripts <code>Python</code> pour récupérer des
+    données sur les prix des carburants à partir des données ouvertes du gouvernement français et les transférer
+    dans un fichier <code>JSON</code>. Les scripts <code>Python</code> sont accompagnés de linters et de formateurs,
+    exécutés dans un pipeline d'intégration continue (via <code>GitHub Actions</code>). Les scripts sont
+    utilisés dans un pipeline <i>CRON</i> dédié à la récupération régulière de nouvelles données sur les prix
+    des carburants en France.
+    <br><br>
+    La deuxième partie était le site web statique. Je l'ai construit en utilisant <code>Jekyll</code> et
+    <code>JavaScript</code>. Il est hébergé sur des <code>pages GitHub</code>. Il affiche une carte de France, avec
+    les emplacements des stations-service et leurs prix. Il affiche également le prix moyen du carburant par
+    région en France. Les manipulations de cartes sont effectuées à l'aide de la bibliothèque <code>Leaflet</code>.
+    Le code JavaScript est également associé à des linters et formatters qui sont utilisés lors de l'intégration
+    continue pour faire imposer un format au code.
+    <br><br>
+    Au final, ce projet a permis de montrer comment construire rapidement un site web statique affichant
+    des statistiques à partir de données ouvertes.
+- _title: Optimization of drone live video streaming
+  title: Optimisation de la vidéo en directe de drones
+  subtitle: Chez Kissfly
+  job: Ingénieur informatique stagiaire
+  description: >-
+    Chez Kissfly, j'étais responsable d'<b>améliorer le système de streaming vidéo en direct</b> qui diffusait
+    la vidéo prise par le drone à la station au sol.
+    <br>
+    Le système était construit avec un serveur <code>Node.js Express</code> tournant sur le drone et une
+    instance de <i>Chromium headless</i> tournant comme client du serveur (sur le drone également),
+    offrant une connexion en <i>peer-to-peer</i> à la station au sol. Cela permettait de diffuser
+    la vidéo en direct prise par le drone via <code>WebRTC</code> (RTC signifiant Real Time Communication).
+    <br><br>
+    Ma mission était de tester plusieurs configurations dans différents environnements afin d'améliorer
+    la <b>distance de streaming maximale</b>, ainsi que la <b>latence</b> et le <b>nombre d'images
+    par seconde</b> de la vidéo.
+    <br>
+    J'ai effectué de nombreux tests en ajustant les paramètres de <code>WebRTC</code>, ainsi qu'une
+    grande quantité de recherches documentaires. Cela m'a beaucoup appris sur les systèmes en
+    <i>peer-to-peer</i> et sur les dessous du streaming vidéo.
+    <br>
+    Finalement, j'ai réussi à améliorer la distance de streaming maximale jusqu'à l'objectif que nous avions
+    défini au préalable tout en réduisant la latence et en augmentant le nombre d'images par seconde.
+    Cette mission a été un succès, mais j'ai également conclu que ces technologies n'étaient pas adaptées
+    à ce cas d'utilisation spécifique et qu'elles avaient atteint leurs limites.
+    <br><br>
+    Cette expérience m'a permis de travailler avec de nouvelles technologies et de comprendre leurs limites et capacités.
+    J'ai pu améliorer mes compétences en matière de streaming vidéo en direct, de développement web et de résolution
+    de problèmes.
+- _title: Randos map
+  subtitle: Site web standalone aaffichant des randonnées en Loire-Atlantique
+  description: >-
+    En tant que projet personnel, j'ai construit un site web statique affichant des trajets de randonnée en
+    <i>Loire-Atlantique</i>.
+    <br><br>
+    Le site web est construit en utilisant <code>Jekyll</code> et un peu de <code>JavaScript</code>. Il est hébergé
+    sur <code>GitHub</code> en tant que site web monopage.
+    <br><br>
+    Les données sur les randonnées proviennent des données ouvertes (<i>open data</i>) du gouvernement français,
+    sous la forme d'un fichier <code>JSON</code>. En utilisant la bibliothèque <code>Leaflet</code>, j'ai affiché
+    les randonnées, leur difficulté, leur description et quelques autres attributs tels que la longueur ou la durée
+    estimée.
+    <br>
+    <code>Leaflet</code> est également utilisé pour afficher la position actuelle de l'utilisateur.
+    <br><br>
+    Enfin, l'utilisateur peut filtrer les randonnées en fonction de leur longueur, de leur durée estimée et de
+    la présence de balises.
+    <br><br>
+    En fin de compte, ce petit site web statique montre comment utiliser simplement les données ouvertes ainsi que
+    des bibliothèques comme <code>Leaflet</code> pour créer un petit site web facilement.
+- _title: Heads or Tails
+  title: Pile ou Face
+  subtitle: Application android
+  job: Auto-entrepreneur
+  description: >-
+    <code>Heads or Tails</code> est la toute première application Android que j'ai publiée sur le Google Play Store.
+    Je n'avais pas d'ambition particulière pour cette application, mais elle a tout de même été installée par plus
+    de 10 000 utilisateurs.
+    <br><br>
+    Le concept est simple, <b>faire des tirages au sort rapidement</b>. L'application permet à l'utilisateur de créer
+    des tirages au sort entre des choix prédéfinis ou de simples nombres.
+    <br><br>
+    Ce projet était l'un de mes tout premiers projets d'application Android, et à mesure que j'apprenais à
+    <i>mieux coder</i> et que l'application était encore utilisée par des centaines de personnes, j'ai
+    décidé de <i>refactoriser</i> la base de code. Cela m'a appris l'importance de la documentation et
+    de maintenir une base de code propre.
+- _title: SMART VR
+  description: >-
+    Dans le cadre d'un projet scolaire de deux semaines pour l'association ANTS
+    (Advanced Neuro-rehabilitation Therapies & Sport), j'ai fait partie d'une équipe de 7 étudiants
+    en ingénieurie chargés de créer des ateliers de réalité virtuelle pour rendre les exercices de mobilisation
+    plus amusants pour les personnes à mobilité réduite.
+    <br><br>
+    Le produit final était un jeu fonctionnant sur <i>Oculus Quest</i>, développé à l'aide de Unity.
+    <br>
+    Le joueur s'envole dans une ville réelle et doit effectuer des exercices répétitifs pour passer à travers
+    des portes et collecter des points dans le ciel.
+    <br><br>
+    Ce projet m'a permis d'apprendre les concepts de la réalité virtuelle et la création de jeux à l'aide du moteur Unity.
+- _title: My data analyser
+  subtitle: Application android analysant les données personnelles
+  description: >-
+    En tant que projet personnel, j'ai développé une application <code>Android</code> qui permet aux utilisateurs
+    d'analyser leurs données personnelles provenant de diverses applications telles que <b>Spotify</b> et
+    <b>Facebook Messenger</b>.
+    <br><br>
+    L'application demande aux utilisateurs de télécharger leurs données personnelles à partir de ces applications,
+    puis les analyse pour afficher des statistiques telles que leurs artistes préférés et le temps passé à les écouter.
+    <br>
+    En effet, cela repose sur le fait que les applications qui collectent des informations sur ses utilisateurs
+    doivent leur offrir un moyen d'y accéder. Ensuite, j'ai trouvé intéressant de creuser dans cette énorme
+    quantité de données personnelles que des entreprises telles que <b>Facebook</b> ou <b>Spotify</b> avaient sur moi.
+    <br>
+    Mon application m'a ainsi montré, à propos de <i>Facebook Messenger</i>, les conversations avec le plus de
+    messages échangés et qui envoyait le plus de messages. À propos de <i>Spotify</i>, l'application affiche
+    l'artiste le plus écouté et l'évolution de la durée d'écoute au fil de l'année.
+    <br>
+    En fait, je pouvais afficher presque tout, car j'avais la main sur les données.
+    <br><br>
+    Bien que l'application n'ait jamais été publiée, le code source est disponible sur <code>GitHub</code> pour
+    quiconque souhaite en savoir plus sur son développement et ses fonctionnalités.
+    <br><br>
+    Ce projet m'a permis d'acquérir de l'expérience dans le traitement de données personnelles et dans l'analyse de
+    données.
+- _title: text-checker
+  subtitle: Bibliothèque python pour vérifier l'orthographe via reverso
+  description: >-
+    Ce projet personnel est un outil en ligne de commande, construit avec <code>python</code>, permettant à
+    l'utilisateur de vérifier l'orthographe de son texte en utilisant des outils en ligne tels que <i>Reverso</i>.
+    <br><br>
+    À partir d'un texte, l'outil trouve les erreurs et suggère des corrections.
+    <br><br>
+    Un pipeline d'intégration continue est mis en place, qui vérifie la structure du code en utilisant
+    <code>black</code>, <code>pylint</code> et <code>isort</code>.
+    <br>
+    L'outil utilise la bibliothèque <code>requests</code> pour interagir avec l'API de <i>Reverso</i>.
+- _title: NuMemory
+  subtitle: Jeu android
+  job: Auto-entrepreneur
+  description: >-
+    Jeu Android publié sur le <i>Play Store</i> qui met au défi la mémoire de l'utilisateur.
+    <br><br>
+    L'utilisateur voit plusieurs carrés numérotés. Il/elle doit alors cliquer sur les carrés, en commençant
+    par celui numéroté <code>1</code> et en suivant l'ordre croissant des nombres.
+    Le jeu commence avec deux carrés et ajoute un carré lorsque le joueur réussit.
+    Il se termine lorsque le joueur commet une erreur dans l'ordre des carrés.
+- _title: Arlanda trip
+  description: >-
+    Ce projet visait à trouver le moyen le moins cher et le plus efficace de se rendre à l'aéroport de Stockholm
+    depuis la ville, sans payer de frais pour le métro direct.
+    <br><br>
+    En utilisant l'<code>API</code> fournie par la compagnie de transport de Stockholm,
+    j'ai créé un ensemble de scripts <code>Python</code> pour recueillir des informations sur les options de transport.
+    <br><br>
+    Le résultat était un ensemble de scripts qui pouvaient aider les voyageurs à économiser de l'argent et à
+    trouver le meilleur itinéraire vers l'aéroport.
