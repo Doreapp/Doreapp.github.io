@@ -41,3 +41,138 @@ education:
     title: Diplôme d'ingénieur, spécialité informatique
     subtitle: Dicerné par l'INSA Lyon
     share-title: Diplôme d'ingénieur, spécialité informatique
+work:
+  companies:
+  - _name: SIREHNA
+    description: >-
+      SIREHNA est une entreprise dynamique et innovante spécialisée dans les solutions d'ingénierie
+      pour l'industrie maritime.
+      Avec une équipe d'ingénieurs et de techniciens hautement qualifiés,
+      SIREHNA fournit une large gamme de services, y compris la conception, le développement et
+      la fabrication d'équipements et de systèmes maritimes de haute technologie.
+      L'entreprise est connue pour ses solutions innovantes, conçues pour améliorer
+      l'efficacité, la sécurité et la durabilité des opérations maritimes.
+      <br>
+      SIREHNA est un partenaire de confiance de l'industrie maritime,
+      grâce à son engagement fort en faveur de la satisfaction des clients et à sa culture
+      de la collaboration et du travail d'équipe. Les solutions innovantes de l'entreprise,
+      combinées à son expertise et à son approche centrée sur le client, en font un leader dans son domaine.
+      <br>
+      SIREHNA est une PME (100+ employee), filiale de Naval Group.
+  - _name: Kissfly
+    description: >-
+      Kissfly est une startup basée à san Fransisco spécialisée dans les drones volant autonomnes.
+    country: USA
+  - _name: LIRIS
+    description: >-
+      Le LIRIS est un laboratoire de recherche de pointe qui se consacre à l'amélioration
+      de notre compréhension des systèmes intelligents et de leurs interactions avec les êtres humains.
+      Avec une équipe multidisciplinaire de chercheurs issus de domaines tels que l'informatique,
+      la psychologie et les sciences cognitives, le LIRIS est à la pointe du développement de solutions
+      innovantes à des problèmes concrets. La recherche du laboratoire se caractérise par une forte
+      concentration sur la recherche fondamentale et appliquée, dans le but de créer des solutions
+      pratiques qui ont un impact réel sur la société.
+  - _name: Doreapp
+    description: >-
+      L'identité de mon "entreprise" en tant qu'auto-entrepreneur.
+      Utilisée principalement pour publier des applications sur le Play Store.
+  jobs:
+  - _name: Software engineer
+    name: Ingénieur logiciel
+    share-title: Ingénieur logiciel chez SIREHNA
+    description: >-
+      En tant qu'ingénieur logiciel chez Sirehna, je fais partie d'une petite équipe où nous construisons
+      des logiciels et des programmes en fort lien avec l'architecture et la science navales.
+      <br><br>
+      Mon rôle passe par du l'utilisation de <code>Gitlab</code> et ses processus de <b>CI/CD</b>
+      et de revue de code pour assurer la production et le déploiement d'un code de haute qualité.
+      <br><br>
+      Je travaille aussi bien avec des technologies backend, telles que <code>Python</code> que des technologies frontend,
+      comme <code>React.js</code>. Ainsi, nous construisons des logiciels de A à Z pour nos clients.
+      <br>
+      Je suis responsable du développement, des tests et de la maintenance des logiciels et des programmes,
+      en collaborant avec l'équipe pour garantir une livraison dans les délais et des produits de haute qualité.
+      <br>
+      En outre, je participe à l'amélioration continue du processus de développement de logiciels et
+      je veille à ce que le logiciel soit optimisé en termes de performances et d'évolutivité.
+  - _name: Software engineer intern
+    name: Ingénieur logiciel stagiaire
+    share-title: Ingénieur logiciel stagiaire à SIREHNA
+    description: >-
+      Au cours de mon stage chez SIREHNA, j'ai été chargé de créer un environnement de simulation et
+      de gestion des données pour les ingénieurs en hydrodynamique de l'entreprise.
+      L'objectif du stage était d'améliorer leurs processus de travail et
+      d'automatiser des simulations hydrodynamiques.
+      <br><br>
+      Dans ce contexte, j'ai développé un environnement complet, contenant les composants suivants :
+      <ul>
+        <li>Un grand système de stockage basé sur <code>MinIO</code>, offrant un stockage
+        robuste et évolutif pour les données de simulation.</li>
+        <li>Une plateforme web de gestion des utilisateurs et des autorisations basée sur <code>Girder</code>,
+        permettant de sécuriser l'accès et la gestion des données de simulation.</li>
+        <li>Un <i>workflow</i> automatisé pour exécuter les simulations <i>CFD</i> et renvoyer de manière asynchrone
+        les résultats et les journaux, basé sur <code>Gitlab</code>.</li>
+      </ul>
+      <p>
+        Cela a permis de rationaliser le processus de simulation et de gérer efficacement les données.
+        Ce stage m'a permis d'acquérir de l'expérience dans un cadre professionnel et de développer mes
+        compétences en matière de développement logiciel, de gestion des données et d'automatisation.
+      </p>
+  - _name: IT engineer intern
+    name: Ingénieur informatique stagiaire
+    share-title: Ingénieur informatique stagiaire chez Kissfly
+    description: >-
+      Pendant mon stage chez Kissfly, j'ai acquis de l'expérience en travaillant dans un environnement à
+      distance tout en étant basée en France. Ce stage m'a permis de développer mes compétences en
+      matière de collaboration à distance et de gestion du temps.
+      <br><br>
+      Durant ce stage, j'ai réaliser de nombreuses missions, notamment
+      <ul>
+        <li>Amélioration du système de streaming vidéo en direct entre le drone en mouvement et la station au sol.
+        Le streaming était basé sur <code>WebRTC</code>. En testant et en mettant à jour les paramètres, j'ai
+        réussi à améliorer la portée maximale du streaming ainsi que la latence et le framerate vidéo.</li>
+        <li>Amélioration de l'interface utilisateur de la station au sol. Elle consistait en une page web
+        conçue avec <code>Vue.js</code>. Cette amélioration a inclus l'ajout de boutons de contrôle et
+        l'affichage de la trajectoire en 3D du drone en direct. Cela a permis d'améliorer l'expérience
+        utilisateur et de rendre l'interface plus intuitive.</li>
+        <li>Recherche et test de technologies de diffusion vidéo en direct, telles que <code>wifi-broadcast</code>.
+        Cela m'a permis d'acquérir des connaissances sur les différentes technologies et leurs capacités,
+        ce qui m'a aidé à prendre des décisions informées sur la meilleure technologie à utiliser pour le projet.</li>
+      </ul>
+      <p>
+        Ce stage m'a donné l'occasion de travailler sur des projets concrets et j'ai pu appliquer mes
+        compétences techniques tout en apprenant de nouvelles technologies et approches de la résolution de problèmes.
+        J'ai pu améliorer mes compétences en matière de diffusion vidéo en direct, de développement front-end et de
+        recherche.
+      </p>
+  - _name: Research intern
+    name: Stagiare en recherche
+    share-title: Stagiaire en recherche au LIRIS
+    description: >-
+      Lors de mon stage au sein du laboratoire de recherche LIRIS, j'ai participé à un projet faisant
+      suite à une thèse. L'objectif était d'évaluer un jeu de données (<i>dataset</i>) au préalable à
+      l'entrainement d'un algorithme de <i>Machine Learning</i>, afin d'identifier de potentielles données incorrectes.
+      Pour ce faire, j'ai créé des algorithmes <code>Python</code> utilisant des méthodes de <i>Blocking</i> pour
+      analyser le jeu de données et mettre en avant les élements conflictuels.
+      <br><br>
+      Ainsi, j'étais responsable du développement et de la mise en œuvre des algorithmes, de leur test et de
+      l'analyse des résultats. J'ai travaillé avec de grands jeux de données et géré ces données
+      de manière efficace (notamment via de la parallélisation des algorithmes), ainsi qu'utilisé diverses bibliothèques
+      telles que <code>pandas</code> et <code>numpy</code>.
+      <br><br>
+      Cette expérience m'a permis de développer mes compétences en matière d'analyse de données, de prétraitement
+      des données et d'apprentissage automatique (<i>Marchine Learning</i>). Elle m'a également permis de mieux
+      comprendre l'importance de la qualité des données dans le <i>Machine Learning</i> et de m'assurer que les
+      données sont correctes avant d'entraîner un modèle.
+  - _name: Autoentrepreneur
+    name: Auto-entrepreneur
+    share-title: Auto-entrepreneur en tant que Doreapp
+    description: >-
+      Avant mes études et mes stages, j'ai appris en autodidacte à développer des applications <b>Android</b>.
+      Cela a conduit à la création de plusieurs applications disponibles sur le <b>Google Play Store</b> et à la
+      création de ma propre auto-entreprise, <b>Doreapp</b>.
+      <br><br>
+      Grâce à cette expérience, j'ai développé mes compétences en matière de développement <code>Android</code>
+      et de concepts de programmation tels que la programmation orientée objet, les structures de données et
+      les algorithmes. J'ai également appris à utiliser <code>Android Studio</code>, <code>Java</code> et
+      d'autres technologies connexes pour développer mes applications.
