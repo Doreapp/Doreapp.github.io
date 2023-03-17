@@ -2,3 +2,14 @@ profile:
   - _name: Antoine Mandin
     subtitle: Ingénieur logiciel
     share-title: Antoine Mandin | Ingénieur logiciel
+about:
+- subtitle: Pourquoi moi plutôt qu'un robot ?
+  share-title: A propos | Antoine Mandin
+  text: 'Quelques qualités'
+  list:
+  - name: Maître Gitmoji
+    description: Transforme n'importe quel repo ennuyeux en une explosion de couleurs
+  - name: Magicien des raccourcis
+    description: Au désaroi de <code>Ctrl</code> et <code>Shift</code>...
+  - name: Chasseur de coverage
+    description: On a testé les tests ?
