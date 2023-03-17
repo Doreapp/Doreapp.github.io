@@ -13,3 +13,31 @@ about:
     description: Au désaroi de <code>Ctrl</code> et <code>Shift</code>...
   - name: Chasseur de coverage
     description: On a testé les tests ?
+education:
+  schools:
+  - _name: KTH
+    country: Suède
+    description: >-
+      KTH est la plus grande université technique de Suède.
+      <br>
+      J'y ai travaillé durant un semestre, en échange universitaire,
+      approfondissant mes connaissances en informatiques et améliorant mon anglais.
+  - _name: INSA Lyon
+    subtitle: Ecole d'ingénieur française
+    share-title: INSA Lyon | Ecole d'ingénieur
+    description: >-
+      Ecole d'ingénieur en 5 ans.
+      <br>
+      Les deux premières années correspondent à la classe préparatoire intégrée,
+      offrant un enseignement sicentifique générale, avec des mathématiques, de le physique,
+      de la chimie et surtout une agréable vie étudiante.
+      <br>
+      Les trois années qui suivent sont dédiées à la spéciailisation.
+      J'ai donc travaillé au sein du département IF (informatique)
+      qui propose des cours allant de l'architecture des ordinateurs jusqu'aux
+      modèles de données, en passant par de la gestion de projets.
+  diplomas:
+  - _title: Engineering degree in computer science
+    title: Diplôme d'ingénieur, spécialité informatique
+    subtitle: Dicerné par l'INSA Lyon
+    share-title: Diplôme d'ingénieur, spécialité informatique
