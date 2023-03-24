@@ -4,8 +4,10 @@ Parameters:
 - end-date: Optional, format dd-mm-yyyy
 {% endcomment %}
 
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
 {% if include.end-date %}
-  {{ site.data.texts.from }} {{ include.start-date | date: "%B %-d, %Y" }} {{ site.data.texts.to }} {{ include.end-date | date: "%B %-d, %Y" }}
+  {{ site.data.texts.from }} {{ include.start-date | date: date_format }} {{ site.data.texts.to }} {{ include.end-date | date: date_format }}
 {% else %}
-  {{ site.data.texts.started-on }} {{ include.start-date | date: "%B %-d, %Y" }}
+  {{ site.data.texts.started-on }} {{ include.start-date | date: date_format }}
 {% endif %}

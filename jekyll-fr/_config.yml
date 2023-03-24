@@ -3,6 +3,8 @@ description: >-
   Portfolio d'Antoine Mandin. Ingénieur Logiciel.
 baseurl: "/fr"
 
+date_format: "%d/%m/%Y"
+
 navbar-links:
   - ["In english", ".."]
   - ["A propos", "about"]
