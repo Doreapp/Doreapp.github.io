@@ -1,0 +1,46 @@
+---
+layout: post
+title: Contact
+permalink: /contact/
+cover-img: "/assets/img/banner.jpg"
+---
+
+<p>
+    Salut! Je suis content que vous soyez tombé sur mon coin de l'internet.
+    Si vous êtes ici, je suppose que vous voulez entrer en contact avec moi.
+    Eh bien, vous avez de la chance! Que vous ayez une offre d'emploi, un projet en tête ou simplement envie de dire
+    bonjour, je suis tout ouïe!
+</p>
+
+{% if site.data.me.profile[0].email and site.data.me.profile[0].linkedin %}
+<p>
+    Si vous préférez me contacter par email, vous pouvez m'envoyer un message à l'adresse
+    <a href="mailto:{{ site.data.me.profile[0].email }}">{{ site.data.me.profile[0].email }}</a>.
+    Je promets de répondre dès que possible (sauf si je fais une sieste ou mange un énorme burrito, auquel cas cela peut
+    prendre un peu plus de temps).
+</p>
+<p>
+    Si vous préférez LinkedIn, vous pouvez aussi me trouver là-bas.
+    Il vous suffit de suivre
+    <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}">ce lien</a>.
+</p>
+{% elsif site.data.me.profile[0].email %}
+<p>
+    Vous pouvez m'envoyer un message à l'adresse
+    <a href="mailto:{{ site.data.me.profile[0].email }}">{{ site.data.me.profile[0].email }}</a>.
+    Je promets de répondre dès que possible (sauf si je fais une sieste ou mange un énorme burrito, auquel cas cela peut
+    prendre un peu plus de temps).
+</p>
+{% elsif site.data.me.profile[0].linkedin %}
+<p>
+    Vous pouvez me trouver sur LinkedIn, il vous suffit de suivre
+    <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}">ce lien</a>.
+</p>
+{% else %}
+<p>
+    Malheureusement, je ne fournis pas de moyens de contact directs sur cette page, vous devrez fouiller sur internet...
+</p>
+{% endif %}
+<p>
+    Merci d'être passé(e)! J'ai hâte d'avoir de vos nouvelles bientôt.
+</p>
