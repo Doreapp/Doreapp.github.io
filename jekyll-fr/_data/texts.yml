@@ -3,3 +3,26 @@ looks-like-your-lost: "On dirait bien que tu es perdu..."
 go-back-home: Retour à l'accueil
 
 no-result: "Aucun résultat"
+search-for-description: "Rechercher un projet, un langage, une techno..."
+
+project-done-as: "Projet fait en tant que"
+at--company: "chez"
+school-project-done-at: "Projet scolaire fait à"
+job-at: "Travail chez"
+posted-on: "Posté le"
+last-updated: "Dernière mise à jour le"
+
+from: "Du"
+to: "au"
+started-on: "A débuté le"
+
+jobs: Expériences professionnelles
+education: Éducation
+
+related: Associé
+view-more-projects: Voir plus de projets
+
+official-website: "Site officiel"
+email-me: M'envoyer un email
+schedule-a-meeting-with-me: Prévoir un rendez-vous avec moi
+phone: Téléphone

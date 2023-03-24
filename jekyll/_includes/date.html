@@ -5,7 +5,7 @@ Parameters:
 {% endcomment %}
 
 {% if include.end-date %}
-From {{ include.start-date | date: "%B %-d, %Y" }} to {{ include.end-date | date: "%B %-d, %Y" }}
+  {{ site.data.texts.from }} {{ include.start-date | date: "%B %-d, %Y" }} {{ site.data.texts.to }} {{ include.end-date | date: "%B %-d, %Y" }}
 {% else %}
-Started on {{ include.start-date | date: "%B %-d, %Y" }}
+  {{ site.data.texts.started-on }} {{ include.start-date | date: "%B %-d, %Y" }}
 {% endif %}

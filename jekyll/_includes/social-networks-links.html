@@ -1,376 +1,374 @@
 <!-- From beautiful jekyll https://github.com/daattali/beautiful-jekyll/blob/master/_includes/social-networks-links.html -->
 
 {% if include.light %}
-  {% assign back-class = "fas fa-circle fa-stack-2x fa-inverse" %}
-  {% assign front-class = "fa-stack-1x" %}
+{% assign back-class = "fas fa-circle fa-stack-2x fa-inverse" %}
+{% assign front-class = "fa-stack-1x" %}
 {% else %}
-  {% assign back-class = "fas fa-circle fa-stack-2x" %}
-  {% assign front-class = "fa-stack-1x fa-inverse" %}
+{% assign back-class = "fas fa-circle fa-stack-2x" %}
+{% assign front-class = "fa-stack-1x fa-inverse" %}
 {% endif %}
 
 <ul class="list-inline text-center footer-links">
 
   {%- if site.data.me.profile[0].rss and site.rss-description -%}
-    <li class="list-inline-item">
-      <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fas fa-rss {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">RSS</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fas fa-rss {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].email -%}
-    <li class="list-inline-item">
-      <a href="mailto:{{ site.data.me.profile[0].email }}" title="Email me">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fas fa-envelope {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Email me</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="mailto:{{ site.data.me.profile[0].email }}" title="{{ site.data.texts.email-me }}">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fas fa-envelope {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">{{ site.data.texts.email-me }}</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].calendly -%}
-    <li class="list-inline-item">
-      <a href="https://calendly.com/{{ site.data.me.profile[0].calendly }}" title="Schedule a meeting with me">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fas fa-calendar-check {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Schedule a meeting with me</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://calendly.com/{{ site.data.me.profile[0].calendly }}"
+      title="{{ site.data.texts.schedule-a-meeting-with-me }}">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fas fa-calendar-check {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">{{ site.data.texts.schedule-a-meeting-with-me }}</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].facebook -%}
-    <li class="list-inline-item">
-      <a href="https://www.facebook.com/{{ site.data.me.profile[0].facebook }}" title="Facebook">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-facebook {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Facebook</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.facebook.com/{{ site.data.me.profile[0].facebook }}" title="Facebook">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-facebook {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].telegram -%}
-    <li class="list-inline-item">
-      <a href="https://t.me/{{ site.data.me.profile[0].telegram }}" title="Telegram">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-telegram-plane {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Telegram</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://t.me/{{ site.data.me.profile[0].telegram }}" title="Telegram">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-telegram-plane {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Telegram</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].github -%}
-    <li class="list-inline-item">
-      <a href="https://github.com/{{ site.data.me.profile[0].github }}" title="GitHub">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-github {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">GitHub</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://github.com/{{ site.data.me.profile[0].github }}" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-github {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].twitter -%}
-    <li class="list-inline-item">
-      <a href="https://twitter.com/{{ site.data.me.profile[0].twitter }}" title="Twitter">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-twitter {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Twitter</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://twitter.com/{{ site.data.me.profile[0].twitter }}" title="Twitter">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-twitter {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].reddit -%}
-    <li class="list-inline-item">
-      <a href="https://reddit.com/u/{{ site.data.me.profile[0].reddit }}" title="Reddit">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-reddit {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Reddit</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://reddit.com/u/{{ site.data.me.profile[0].reddit }}" title="Reddit">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-reddit {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Reddit</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].linkedin -%}
-    <li class="list-inline-item">
-      <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}" title="LinkedIn">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-linkedin {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">LinkedIn</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-linkedin {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].xing -%}
-    <li class="list-inline-item">
-      <a href="https://www.xing.com/profile/{{ site.data.me.profile[0].xing }}" title="Xing">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-xing {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Xing</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.xing.com/profile/{{ site.data.me.profile[0].xing }}" title="Xing">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-xing {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Xing</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].stackoverflow -%}
-    <li class="list-inline-item">
-      <a href="https://stackoverflow.com/users/{{ site.data.me.profile[0].stackoverflow }}" title="StackOverflow">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-stack-overflow {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">StackOverflow</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://stackoverflow.com/users/{{ site.data.me.profile[0].stackoverflow }}" title="StackOverflow">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-stack-overflow {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">StackOverflow</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].snapchat -%}
-    <li class="list-inline-item">
-      <a href="https://www.snapchat.com/add/{{ site.data.me.profile[0].snapchat }}" title="Snapchat">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-snapchat-ghost {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Snapchat</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.snapchat.com/add/{{ site.data.me.profile[0].snapchat }}" title="Snapchat">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-snapchat-ghost {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Snapchat</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].instagram -%}
-    <li class="list-inline-item">
-      <a href="https://www.instagram.com/{{ site.data.me.profile[0].instagram }}" title="Instagram">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-instagram {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Instagram</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.instagram.com/{{ site.data.me.profile[0].instagram }}" title="Instagram">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-instagram {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Instagram</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].youtube -%}
-    <li class="list-inline-item">
-      <a href="https://www.youtube.com/{{ site.data.me.profile[0].youtube }}" title="YouTube">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-youtube {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">YouTube</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.youtube.com/{{ site.data.me.profile[0].youtube }}" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-youtube {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].spotify -%}
-    <li class="list-inline-item">
-      <a href="https://open.spotify.com/user/{{ site.data.me.profile[0].spotify }}" title="Spotify">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-spotify {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Spotify</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://open.spotify.com/user/{{ site.data.me.profile[0].spotify }}" title="Spotify">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-spotify {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Spotify</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].telephone -%}
-    <li class="list-inline-item">
-      <a href="tel:{{ site.data.me.profile[0].telephone }}" title="Phone">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fas fa-phone {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Phone</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="tel:{{ site.data.me.profile[0].telephone }}" title="Phone">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fas fa-phone {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">{{ site.data.texts.phone }}</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].steam -%}
-    <li class="list-inline-item">
-      <a href="https://steamcommunity.com/id/{{ site.data.me.profile[0].steam }}" title="Steam">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-steam {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Steam</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://steamcommunity.com/id/{{ site.data.me.profile[0].steam }}" title="Steam">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-steam {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Steam</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].twitch -%}
-    <li class="list-inline-item">
-      <a href="https://www.twitch.tv/{{ site.data.me.profile[0].twitch }}" title="Twitch">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-twitch {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Twitch</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.twitch.tv/{{ site.data.me.profile[0].twitch }}" title="Twitch">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-twitch {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Twitch</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].yelp -%}
-    <li class="list-inline-item">
-      <a href="https://{{ site.data.me.profile[0].yelp }}.yelp.com" title="Yelp">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-yelp {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Yelp</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://{{ site.data.me.profile[0].yelp }}.yelp.com" title="Yelp">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-yelp {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Yelp</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].mastodon -%}
-    <li class="list-inline-item">
-      <a
-        rel="me"
-        href="https://{{ site.data.me.profile[0].mastodon }}"
-        title="Mastodon">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-mastodon {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Mastodon</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a rel="me" href="https://{{ site.data.me.profile[0].mastodon }}" title="Mastodon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-mastodon {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Mastodon</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].ORCID -%}
-    <li class="list-inline-item">
-      <a href="https://orcid.org/{{ site.data.me.profile[0].ORCID }}" title="ORCID">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-orcid {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">ORCID</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://orcid.org/{{ site.data.me.profile[0].ORCID }}" title="ORCID">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-orcid {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">ORCID</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].google-scholar -%}
-    <li class="list-inline-item">
-      <a href="https://scholar.google.com/{{ site.data.me.profile[0].google-scholar }}" title="Google Scholar">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fa fa-graduation-cap {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Google Scholar</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://scholar.google.com/{{ site.data.me.profile[0].google-scholar }}" title="Google Scholar">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fa fa-graduation-cap {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Google Scholar</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].patreon -%}
-    <li class="list-inline-item">
-      <a href="https://patreon.com/{{ site.data.me.profile[0].patreon }}" title="Patreon">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-patreon {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Patreon</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://patreon.com/{{ site.data.me.profile[0].patreon }}" title="Patreon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-patreon {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Patreon</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].medium -%}
-    <li class="list-inline-item">
-      <a href="https://medium.com/@{{ site.data.me.profile[0].medium }}" title="Medium">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-medium {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Medium</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://medium.com/@{{ site.data.me.profile[0].medium }}" title="Medium">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-medium {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Medium</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].itchio -%}
-    <li class="list-inline-item">
-      <a href="https://{{ site.data.me.profile[0].itchio }}.itch.io/" title="Itchio">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-itch-io {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Itchio</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://{{ site.data.me.profile[0].itchio }}.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-itch-io {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].discord -%}
-    <li class="list-inline-item">
-      <a href="https://discord.com/{{ site.data.me.profile[0].discord }}" title="Discord">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-discord {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Discord</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://discord.com/{{ site.data.me.profile[0].discord }}" title="Discord">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-discord {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Discord</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].kaggle -%}
-    <li class="list-inline-item">
-      <a href="https://www.kaggle.com/{{ site.data.me.profile[0].kaggle }}" title="Kaggle">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-kaggle {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Kaggle</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.kaggle.com/{{ site.data.me.profile[0].kaggle }}" title="Kaggle">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-kaggle {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Kaggle</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].hackerrank -%}
-    <li class="list-inline-item">
-      <a href="https://www.hackerrank.com/{{ site.data.me.profile[0].hackerrank }}" title="Hackerrank">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-hackerrank {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Hackerrank</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.hackerrank.com/{{ site.data.me.profile[0].hackerrank }}" title="Hackerrank">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-hackerrank {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Hackerrank</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].gitlab -%}
-    <li class="list-inline-item">
-      <a href="https://www.gitlab.com/{{ site.data.me.profile[0].gitlab }}" title="GitLab">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-gitlab {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">GitLab</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="https://www.gitlab.com/{{ site.data.me.profile[0].gitlab }}" title="GitLab">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-gitlab {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">GitLab</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if site.data.me.profile[0].google-play -%}
-    <li class="list-inline-item">
-      <a href="{{ site.data.me.profile[0].google-play }}" title="Google Play">
-        <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="{{ back-class }}"></i>
-          <i class="fab fa-google-play {{ front-class }}"></i>
-        </span>
-        <span class="sr-only">Google Play</span>
-      </a>
-    </li>
+  <li class="list-inline-item">
+    <a href="{{ site.data.me.profile[0].google-play }}" title="Google Play">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="{{ back-class }}"></i>
+        <i class="fab fa-google-play {{ front-class }}"></i>
+      </span>
+      <span class="sr-only">Google Play</span>
+    </a>
+  </li>
   {%- endif -%}
 
 </ul>
