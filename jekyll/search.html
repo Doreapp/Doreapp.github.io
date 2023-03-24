@@ -17,10 +17,10 @@ js:
   window.store = [{% for project in site.data.me.projects %}{
         "id": "{{ project.title }}",
         "url": "{{ project.title | datapage_url: 'project' | absolute_url }}",
-        "title": "{{ project.title | xml_escape }}",
-        "subtitle": "{{ project.subtitle | xml_escape }}",
-        "description": "{{ project.description | xml_escape | strip_newlines }}",
-        "skills": "{{ project.skills | join: " ; " | xml_escape }}",
+        "title": "{{ project.title | strip_html | remove: '"' }}",
+        "subtitle": "{{ project.subtitle | strip_html | remove: '"' }}",
+        "description": "{{ project.description | strip_html | remove: '"'| strip_newlines }}",
+        "skills": "{{ project.skills | join: " ; " | strip_html | remove: '"'}}",
         "coverimg": "{{ project.cover-img | absolute_url }}"
       }
         {% unless forloop.last %},{% endunless %}{% endfor %}];
