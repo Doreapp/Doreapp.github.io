@@ -230,7 +230,7 @@ projects:
     Cette application est - au moment où j'écris ces lignes - mon application <b>la plus téléchargée</b> sur le
     <b>Google Play Store</b>.
 - _title: E scooters
-  subtitle: Application modile pour un projet scolaire
+  subtitle: Application mobile pour un projet scolaire
   description: >-
     Dans le cadre d'un projet scolaire, j'ai fait partie d'une équipe chargée de trouver une idée pour une
     application mobile. Nous avons décidé de créer une application qui regroupe toutes les marques
@@ -345,7 +345,7 @@ projects:
     un conteneur portable, utilisable quel que soit le <i>système d'exploitation</i>.
 - _title: My portfolio
   title: Mon portfolio
-  subtitle: Site web static mettant en avant mes expériences
+  subtitle: Site web statique mettant en avant mes expériences
   weblink: https://antoine.mandin.dev/fr
   description: >-
     Projet de construction de mon <b>portfolio</b>, en utilisant des technologies de haut niveau et en <b>centrant le
