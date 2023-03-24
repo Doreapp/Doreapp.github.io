@@ -52,10 +52,10 @@ css:
       </a>
     </article>
   {% endfor %}
-  <button class="view-more-button button">View more projects</button>
+  <button class="view-more-button button">{{ site.data.texts.view-more-projects }}</button>
 </div>
 
-<h2>Jobs</h2>
+<h2>{{ site.data.texts.jobs }}</h2>
 
 <ul class="related-list">
   {% for job in site.data.me.work.jobs %}
@@ -64,7 +64,7 @@ css:
         <div class="flex">
           <div class="content-wrap">
             <h3 class="post__title">{{ job.name }}{% if job.company %}
-                at {{ job.company }}{% endif %}
+                {{ site.data.texts.at--company }} {{ job.company }}{% endif %}
             </h3>
             <span class="date post__subtitle">
               {% include date.html start-date=job.start-date end-date=job.end-date %}
@@ -102,7 +102,7 @@ css:
   {% endfor %}
 </ul>
 
-<h2>Education</h2>
+<h2>{{ site.data.texts.education }}</h2>
 
 <ul class="related-list">
   {% for school in site.data.me.education.schools %}

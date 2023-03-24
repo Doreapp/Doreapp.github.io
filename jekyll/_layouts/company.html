@@ -19,24 +19,24 @@ layout: mypost
 <p>{{ page.description }}</p>
 
 
-<h3>Related</h3>
+<h3>{{ site.data.texts.related }}</h3>
 
 {% include related-list.html
-  list=site.data.me.work.jobs
-  ref=page.title
-  cmp-key = "company"
-  name-key = "name"
-  datapage-folder = "job" %}
+ list=site.data.me.work.jobs
+ ref=page.title
+ cmp-key = "company"
+ name-key = "name"
+ datapage-folder = "job" %}
 
 {% include related-list.html
-  list=site.data.me.projects
-  ref=page.title
-  cmp-key = "school"
-  name-key = "title"
-  datapage-folder = "project" %}
+ list=site.data.me.projects
+ ref=page.title
+ cmp-key = "school"
+ name-key = "title"
+ datapage-folder = "project" %}
 
 {% if page.weblink %}
   <p>
-    <a class="button button--large" href="{{ page.weblink | absolute_url }}">Official website</a>
+    <a class="button button--large" href="{{ page.weblink | absolute_url }}">{{ site.data.texts.official-website }}</a>
   </p>
 {% endif %}

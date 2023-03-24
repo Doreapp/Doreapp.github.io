@@ -21,10 +21,10 @@ layout: mypost
       {% endfor %}
     {% endif %}
     <p>
-      Project done as
+      {{ site.data.texts.project-done-as }}
       <a href="{{ job.name | datapage_url: 'job' | absolute_url }}">{{ job.name }}</a>
       {% if company %}
-        at
+        {{ site.data.texts.at--company }}
         <a href="{{ company.name | datapage_url: 'company' | absolute_url }}">{{ company.name }}</a>
       {% endif %}
     </p>
@@ -39,7 +39,7 @@ layout: mypost
   {% endfor %}
   {% if school %}
     <p>
-      School project done at
+      {{ site.data.texts.school-project-done-at }}
       <a href="{{ school.name | datapage_url: 'school' | absolute_url }}">{{ school.name }}</a>
     </p>
   {% endif %}
