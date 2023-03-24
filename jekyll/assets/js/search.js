@@ -86,6 +86,8 @@ const buildResultListItem = (result) => {
 
 const displaySearchResults = (results) => {
     const container = document.getElementById('search-results');
+    const noResult = document.getElementById('no-result');
+    noResult.style.display = "none";
 
     if (results.length) { // Are there any results?
         for (const result of results) {
@@ -93,7 +95,7 @@ const displaySearchResults = (results) => {
             container.appendChild(resultElement);
         }
     } else {
-        container.innerText = "No results found";
+        noResult.style.display = "";
     }
 }
 

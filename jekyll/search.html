@@ -13,6 +13,8 @@ js:
 
 <ul id="search-results" class="related-list"></ul>
 
+<div id="no-result">{{ site.data.texts.no-result }}</div>
+
 <script>
   window.store = [{% for project in site.data.me.projects %}{
         "id": "{{ project.title }}",
