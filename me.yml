@@ -986,6 +986,7 @@ projects:
   start-date: 26-04-2021
   end-date: 06-05-2021
 - title: My data analyser
+  subtitle: Android app analysing personal data
   source-code: https://github.com/Doreapp/My_data_analyser
   cover-img: "/assets/img/my-data-analyser.jpg"
   team-size: 1
