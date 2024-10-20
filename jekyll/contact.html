@@ -6,39 +6,14 @@ cover-img: "/assets/img/banner.jpg"
 ---
 
 <p>
-  Hey there! I'm glad you stumbled upon my corner of the internet.
-  If you're here, I'm guessing you want to get in touch with me.
-        Well, you're in luck! Whether you have a job offer, a project in mind, or just want to say hi, I'm all ears!</p>
-
-{% if site.data.me.profile[0].email and site.data.me.profile[0].linkedin %}
-  <p>
-    If you prefer to reach me through email, you can send me a message at
-    <a href="mailto:{{ site.data.me.profile[0].email }}">{{ site.data.me.profile[0].email }}</a>.
-    I promise to respond as soon as possible (unless I'm taking a nap or eating a giant burrito, in which case it may
-                take a bit longer).</p>
-
-  <p>
-    If you're more of a LinkedIn person, you can find me there too.
-    Just follow
-    <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}">this link</a>.
-  </p>
-{% elsif site.data.me.profile[0].email %}
-  <p>
-    You can send me a message at
-    <a href="mailto:{{ site.data.me.profile[0].email }}">{{ site.data.me.profile[0].email }}</a>.
-    I promise to respond as soon as possible (unless I'm taking a nap or eating a giant burrito, in which case it may
-                take a bit longer).</p>
-{% elsif site.data.me.profile[0].linkedin %}
-  <p>
-    You can find me on LinkedIn, just follow
-    <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}">this link</a>.
-  </p>
-{% else %}
-  <p>
-    Unfortunatelly, I do not provide direct contact mediums on this page, you'll have to dig in the internet...
-  </p>
-{% endif %}
+    Hello! Envie de me passer le bonjour ? Je t'invite à m'envoyer un mail ou me contacter sur LinkedIn.
+</p>
 
 <p>
-  Thanks for stopping by! I look forward to hearing from you soon.
+    Voici mon adresse mail :
+    <a href="mailto:{{ site.data.me.profile[0].email }}">{{ site.data.me.profile[0].email }}</a>.
+</p>
+<p>
+    Et voila mon
+    <a href="https://linkedin.com/in/{{ site.data.me.profile[0].linkedin }}">profil LinkedIn</a>.
 </p>
