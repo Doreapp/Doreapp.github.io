@@ -18,6 +18,76 @@ about:
       - name: Désolé
         description: Cette page est encore en développement...
 projects:
-  - title: "[Freelance] Développeur FullStack | Web app de mise en relation entre des Audio-prothèsistes et des Médecins ORL"
-    description: TODO
+  - title: Web app de mise en relation entre des Audio-prothèsistes et des Médecins ORL
+    subtitle: Développeur FullStack en Freelance
+    start-date: 01-07-2024
+    end-date: 11-10-2024
+    weblink: https://otoremote.fr/
+    job: Freelance
+    description: |
+      Développement pour l'amélioration et le déploiement d'une application web dans le secteur du médical.
+      Interconnexion avec les services de l'état, conception et développement de nouvelles fonctionnalités.
+      <br />
+      <h2>⚡️ Compétences</h2>
+      <br />
+      <ul>
+        <li>🏗️ Conception et architecture web</li>
+        <li>💻 Développement FullStack</li>
+        <li>🧪Tests automatisés</li>
+      </ul>
+      <br />
+      <h2>🖥️ Technos</h2>
+      <br />
+      <ul>
+        <li>⚛️ Next.js, TypeScript, MUI, Figma</li>
+        <li>♌ Nest.js, JWT, GraphQL, Apollo</li>
+        <li>🗄️ PostgreSQL, Prisma</li>
+        <li>🚀 GitHub, Github Actions, Docker, Docker compose</li>
+      </ul>
     cover-img: "/assets/img/banner.jpg"
+    skills:
+      - Next.js
+      - TypeScript
+      - NestJS
+      - GraphQL
+      - Apollo
+      - Développement FullStack
+      - Docker
+      - MUI
+      - Figma
+works:
+  jobs:
+    - name: Freelance
+      subtitle: Développeur FullStack en Freelance
+      description: |
+        Développeur FullStack en indépendant.
+        Spécialisation dans le développement web avec Next.js, NestJS et TypeScript.
+      cover-img: "/assets/img/banner.jpg"
+      start-date: 01-10-2023
+education:
+  schools:
+    - name: KTH
+      country: Suède
+      description: >-
+        KTH est la plus grande université technique de Suède.
+        <br>
+        J'y ai travaillé durant un semestre, en échange universitaire,
+        approfondissant mes connaissances en informatiques et améliorant mon anglais.
+    - name: INSA Lyon
+      subtitle: Ecole d'ingénieur française
+      share-title: INSA Lyon | Ecole d'ingénieur
+      description: >-
+        Ecole d'ingénieur en 5 ans.
+        <br>
+        Les deux premières années correspondent à la classe préparatoire intégrée,
+        offrant un enseignement sicentifique générale, avec des mathématiques, de le physique,
+        de la chimie et surtout une agréable vie étudiante.
+        <br>
+        Les trois années qui suivent sont dédiées à la spéciailisation.
+        J'ai donc travaillé au sein du département IF (informatique)
+        qui propose des cours allant de l'architecture des ordinateurs jusqu'aux
+        modèles de données, en passant par de la gestion de projets.
+  diplomas:
+    - title: Diplôme d'ingénieur, spécialité informatique
+      subtitle: Dicerné par l'INSA Lyon
+      share-title: Diplôme d'ingénieur, spécialité informatique
