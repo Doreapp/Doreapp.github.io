@@ -85,6 +85,20 @@ It shall respect a precise format. An example can be seen in [`me.yml` file](me.
 | `projects[?].school` | [Optional] Name of the school related to this project. Must exist in `education.schools`. |
 
 
+## Running
+
+```bash
+source dev.sh
+```
+
+```bash
+it
+$ cd jekyll
+$ ./dev.sh
+```
+
+Open `http://localhost:4000` in your browser.
+
 ## Automatic format check
 
 If you want to check the format of your `me.yml` file, you can use `pyfolio` python library in [`tools` directory](tools/).
