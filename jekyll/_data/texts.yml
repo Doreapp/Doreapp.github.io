@@ -1,28 +1,28 @@
-page-not-found: "Page not found :("
-looks-like-your-lost: "Look's like you're lost..."
-go-back-home: Go back home
+page-not-found: "Page introuvable :("
+looks-like-your-lost: "On dirait bien que tu es perdu..."
+go-back-home: Retour à l'accueil
 
-no-result: "No results found"
-search-for-description: "Search for a project, language, techno..."
+no-result: "Aucun résultat"
+search-for-description: "Rechercher un projet, un langage, une techno..."
 
-project-done-as: "Project done as"
-at--company: "at"
-school-project-done-at: "School project done at"
-job-at: "Job at"
-posted-on: "Posted on"
-last-updated: "Last updated"
+project-done-as: "Projet fait en tant que"
+at--company: "chez"
+school-project-done-at: "Projet scolaire fait à"
+job-at: "Travail chez"
+posted-on: "Posté le"
+last-updated: "Dernière mise à jour le"
 
-from: "From"
-to: "to"
-started-on: "Started on"
+from: "Du"
+to: "au"
+started-on: "A débuté le"
 
-jobs: Jobs
-education: Education
+jobs: Expériences professionnelles
+education: Éducation
 
-related: "Related"
-view-more-projects: View more projects
+related: Associé
+view-more-projects: Voir plus de projets
 
-official-website: "Official website"
-email-me: Email me
-schedule-a-meeting-with-me: Schedule a meeting with me
-phone: Phone
+official-website: "Site officiel"
+email-me: M'envoyer un email
+schedule-a-meeting-with-me: Prévoir un rendez-vous avec moi
+phone: Téléphone

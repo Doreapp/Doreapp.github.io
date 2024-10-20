@@ -5,18 +5,17 @@ plugins:
   - jekyll-datapage-generator
   - jekyll-sitemap # Be sure to put this under datapage-generator
 
-title: Antoine Mandin | Software engineer
+title: Antoine Mandin | Développeur Fullstack
 author: Antoine Mandin
 email: antoine.mandin.am@gmail.com
 description: >-
-  Portfolio and Resume of Antoine Mandin. French Software engineer.
+  Portfolio d'Antoine Mandin. Développeur Fullstack en Freelance.
 baseurl: ""
 url: ""
 github_username: Doreapp
 
 navbar-links:
-  - ["En français", "fr"]
-  - ["About Me", "about"]
+  - ["A propos", "about"]
   - [Contact, "contact"]
 remove-ads: true
 site-css:

@@ -1,7 +1,7 @@
 profile:
   - name: Antoine Mandin
-    subtitle: Software engineer
-    share-title: Antoine Mandin | Software engineer
+    subtitle: Développeur Fullstack Freelance
+    share-title: Antoine Mandin | Développeur Fullstack
     cover-img: "/assets/img/banner.jpg"
     birthday: 04-10-1999
     email: antoine.mandin.am@gmail.com
@@ -11,13 +11,9 @@ profile:
     google-play: https://play.google.com/store/apps/dev?id=6950241882157030363
     gitlab: AntoineMdn
 about:
-  - subtitle: Why me instead of a robot?
-    share-title: About me | Antoine Mandin
+  - subtitle: TODO
+    share-title: A propos| Antoine Mandin
     text: "Some of my best qualities:"
     list:
-      - name: Gitmoji master
-        description: I turn any boring repository into a color explosion
-      - name: Keyboard shortcut wizard
-        description: To the dismay of <code>Ctrl</code> and <code>Shift</code> keys...
-      - name: Coverage hunter
-        description: Did we test the tests ?
+      - name: Désolé
+        description: Cette page est encore en développement...
