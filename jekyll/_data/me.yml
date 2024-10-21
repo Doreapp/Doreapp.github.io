@@ -104,16 +104,12 @@ work:
       start-date: 01-10-2023
 education:
   schools:
-    - name: KTH
-      country: Suède
-      description: >-
-        KTH est la plus grande université technique de Suède.
-        <br>
-        J'y ai travaillé durant un semestre, en échange universitaire,
-        approfondissant mes connaissances en informatiques et améliorant mon anglais.
     - name: INSA Lyon
+      cover-img: "/assets/img/insa.jpg"
       subtitle: Ecole d'ingénieur française
       share-title: INSA Lyon | Ecole d'ingénieur
+      city: Lyon
+      country: France
       description: >-
         Ecole d'ingénieur en 5 ans.
         <br>
@@ -125,6 +121,25 @@ education:
         J'ai donc travaillé au sein du département IF (informatique)
         qui propose des cours allant de l'architecture des ordinateurs jusqu'aux
         modèles de données, en passant par de la gestion de projets.
+      weblink: https://www.insa-lyon.fr/
+      start-date: 01-09-2017
+      end-date: 30-06-2022
+    - name: KTH
+      cover-img: "/assets/img/banner.jpg"
+      country: Suède
+      cover-img: "/assets/img/kth.webp"
+      share-title: KTH Royal Institue of Technology
+      long-name: KTH Royal Institue of Technology
+      city: Stockholm
+      country: Sweden
+      description: >-
+        KTH est la plus grande université technique de Suède.
+        <br>
+        J'y ai travaillé durant un semestre, en échange universitaire,
+        approfondissant mes connaissances en informatiques et améliorant mon anglais.
+      weblink: https://www.kth.se/
+      start-date: 22-08-2021
+      end-date: 15-01-2022
   diplomas:
     - title: Diplôme d'ingénieur, spécialité informatique
       subtitle: Dicerné par l'INSA Lyon
