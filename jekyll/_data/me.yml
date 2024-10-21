@@ -121,6 +121,26 @@ projects:
       - Développement web
       - Docker
       - Zendesk
+  - title: Portfolio
+    subtitle: Site web static mettant en avant mes expériences
+    cover-img: "/assets/img/portfolio.jpg"
+    source-code: https://github.com/Doreapp/Doreapp.github.io
+    weblink: https://antoine.mandin.dev
+    start-date: 16-01-2023
+    description: |
+      Site de mon <b>portfolio</b> en open source.
+      Conception centrée sur les données.
+    skills:
+      - CSS
+      - HTML
+      - JavaScript
+      - Développement Web
+      - UI Design
+      - Python
+      - GitHub
+      - CI/CD
+      - GitHub actions
+      - Jekyll
 work:
   jobs:
     - name: Freelance
