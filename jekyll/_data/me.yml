@@ -93,6 +93,34 @@ projects:
       - Docker
       - MUI
       - Figma
+  - title: Application Zendesk pour la gestion de contrats
+    subtitle: Développeur Front-end en Freelance
+    start-date: 12-10-2023
+    end-date: 10-12-2023
+    job: Freelance
+    description: |
+      Développement d'une application Zendesk permettant de gérer des contrats.
+      <h2>Compétences</ul>
+      <ul>
+        <li>💡 Conception web axée sur les besoins clients</li>
+        <li>🏗️ Architecture et développement web</li>
+        <li>🪄 Intégration dans l'environnement Zendesk</li>
+      </ul>
+      <h2>🖥️ Technos</h2>
+      <ul>
+        <li>⚛️ React.js, TypeScript, MUI</li>
+        <li>🚀 Gitlab, GitLab CI/CD, Docker</li>
+        <li>🤝 Zendesk, Zendesk Garden, Zendesk Apps framework</li>
+      </ul>
+    cover-img: "/assets/img/banner.jpg"
+    weblink: https://www.zendesk.com/marketplace/apps/support/992190/contract-manager/
+    skills:
+      - React.js
+      - TypeScript
+      - Développement Front-end
+      - Développement web
+      - Docker
+      - Zendesk
 work:
   jobs:
     - name: Freelance
