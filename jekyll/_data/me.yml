@@ -11,11 +11,11 @@ profile:
     google-play: https://play.google.com/store/apps/dev?id=6950241882157030363
     gitlab: AntoineMdn
 about:
-  - subtitle: En savoir un peu plus sur moi 
+  - subtitle: En savoir un peu plus sur moi
     share-title: A propos | Antoine Mandin
     text: |
-      Passionné par le développement de logiciels et d'applications, j'aime créer des outils de A à Z. 
-      Issue d'une formation d'ingénieur, j'aime trouver les meilleures solutions à des problèmes complexes. 
+      Passionné par le développement de logiciels et d'applications, j'aime créer des outils de A à Z.
+      Issue d'une formation d'ingénieur, j'aime trouver les meilleures solutions à des problèmes complexes.
       J'ai goûté au développement mobile, au développement d'applications de bureau et au développement Web, et aujourd'hui j'ai choisi mon camp ! Je me spécialise désormais dans le développement Web fullstack, avec des technologies à la pointe de ce qu'il se fait. Cela me permet d'assurer la maintenabilité des projets sur lesquels je travaille, mais également leur robustesse et leurs performances, tout en assurance une excellente expérience developpeur.
       Constamment à la recherche de nouveaux outils pour améliorer mon quotidien de développeur et la qualité de mes livrables, j'adore le monde l'open source, et j'aime mettre ma pierre à l'édifice, lorsque l'occasion et le temps se présentent.
 projects:
@@ -27,7 +27,7 @@ projects:
     job: Freelance
     description: |
       Amélioration d'une application web dans le secteur du médical.
-      J'ai conduit des développement fullstack dans une base de code pour ajouter de nouvelles fonctionnalités. 
+      J'ai conduit des développement fullstack dans une base de code pour ajouter de nouvelles fonctionnalités.
       Interconnexion avec les services de l'état, conception et développement de nouvelles fonctionnalités.
       <br />
       <h2>⚡️ Compétences</h2>
@@ -57,7 +57,43 @@ projects:
       - Docker
       - MUI
       - Figma
-works:
+  - title: Application web de gestion utilisateur et contrats
+    subtitle: Développeur FullStack en Freelance
+    start-date: 05-01-2024
+    end-date: 01-07-2024
+    job: Freelance
+    description: |
+      Conception et architecture d'une application web.
+      Développement Fullstack d’une plateforme web permettant la gestion de données utilisateurs et de leur contrats.
+      <br />
+      <h2>Compétences</h2>
+      <br />
+      <ul>
+        <li>🏗️ Conception et architecture web</li>
+        <li>💻 Développement fullstack</li>
+        <li>🎯 Gestion des budgets et des délais</li>
+      </ul>
+      <br />
+      <h2>Technos</h2>
+      <br />
+      <ul>
+        <li>⚛️ Next.js, TypeScript, MUI, Figma</li>
+        <li>♌ Nest.js, JWT, GraphQL, Apollo</li>
+        <li>🗄️ PostgreSQL, Prisma, MinIO, DocuSeal</li>
+        <li>🚀 GitHub, Github Actions, Docker, Docker compose</li>
+      </ul>
+    cover-img: "/assets/img/banner.jpg"
+    skills:
+      - Next.js
+      - TypeScript
+      - NestJS
+      - GraphQL
+      - Apollo
+      - Développement FullStack
+      - Docker
+      - MUI
+      - Figma
+work:
   jobs:
     - name: Freelance
       subtitle: Développeur FullStack en Freelance
