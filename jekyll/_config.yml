@@ -32,7 +32,8 @@ matomo:
   opt-out: true
 
 # The keywords to associate the website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "développeur,fullstack,freelance,web,react.js,next.js,nestjs"
+job_title: Développeur Fullstack en Freelance
 
 # Page generation configuration
 # See https://github.com/avillafiorita/jekyll-datapage_gen
