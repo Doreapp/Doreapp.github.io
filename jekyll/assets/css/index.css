@@ -194,6 +194,12 @@ body {
     font-weight: 700;
 }
 
+.navbar-custom .navbar-brand {
+    /** To handle mobile nicelly */
+    max-width: 70vw;
+    white-space: break-spaces;
+}
+
 .navbar {
     background-color: white;
 }
