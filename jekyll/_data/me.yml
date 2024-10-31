@@ -141,6 +141,57 @@ projects:
       - CI/CD
       - GitHub actions
       - Jekyll
+  - title: Missions diverses dans le secteur du maritime
+    subtitle: Développeur FullStack chez SIREHNA
+    job: Ingénieur Logiciel
+    cover-img: "/assets/img/sirehna.jpg"
+    start-date: 01-02-2021
+    end-date: 29-09-2024
+    description: |
+      <p>
+        <b>Missions</b>
+        <br />
+        En tant que développeur fullstack chez Sirehna, je participais à l'architecture,
+        la conception, le développement, les tests et le déploiement de logiciels ayant un
+        lien fort avec l'aide à la conception, l'architecture navale et l'aide à la décision.
+        <br />
+      </p>
+      <p>
+        <b>Compétences</b>
+        <ul>
+          <li>💡 Définition des besoins utilisateurs</li>
+          <li>🏗️ Conception et architecture de logiciels</li>
+          <li>💻 Développement logiciel (incluant tests, relecture, déploiement)</li>
+        </ul>
+      </p>
+      <p>
+        <b>Projets</b>
+        <ul>
+          <li>Réalisation d'une application Web, basées sur React.js (MUI et TailwindCSS) en architecture micro-services. Restructuration de services avec FastAPI et pydantic.</li>
+          <li>Développement d’un outil métier de bureau avec Python, Qt et Pyside. Import/Export de fichiers Excel, stockage en base de données SQLite, suivi de version des données avec Git.</li>
+          <li>Développement d’un projet d’application web distribuée. Définition des besoins utilisateurs, Réalisation d’une étude de marché, Écriture d’un Business Plan, Conception de l’architecture logicielle et de la feuille de route produit.</li>
+        </ul>
+      </p>
+      <p>
+        <b>Technos</b>
+        <ul>
+          <li>🐍 Python, FastAPI, Conda, Pyside, Pytest, Pandas, Sphinx, Selenium</li>
+          <li>⚛️ JavaScript, TypeScript, React.js, Leaflet.js, MUI, TailwindCSS, Redux</li>
+          <li>🚀 Gitlab, GitLab CI/CD, Docker, Docker compose, Makefile, Git, Debian, Ubuntu</li>
+          <li>🗄️ SQL, MongoDB, PostgreSQL, MinIO</li>
+        </ul>
+      </p>
+    skills:
+      - Fullstack
+      - React.js
+      - TypeScript
+      - Développement Web
+      - JavaScript
+      - UI Design
+      - MUI
+      - TailwindCSS
+      - Python
+      - FastAPI
 work:
   jobs:
     - name: Freelance
@@ -150,6 +201,26 @@ work:
         Spécialisation dans le développement web avec Next.js, NestJS et TypeScript.
       cover-img: "/assets/img/banner.jpg"
       start-date: 01-10-2023
+    - name: Ingénieur logiciel
+      subtitle: Ingénieur logiciel chez SIREHNA
+      start-date: 01-02-2021
+      end-date: 29-09-2024
+      cover-img: "/assets/img/sirehna.jpg"
+      description: |
+        En tant qu'ingénieur logiciel chez Sirehna, je faisais partie d'une petite équipe où nous construisions
+        des logiciels et des programmes en fort lien avec l'architecture et la science navales.
+        <br><br>
+        Mon rôle passais par du l'utilisation de <code>Gitlab</code> et ses processus de <b>CI/CD</b>
+        et de revue de code pour assurer la production et le déploiement d'un code de haute qualité.
+        <br><br>
+        Je travaillais aussi bien avec des technologies backend, telles que <code>Python</code> que des technologies frontend,
+        comme <code>React.js</code>. Ainsi, nous construisions des logiciels de A à Z pour nos clients.
+        <br>
+        J'étais responsable du développement, des tests et de la maintenance des logiciels et des programmes,
+        en collaborant avec l'équipe pour garantir une livraison dans les délais et des produits de haute qualité.
+        <br>
+        En outre, je participais à l'amélioration continue du processus de développement de logiciels et
+        je veillais à ce que le logiciel soit optimisé en termes de performances et d'évolutivité.
 education:
   schools:
     - name: INSA Lyon
