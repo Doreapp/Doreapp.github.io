@@ -14,10 +14,27 @@ about:
   - subtitle: En savoir un peu plus sur moi
     share-title: A propos | Antoine Mandin
     text: |
-      Passionné par le développement de logiciels et d'applications, j'aime créer des outils de A à Z.
-      Issue d'une formation d'ingénieur, j'aime trouver les meilleures solutions à des problèmes complexes.
-      J'ai goûté au développement mobile, au développement d'applications de bureau et au développement Web, et aujourd'hui j'ai choisi mon camp ! Je me spécialise désormais dans le développement Web fullstack, avec des technologies à la pointe de ce qu'il se fait. Cela me permet d'assurer la maintenabilité des projets sur lesquels je travaille, mais également leur robustesse et leurs performances, tout en assurance une excellente expérience developpeur.
-      Constamment à la recherche de nouveaux outils pour améliorer mon quotidien de développeur et la qualité de mes livrables, j'adore le monde l'open source, et j'aime mettre ma pierre à l'édifice, lorsque l'occasion et le temps se présentent.
+      <p>
+      Passionné par le <b>développement de logiciels et d'applications</b>, j'aime créer des outils de A à Z.
+      </p>
+      <p>
+      Issue d'une formation d'<b>ingénieur</b>, j'aime trouver les <b>meilleures solutions à des problèmes complexes</b>.
+      </p>
+      <p>
+      J'ai goûté au développement mobile, au développement d'applications de bureau et au développement Web,
+      et aujourd'hui j'ai choisi mon camp !
+      <b>Je me spécialise</b> désormais <b>dans le développement Web fullstack</b>,
+      avec des technologies à la pointe de ce qu'il se fait.
+      <br />
+      Cela me permet d'assurer la <b>maintenabilité</b> des projets sur lesquels je travaille,
+      mais également leur <b>robustesse</b> et leurs <b>performances</b>, tout en assurance
+      une <b>excellente expérience developpeur</b>.
+      </p>
+      <p>
+      Constamment à la recherche de nouveaux outils pour améliorer mon quotidien de développeur
+      et la <b>qualité de mes livrables</b>, j'adore le monde l'open source, et
+      j'aime mettre ma pierre à l'édifice, lorsque l'occasion et le temps se présentent.
+      </p>
 projects:
   - title: Web app de mise en relation entre des Audio-prothèsistes et des Médecins ORL
     subtitle: Développeur FullStack en Freelance

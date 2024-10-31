@@ -1,18 +1,10 @@
 ---
-layout: mypost
-title: About me
+layout: post
+title: A propos
 permalink: /about/
 cover-img: "/assets/img/banner.jpg"
 ---
 
 {% if page.text %}
-  <h2>{{ page.text }}</h2>
-{% endif %}
-{% if page.list %}
-  <ul>
-    {% for element in page.list %}
-      <li>
-        <strong>{{ element.name }}</strong>: {{ element.description }}</li>
-    {% endfor %}
-  </ul>
+  <p>{{ page.text }}</p>
 {% endif %}
