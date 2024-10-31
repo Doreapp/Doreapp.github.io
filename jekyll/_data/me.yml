@@ -46,7 +46,7 @@ projects:
         <li>🗄️ PostgreSQL, Prisma</li>
         <li>🚀 GitHub, Github Actions, Docker, Docker compose</li>
       </ul>
-    cover-img: "/assets/img/banner.jpg"
+    cover-img: "/assets/img/otoremote.png"
     skills:
       - Next.js
       - TypeScript
@@ -82,7 +82,7 @@ projects:
         <li>🗄️ PostgreSQL, Prisma, MinIO, DocuSeal</li>
         <li>🚀 GitHub, Github Actions, Docker, Docker compose</li>
       </ul>
-    cover-img: "/assets/img/banner.jpg"
+    cover-img: "/assets/img/capefront.png"
     skills:
       - Next.js
       - TypeScript
@@ -112,7 +112,7 @@ projects:
         <li>🚀 Gitlab, GitLab CI/CD, Docker</li>
         <li>🤝 Zendesk, Zendesk Garden, Zendesk Apps framework</li>
       </ul>
-    cover-img: "/assets/img/banner.jpg"
+    cover-img: "/assets/img/seif.png"
     weblink: https://www.zendesk.com/marketplace/apps/support/992190/contract-manager/
     skills:
       - React.js
