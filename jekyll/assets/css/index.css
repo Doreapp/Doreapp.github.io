@@ -307,6 +307,14 @@ article.blog-post {
     box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
 }
 
+@media only screen and (max-width:900px) {
+    article.blog-post {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 30px 30px;
+    }
+}
+
 /* Hide buggy header on post-like pages */
 .intro-header.no-img {
     display: none;
