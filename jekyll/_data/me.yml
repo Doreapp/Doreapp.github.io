@@ -2,6 +2,9 @@ profile:
   - name: Antoine Mandin
     subtitle: Développeur Fullstack Freelance
     share-title: Antoine Mandin | Développeur Fullstack
+    share-description: |
+      Je suis Antoine Mandin, Ingénieur logiciel et développeur Fullstack en Freelance,
+      spécialisé dans le développement web avec React.js, Next.js, NestJS et TypeScript.
     cover-img: "/assets/img/banner.jpg"
     birthday: 04-10-1999
     email: antoine.mandin.am@gmail.com
