@@ -135,9 +135,13 @@ li.post {
 }
 
 .search-bar {
-    height: 40px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
     width: 100%;
+
     border-radius: 4px;
     border: none;
     margin: 0px;
@@ -145,7 +149,10 @@ li.post {
 
 .search-bar input {
     width: 30%;
-    margin: 0px 35%;
+    min-width: 200px;
+
+    margin: 0px;
+
     height: 100%;
     outline: none;
     border: rgba(20, 20, 20, 0.5) solid 1px;
@@ -175,7 +182,8 @@ li.post {
 .search-bar input:focus-visible,
 .search-bar input:active {
     width: 60%;
-    margin: 0px 20%;
+    min-width: 250px;
+    margin: 0px;
 }
 
 .search-bar input::placeholder {
@@ -313,4 +321,8 @@ article.blog-post {
 }
 *:hover > .fa-inverse.fill-hoverable {
     fill: #ffffff;
+}
+
+.search-box {
+
 }
