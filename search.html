@@ -88,7 +88,7 @@
   
 
   
-  <meta property="og:site_name" content="Antoine Mandin | Software engineer">
+  <meta property="og:site_name" content="Antoine Mandin | Développeur Fullstack">
   <meta property="og:title" content="Search">
   <meta property="og:description" content="{% include search-bar.html mb = &quot;2em&quot; %}
 
@@ -138,17 +138,14 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://antoine.mandin.dev/">Antoine Mandin | Software engineer</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://antoine.mandin.dev/">Antoine Mandin | Développeur Fullstack</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/fr">En français</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About Me</a>
+            <a class="nav-link" href="/about">A propos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
@@ -185,15 +182,60 @@
     type="text"
     id="search-box"
     name="query"
-    placeholder="Search for a project, language, techno...">
+    placeholder="Rechercher un projet, un langage, une techno...">
 </form>
 
 <ul id="search-results" class="related-list"></ul>
 
-<div id="no-result">No results found</div>
+<div id="no-result">Aucun résultat</div>
 
 <script>
-  window.store = [];
+  window.store = [{
+        "id": "Web app de mise en relation entre des Audio-prothèsistes et des Médecins ORL",
+        "url": "https://antoine.mandin.dev/project/web-app-de-mise-en-relation-entre-des-audio-prothesistes-et-des-medecins-orl.html",
+        "title": "Web app de mise en relation entre des Audio-prothèsistes et des Médecins ORL",
+        "subtitle": "Développeur FullStack en Freelance",
+        "description": "Amélioration d'une application web dans le secteur du médical.J'ai conduit des développement fullstack dans une base de code pour ajouter de nouvelles fonctionnalités.Interconnexion avec les services de l'état, conception et développement de nouvelles fonctionnalités.⚡️ Compétences  🏗️ Conception et architecture web  💻 Développement FullStack  🧪Tests automatisés🖥️ Technos  ⚛️ Next.js, TypeScript, MUI, Figma  ♌ Nest.js, JWT, GraphQL, Apollo  🗄️ PostgreSQL, Prisma  🚀 GitHub, Github Actions, Docker, Docker compose",
+        "skills": "Next.js ; TypeScript ; NestJS ; GraphQL ; Apollo ; Développement FullStack ; Docker ; MUI ; Figma",
+        "coverimg": "https://antoine.mandin.dev/assets/img/otoremote.png"
+      }
+        ,{
+        "id": "Application web de gestion utilisateur et contrats",
+        "url": "https://antoine.mandin.dev/project/application-web-de-gestion-utilisateur-et-contrats.html",
+        "title": "Application web de gestion utilisateur et contrats",
+        "subtitle": "Développeur FullStack en Freelance",
+        "description": "Conception et architecture d'une application web.Développement Fullstack d’une plateforme web permettant la gestion de données utilisateurs et de leur contrats.Compétences  🏗️ Conception et architecture web  💻 Développement fullstack  🎯 Gestion des budgets et des délaisTechnos  ⚛️ Next.js, TypeScript, MUI, Figma  ♌ Nest.js, JWT, GraphQL, Apollo  🗄️ PostgreSQL, Prisma, MinIO, DocuSeal  🚀 GitHub, Github Actions, Docker, Docker compose",
+        "skills": "Next.js ; TypeScript ; NestJS ; GraphQL ; Apollo ; Développement FullStack ; Docker ; MUI ; Figma",
+        "coverimg": "https://antoine.mandin.dev/assets/img/capefront.png"
+      }
+        ,{
+        "id": "Application Zendesk pour la gestion de contrats",
+        "url": "https://antoine.mandin.dev/project/application-zendesk-pour-la-gestion-de-contrats.html",
+        "title": "Application Zendesk pour la gestion de contrats",
+        "subtitle": "Développeur Front-end en Freelance",
+        "description": "Développement d'une application Zendesk permettant de gérer des contrats.Compétences  💡 Conception web axée sur les besoins clients  🏗️ Architecture et développement web  🪄 Intégration dans l'environnement Zendesk🖥️ Technos  ⚛️ React.js, TypeScript, MUI  🚀 Gitlab, GitLab CI/CD, Docker  🤝 Zendesk, Zendesk Garden, Zendesk Apps framework",
+        "skills": "React.js ; TypeScript ; Développement Front-end ; Développement web ; Docker ; Zendesk",
+        "coverimg": "https://antoine.mandin.dev/assets/img/seif.png"
+      }
+        ,{
+        "id": "Portfolio",
+        "url": "https://antoine.mandin.dev/project/portfolio.html",
+        "title": "Portfolio",
+        "subtitle": "Site web static mettant en avant mes expériences",
+        "description": "Site de mon portfolio en open source.Conception centrée sur les données.",
+        "skills": "CSS ; HTML ; JavaScript ; Développement Web ; UI Design ; Python ; GitHub ; CI/CD ; GitHub actions ; Jekyll",
+        "coverimg": "https://antoine.mandin.dev/assets/img/portfolio.jpg"
+      }
+        ,{
+        "id": "Missions diverses dans le secteur du maritime",
+        "url": "https://antoine.mandin.dev/project/missions-diverses-dans-le-secteur-du-maritime.html",
+        "title": "Missions diverses dans le secteur du maritime",
+        "subtitle": "Développeur FullStack chez SIREHNA",
+        "description": "  Missions    En tant que développeur fullstack chez Sirehna, je participais à l'architecture,  la conception, le développement, les tests et le déploiement de logiciels ayant un  lien fort avec l'aide à la conception, l'architecture navale et l'aide à la décision.    Compétences      💡 Définition des besoins utilisateurs    🏗️ Conception et architecture de logiciels    💻 Développement logiciel (incluant tests, relecture, déploiement)    Projets      Réalisation d'une application Web, basées sur React.js (MUI et TailwindCSS) en architecture micro-services. Restructuration de services avec FastAPI et pydantic.    Développement d’un outil métier de bureau avec Python, Qt et Pyside. Import/Export de fichiers Excel, stockage en base de données SQLite, suivi de version des données avec Git.    Développement d’un projet d’application web distribuée. Définition des besoins utilisateurs, Réalisation d’une étude de marché, Écriture d’un Business Plan, Conception de l’architecture logicielle et de la feuille de route produit.    Technos      🐍 Python, FastAPI, Conda, Pyside, Pytest, Pandas, Sphinx, Selenium    ⚛️ JavaScript, TypeScript, React.js, Leaflet.js, MUI, TailwindCSS, Redux    🚀 Gitlab, GitLab CI/CD, Docker, Docker compose, Makefile, Git, Debian, Ubuntu    🗄️ SQL, MongoDB, PostgreSQL, MinIO  ",
+        "skills": "Fullstack ; React.js ; TypeScript ; Développement Web ; JavaScript ; UI Design ; MUI ; TailwindCSS ; Python ; FastAPI",
+        "coverimg": "https://antoine.mandin.dev/assets/img/sirehna.jpg"
+      }
+        ];
 </script>
 
   
@@ -209,12 +251,12 @@
 
 
 <ul class="list-inline text-center footer-links"><li class="list-inline-item">
-    <a href="mailto:antoine.mandin.am@gmail.com" title="Email me">
+    <a href="mailto:antoine.mandin.am@gmail.com" title="M'envoyer un email">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
       </span>
-      <span class="sr-only">Email me</span>
+      <span class="sr-only">M'envoyer un email</span>
     </a>
   </li><li class="list-inline-item">
     <a href="https://github.com/Doreapp" title="GitHub">

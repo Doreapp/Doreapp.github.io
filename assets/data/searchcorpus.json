@@ -1,0 +1,116 @@
+[ 
+ 
+ 
+{ 
+"title"    : "", 
+"desc"     : "", 
+"category" : "page", 
+"url"      : "/404.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Contact", 
+"desc"     : "Contact", 
+"category" : "page", 
+"url"      : "/contact/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Search", 
+"desc"     : "Search", 
+"category" : "page", 
+"url"      : "/search", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Diplôme d&#39;ingénieur en informatique | INSA Lyon", 
+"desc"     : "Diplôme d&#39;ingénieur en informatique | INSA Lyon", 
+"category" : "page", 
+"url"      : "/school/diplome-dingenieur-en-informatique--insa-lyon.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Échange universitaire en Suède | KTH", 
+"desc"     : "Échange universitaire en Suède | KTH", 
+"category" : "page", 
+"url"      : "/school/echange-universitaire-en-suede--kth.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Freelance", 
+"desc"     : "Freelance", 
+"category" : "page", 
+"url"      : "/job/freelance.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Ingénieur logiciel", 
+"desc"     : "Ingénieur logiciel", 
+"category" : "page", 
+"url"      : "/job/ingenieur-logiciel.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Web app de mise en relation entre des Audio-prothèsistes et des Médecins ORL", 
+"desc"     : "Web app de mise en relation entre des Audio-prothèsistes et des Médecins ORL", 
+"category" : "page", 
+"url"      : "/project/web-app-de-mise-en-relation-entre-des-audio-prothesistes-et-des-medecins-orl.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Application web de gestion utilisateur et contrats", 
+"desc"     : "Application web de gestion utilisateur et contrats", 
+"category" : "page", 
+"url"      : "/project/application-web-de-gestion-utilisateur-et-contrats.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Application Zendesk pour la gestion de contrats", 
+"desc"     : "Application Zendesk pour la gestion de contrats", 
+"category" : "page", 
+"url"      : "/project/application-zendesk-pour-la-gestion-de-contrats.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Portfolio", 
+"desc"     : "Portfolio", 
+"category" : "page", 
+"url"      : "/project/portfolio.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Missions diverses dans le secteur du maritime", 
+"desc"     : "Missions diverses dans le secteur du maritime", 
+"category" : "page", 
+"url"      : "/project/missions-diverses-dans-le-secteur-du-maritime.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Antoine Mandin", 
+"desc"     : "Antoine Mandin", 
+"category" : "page", 
+"url"      : "/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "A propos", 
+"desc"     : "A propos", 
+"category" : "page", 
+"url"      : "/about/", 
+"date"     : "January 1, 1970" 
+} 
+ 
+]
