@@ -57,7 +57,7 @@ page_gen:
   - data: me.about
     template: about
     name_expr: '"about"'
-    title_expr: '"About me"'
+    title_expr: '"A propos"'
     dir: '.'
 
 include: [CNAME]

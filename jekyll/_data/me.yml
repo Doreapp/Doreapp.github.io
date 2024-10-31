@@ -11,7 +11,8 @@ profile:
     google-play: https://play.google.com/store/apps/dev?id=6950241882157030363
     gitlab: AntoineMdn
 about:
-  - subtitle: En savoir un peu plus sur moi
+  - title: A propos
+    subtitle: En savoir un peu plus sur moi
     share-title: A propos | Antoine Mandin
     text: |
       <p>
