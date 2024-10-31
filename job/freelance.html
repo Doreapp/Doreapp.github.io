@@ -111,7 +111,21 @@
   <meta name="twitter:image" content="https://antoine.mandin.dev/assets/img/banner.jpg">
   
 
-  
+  <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//webstats.mandin.dev/";
+      _paq.push(['setTrackerUrl', u+'data.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'data.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
 
 
   
@@ -504,6 +518,11 @@ Compétences
 
       
 
+      
+        
+          &nbsp;&bull;&nbsp;
+          <a href="http://webstats.mandin.dev/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
+        
       
 
       
