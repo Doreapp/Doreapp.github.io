@@ -31,6 +31,9 @@ matomo:
   uri: "webstats.mandin.dev"
   opt-out: true
 
+# The keywords to associate the website, for SEO purposes
+#keywords: "my,list,of,keywords"
+
 # Page generation configuration
 # See https://github.com/avillafiorita/jekyll-datapage_gen
 # page_gen-dirs: true # uncomment, if you prefer to generate named folders
