@@ -5,6 +5,7 @@ profile:
     share-description: |
       Je suis Antoine Mandin, Ingénieur logiciel et développeur Fullstack en Freelance,
       spécialisé dans le développement web avec React.js, Next.js, NestJS et TypeScript.
+
     cover-img: "/assets/img/banner.jpg"
     birthday: 04-10-1999
     email: antoine.mandin.am@gmail.com
@@ -13,6 +14,7 @@ profile:
     stackoverflow: 12102246/doreapp
     google-play: https://play.google.com/store/apps/dev?id=6950241882157030363
     gitlab: AntoineMdn
+    malt: antoinemandin
 about:
   - title: A propos
     subtitle: En savoir un peu plus sur moi

@@ -297,3 +297,14 @@ article.blog-post {
 .intro-header.no-img {
     display: none;
 }
+
+*:hover > .fill-hoverable {
+    fill: #3498db;
+}
+
+.fa-inverse {
+    fill: #ffffff;
+}
+*:hover > .fa-inverse.fill-hoverable {
+    fill: #ffffff;
+}
