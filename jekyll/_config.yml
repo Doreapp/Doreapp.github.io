@@ -26,6 +26,11 @@ site-css:
 site-js:
 - "/assets/js/index.js"
 
+matomo:
+  site_id: "3"
+  uri: "webstats.mandin.dev"
+  opt-out: true
+
 # Page generation configuration
 # See https://github.com/avillafiorita/jekyll-datapage_gen
 # page_gen-dirs: true # uncomment, if you prefer to generate named folders
