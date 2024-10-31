@@ -22,32 +22,6 @@ jobs:
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: 'gh-pages'
-          jekyll_src: 'jekyll'
+          target_branch: "gh-pages"
+          jekyll_src: "jekyll"
           keep_history: true
-  publish-fr-version:
-    needs: github-pages
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Translate website
-      run: |
-        cp ./me.yml ./jekyll/_data/
-        cp ./me.fr.yml ./jekyll-fr/_data/me.yml
-        make --directory=tools translate_fr
-        cp ./CNAME ./fr-tmp/
-    - uses: actions/cache@v2
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-    - name: Push fr sub-website
-      uses: helaili/jekyll-action@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        target_branch: gh-pages
-        jekyll_src: 'fr-tmp'
-        gem_src: 'fr-tmp'
-        keep_history: true
-        target_path: fr
